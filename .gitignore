@@ -43,3 +43,6 @@ results/ctx_cache_*.json
 results/*_rows.json
 results/multi_keys.json
 results/multistep_cache_*.json
+
+# Zenodo 发布包与草稿元数据（含上传凭证地址，勿提交）
+release/
