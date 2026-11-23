@@ -1,0 +1,434 @@
+[
+ {
+  "key": [
+   "V/2008/page_17.pdf-1",
+   127.4
+  ],
+  "pair": [
+   0,
+   1
+  ],
+  "gold": [
+   0,
+   1
+  ],
+  "op": 5,
+  "gold_op": -1,
+  "ok": false,
+  "ok_pair": true
+ },
+ {
+  "key": [
+   "AMT/2005/page_105.pdf-2",
+   4575515.0
+  ],
+  "pair": [
+   0,
+   1
+  ],
+  "gold": [
+   0,
+   1
+  ],
+  "op": 4,
+  "gold_op": 0,
+  "ok": false,
+  "ok_pair": true
+ },
+ {
+  "key": [
+   "ADI/2011/page_81.pdf-1",
+   0.65078
+  ],
+  "pair": [
+   0,
+   1
+  ],
+  "gold": null,
+  "op": 4,
+  "gold_op": -1,
+  "ok": false,
+  "ok_pair": false
+ },
+ {
+  "key": [
+   "INTC/2013/page_29.pdf-3",
+   0.35837
+  ],
+  "pair": [
+   0,
+   1
+  ],
+  "gold": null,
+  "op": 4,
+  "gold_op": -1,
+  "ok": false,
+  "ok_pair": false
+ },
+ {
+  "key": [
+   "INTC/2013/page_29.pdf-1",
+   0.84882
+  ],
+  "pair": [
+   0,
+   1
+  ],
+  "gold": null,
+  "op": 4,
+  "gold_op": -1,
+  "ok": false,
+  "ok_pair": false
+ },
+ {
+  "key": [
+   "UNP/2006/page_37.pdf-1",
+   0.66325
+  ],
+  "pair": [
+   0,
+   1
+  ],
+  "gold": [
+   0,
+   1
+  ],
+  "op": 4,
+  "gold_op": 4,
+  "ok": true,
+  "ok_pair": true
+ },
+ {
+  "key": [
+   "CNP/2010/page_31.pdf-2",
+   0.0837
+  ],
+  "pair": [
+   0,
+   2
+  ],
+  "gold": [
+   0,
+   1
+  ],
+  "op": 4,
+  "gold_op": 5,
+  "ok": false,
+  "ok_pair": false
+ },
+ {
+  "key": [
+   "JPM/2013/page_209.pdf-1",
+   8076.0
+  ],
+  "pair": [
+   0,
+   1
+  ],
+  "gold": [
+   0,
+   1
+  ],
+  "op": 2,
+  "gold_op": 1,
+  "ok": false,
+  "ok_pair": true
+ },
+ {
+  "key": [
+   "HUM/2017/page_133.pdf-3",
+   149.12281
+  ],
+  "pair": [
+   0,
+   1
+  ],
+  "gold": [
+   0,
+   1
+  ],
+  "op": 4,
+  "gold_op": 5,
+  "ok": false,
+  "ok_pair": true
+ },
+ {
+  "key": [
+   "IPG/2008/page_93.pdf-1",
+   0.1931
+  ],
+  "pair": [
+   0,
+   1
+  ],
+  "gold": null,
+  "op": 4,
+  "gold_op": -1,
+  "ok": false,
+  "ok_pair": false
+ },
+ {
+  "key": [
+   "INTC/2013/page_29.pdf-4",
+   0.92857
+  ],
+  "pair": [
+   0,
+   1
+  ],
+  "gold": null,
+  "op": 4,
+  "gold_op": -1,
+  "ok": false,
+  "ok_pair": false
+ },
+ {
+  "key": [
+   "INTC/2013/page_29.pdf-2",
+   0.15118
+  ],
+  "pair": [
+   0,
+   1
+  ],
+  "gold": null,
+  "op": 4,
+  "gold_op": -1,
+  "ok": false,
+  "ok_pair": false
+ },
+ {
+  "key": [
+   "AON/2011/page_134.pdf-2",
+   0.60397
+  ],
+  "pair": [
+   0,
+   1
+  ],
+  "gold": [
+   0,
+   1
+  ],
+  "op": 5,
+  "gold_op": 4,
+  "ok": false,
+  "ok_pair": true
+ },
+ {
+  "key": [
+   "AES/2017/page_175.pdf-2",
+   -28.0
+  ],
+  "pair": [
+   0,
+   1
+  ],
+  "gold": [
+   0,
+   1
+  ],
+  "op": 1,
+  "gold_op": 2,
+  "ok": false,
+  "ok_pair": true
+ },
+ {
+  "key": [
+   "UNP/2013/page_54.pdf-1",
+   0.16662
+  ],
+  "pair": [
+   0,
+   1
+  ],
+  "gold": null,
+  "op": 4,
+  "gold_op": -1,
+  "ok": false,
+  "ok_pair": false
+ },
+ {
+  "key": [
+   "ABMD/2007/page_52.pdf-2",
+   0.59482
+  ],
+  "pair": [
+   0,
+   2
+  ],
+  "gold": null,
+  "op": 4,
+  "gold_op": -1,
+  "ok": false,
+  "ok_pair": false
+ },
+ {
+  "key": [
+   "V/2008/page_17.pdf-2",
+   91.66667
+  ],
+  "pair": [
+   0,
+   1
+  ],
+  "gold": null,
+  "op": 5,
+  "gold_op": -1,
+  "ok": false,
+  "ok_pair": false
+ },
+ {
+  "key": [
+   "AAPL/2014/page_38.pdf-4",
+   1145.0
+  ],
+  "pair": [
+   0,
+   1
+  ],
+  "gold": null,
+  "op": 1,
+  "gold_op": -1,
+  "ok": false,
+  "ok_pair": false
+ },
+ {
+  "key": [
+   "CNP/2010/page_31.pdf-1",
+   0.89051
+  ],
+  "pair": [
+   0,
+   1
+  ],
+  "gold": null,
+  "op": 4,
+  "gold_op": -1,
+  "ok": false,
+  "ok_pair": false
+ },
+ {
+  "key": [
+   "DRE/2013/page_39.pdf-1",
+   0.47104
+  ],
+  "pair": [
+   0,
+   1
+  ],
+  "gold": null,
+  "op": 4,
+  "gold_op": -1,
+  "ok": true,
+  "ok_pair": false
+ },
+ {
+  "key": [
+   "AAPL/2014/page_38.pdf-2",
+   4027.0
+  ],
+  "pair": [
+   0,
+   1
+  ],
+  "gold": [
+   0,
+   1
+  ],
+  "op": 1,
+  "gold_op": 1,
+  "ok": true,
+  "ok_pair": true
+ },
+ {
+  "key": [
+   "UNP/2011/page_76.pdf-3",
+   0.11979
+  ],
+  "pair": [
+   0,
+   1
+  ],
+  "gold": null,
+  "op": 4,
+  "gold_op": -1,
+  "ok": false,
+  "ok_pair": false
+ },
+ {
+  "key": [
+   "UNP/2013/page_54.pdf-3",
+   0.09457
+  ],
+  "pair": [
+   0,
+   1
+  ],
+  "gold": null,
+  "op": 5,
+  "gold_op": -1,
+  "ok": false,
+  "ok_pair": false
+ },
+ {
+  "key": [
+   "UNP/2013/page_44.pdf-2",
+   -1.0
+  ],
+  "pair": [
+   0,
+   1
+  ],
+  "gold": null,
+  "op": 1,
+  "gold_op": -1,
+  "ok": false,
+  "ok_pair": false
+ },
+ {
+  "key": [
+   "UNP/2011/page_76.pdf-4",
+   0.08012
+  ],
+  "pair": [
+   0,
+   1
+  ],
+  "gold": null,
+  "op": 4,
+  "gold_op": -1,
+  "ok": false,
+  "ok_pair": false
+ },
+ {
+  "key": [
+   "UNP/2013/page_54.pdf-4",
+   0.07721
+  ],
+  "pair": [
+   0,
+   1
+  ],
+  "gold": null,
+  "op": 5,
+  "gold_op": -1,
+  "ok": false,
+  "ok_pair": false
+ },
+ {
+  "key": [
+   "UNP/2013/page_44.pdf-3",
+   -16.0
+  ],
+  "pair": [
+   0,
+   1
+  ],
+  "gold": null,
+  "op": 1,
+  "gold_op": -1,
+  "ok": false,
+  "ok_pair": false
+ }
+]

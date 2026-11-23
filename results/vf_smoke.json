@@ -1,0 +1,319 @@
+{
+  "summary": [
+    {
+      "cond": "auto_f@5",
+      "n": 6,
+      "em": 0.0,
+      "anr": 0.3333333333333333,
+      "n_intact": 2,
+      "p_correct_intact": 0.0,
+      "n_frag": 4,
+      "p_correct_frag": 0.0
+    }
+  ],
+  "records": [
+    {
+      "id": "V/2008/page_17.pdf-1",
+      "cond": "auto_f@5",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 984.5440494590417,
+      "gold": 127.4,
+      "correct": false,
+      "cids": [],
+      "text": "637 / 647 * 1000",
+      "L": 1032,
+      "n_doc": 782,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 39,
+      "pair_fit": 0,
+      "pair_cost": 18,
+      "pair_kept": 18
+    },
+    {
+      "id": "PM/2017/page_38.pdf-1",
+      "cond": "auto_f@5",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": true,
+      "num": true,
+      "air": 0.6666666666666666,
+      "pred": -3927.0,
+      "gold": 688.0,
+      "correct": false,
+      "cids": [],
+      "text": "6888 - 10815",
+      "L": 1248,
+      "n_doc": 988,
+      "gold_in_kept": true,
+      "n_dup": 2,
+      "dgr": 1.0,
+      "budget_tokens": 49,
+      "pair_fit": 0,
+      "pair_cost": 41,
+      "pair_kept": 41
+    },
+    {
+      "id": "PNC/2013/page_207.pdf-1",
+      "cond": "auto_f@5",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": false,
+      "num": true,
+      "air": 0.0,
+      "pred": 19336.378205128203,
+      "gold": 30.44323,
+      "correct": false,
+      "cids": [],
+      "text": "(361977 / 1872) * 100",
+      "L": 1091,
+      "n_doc": 821,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 41,
+      "pair_fit": 1,
+      "pair_cost": 54,
+      "pair_kept": 14
+    },
+    {
+      "id": "CME/2017/page_97.pdf-5",
+      "cond": "auto_f@5",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": false,
+      "num": false,
+      "air": 0.6666666666666666,
+      "pred": 100.0,
+      "gold": 995.0,
+      "correct": false,
+      "cids": [],
+      "text": "(400 - 200) / 200 * 100",
+      "L": 1105,
+      "n_doc": 849,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 0.0,
+      "budget_tokens": 42,
+      "pair_fit": 0,
+      "pair_cost": 37,
+      "pair_kept": 37
+    },
+    {
+      "id": "LMT/2013/page_74.pdf-4",
+      "cond": "auto_f@5",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": false,
+      "num": true,
+      "air": 0.5,
+      "pred": -0.0018999999999999772,
+      "gold": -1.9,
+      "correct": false,
+      "cids": [],
+      "text": "(326.5 - 328.4) / 1000",
+      "L": 1314,
+      "n_doc": 1046,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 52,
+      "pair_fit": 0,
+      "pair_cost": 26,
+      "pair_kept": 26
+    },
+    {
+      "id": "AMT/2005/page_105.pdf-2",
+      "cond": "auto_f@5",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": false,
+      "num": true,
+      "air": 1.0,
+      "pred": 947449.0,
+      "gold": 4575515.0,
+      "correct": false,
+      "cids": [],
+      "text": "5248 + 469747 + 472454",
+      "L": 1201,
+      "n_doc": 950,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 47,
+      "pair_fit": 0,
+      "pair_cost": 27,
+      "pair_kept": 27
+    }
+  ],
+  "n": 6,
+  "alloc": [
+    {
+      "id": "V/2008/page_17.pdf-1",
+      "budget": 156,
+      "n_doc": 782,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 2,
+          "val": 2.0,
+          "ub": 2.0,
+          "tokens": 18
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 2,
+          "val": 3.05,
+          "ub": 3.05,
+          "tokens": 18
+        }
+      ]
+    },
+    {
+      "id": "PM/2017/page_38.pdf-1",
+      "budget": 197,
+      "n_doc": 988,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 3,
+          "val": 3.0,
+          "ub": 3.0,
+          "tokens": 54
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 3,
+          "val": 4.32,
+          "ub": 4.32,
+          "tokens": 54
+        }
+      ]
+    },
+    {
+      "id": "PNC/2013/page_207.pdf-1",
+      "budget": 164,
+      "n_doc": 821,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 12,
+          "val": 11.0,
+          "ub": 12.0,
+          "tokens": 163
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 12,
+          "val": 14.643,
+          "ub": 15.943,
+          "tokens": 164
+        }
+      ]
+    },
+    {
+      "id": "CME/2017/page_97.pdf-5",
+      "budget": 169,
+      "n_doc": 849,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 6,
+          "val": 6.0,
+          "ub": 6.0,
+          "tokens": 88
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 6,
+          "val": 7.382,
+          "ub": 7.382,
+          "tokens": 88
+        }
+      ]
+    },
+    {
+      "id": "LMT/2013/page_74.pdf-4",
+      "budget": 209,
+      "n_doc": 1046,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 6,
+          "val": 6.0,
+          "ub": 6.0,
+          "tokens": 92
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 6,
+          "val": 8.511,
+          "ub": 8.511,
+          "tokens": 92
+        }
+      ]
+    },
+    {
+      "id": "AMT/2005/page_105.pdf-2",
+      "budget": 190,
+      "n_doc": 950,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 2,
+          "val": 2.0,
+          "ub": 2.0,
+          "tokens": 49
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 2,
+          "val": 2.6,
+          "ub": 2.6,
+          "tokens": 49
+        }
+      ]
+    }
+  ]
+}

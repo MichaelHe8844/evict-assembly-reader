@@ -1,0 +1,45 @@
+# 忽略数据、权重、缓存与中间产物
+data/
+models/
+cache/
+_probe/
+_archive/
+.workbuddy/
+
+# 模型权重与张量（单文件 129MB 起，全部 >3GB）
+*.pt
+*.pth
+*.bin
+*.safetensors
+
+# 运行日志与渲染产物
+*.log
+_tpl/*.pdf
+_tpl/*.png
+_tpl/*.docx
+*.aux
+*.toc
+*.out
+
+# 编辑器与系统
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+
+# 论文稿件与投稿材料（不随代码发布）
+论文_*.docx
+paper_journal*.md
+预实验报告_*.md
+文献侦查*.md
+占位核查_*.md
+论文达标评估_*.md
+计算机科学模板.doc
+
+# 数据集副本与上下文缓存（可应要求提供）
+results/conv_*.json
+results/ctx_cache_*.json
+results/*_rows.json
+results/multi_keys.json
+results/multistep_cache_*.json

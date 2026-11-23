@@ -1,0 +1,69 @@
+{
+  "summary": [
+    {
+      "cond": "auto_f@10",
+      "n": 1,
+      "em": 0.0,
+      "anr": 0.0,
+      "n_intact": 0,
+      "p_correct_intact": NaN,
+      "n_frag": 1,
+      "p_correct_frag": 0.0
+    }
+  ],
+  "records": [
+    {
+      "id": "UAA/2016/page_42.pdf-2",
+      "cond": "auto_f@10",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": false,
+      "num": false,
+      "air": NaN,
+      "pred": 1.0144927536231885,
+      "gold": 0.22429,
+      "correct": false,
+      "cids": [],
+      "text": "350 / (2450 + 1000) * 10",
+      "L": 671,
+      "n_doc": 424,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 0.0,
+      "budget_tokens": 42,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    }
+  ],
+  "n": 1,
+  "alloc": [
+    {
+      "id": "UAA/2016/page_42.pdf-2",
+      "budget": 84,
+      "n_doc": 424,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 6,
+          "val": 5.0,
+          "ub": 6.0,
+          "tokens": 67
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 6,
+          "val": 5.0,
+          "ub": 6.0,
+          "tokens": 67
+        }
+      ]
+    }
+  ]
+}

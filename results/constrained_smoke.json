@@ -1,0 +1,164 @@
+{
+ "summary": {
+  "3": {
+   "n": 10,
+   "em": 0.0,
+   "oob_question": 0.0,
+   "oob_numbers": 0,
+   "sec": 19.256463050842285
+  },
+  "20": {
+   "n": 10,
+   "em": 0.8,
+   "oob_question": 0.0,
+   "oob_numbers": 0,
+   "sec": 23.89723229408264
+  }
+ },
+ "detail": {
+  "3": [
+   {
+    "id": "INTC/2015/page_41.pdf-4",
+    "gen": "divide(56.0, 56.0)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "CMCSA/2015/page_112.pdf-2",
+    "gen": "subtract(2015, 2014)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "UAA/2016/page_42.pdf-2",
+    "gen": "divide(2016, 2016)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "GIS/2018/page_110.pdf-2",
+    "gen": "divide(2019, 2019)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "UNP/2015/page_56.pdf-1",
+    "gen": "divide(3581, 20397)",
+    "ok": false,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "FBHS/2017/page_83.pdf-1",
+    "gen": "multiply(2017, 2017)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "SNA/2018/page_31.pdf-1",
+    "gen": "divide(335000, 12)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "CME/2010/page_123.pdf-2",
+    "gen": "multiply(share_count,  $)",
+    "ok": false,
+    "oob": 0,
+    "steps": 9
+   },
+   {
+    "id": "CME/2010/page_123.pdf-4",
+    "gen": "divide(remaining_options, total_options)",
+    "ok": false,
+    "oob": 0,
+    "steps": 9
+   },
+   {
+    "id": "VNO/2014/page_57.pdf-1",
+    "gen": "subtract(2009, 2009)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   }
+  ],
+  "20": [
+   {
+    "id": "INTC/2015/page_41.pdf-4",
+    "gen": "divide(8.1, 56.0)",
+    "ok": true,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "CMCSA/2015/page_112.pdf-2",
+    "gen": "subtract(1136, 1171)",
+    "ok": true,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "UAA/2016/page_42.pdf-2",
+    "gen": "divide(817388, 3644331)",
+    "ok": true,
+    "oob": 0,
+    "steps": 19
+   },
+   {
+    "id": "GIS/2018/page_110.pdf-2",
+    "gen": "divide(137.4, 559.3)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "UNP/2015/page_56.pdf-1",
+    "gen": "divide(3581, 21813)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "FBHS/2017/page_83.pdf-1",
+    "gen": "multiply(160196, 58.02)",
+    "ok": true,
+    "oob": 0,
+    "steps": 17
+   },
+   {
+    "id": "SNA/2018/page_31.pdf-1",
+    "gen": "divide(205000, 630000)",
+    "ok": true,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "CME/2010/page_123.pdf-2",
+    "gen": "multiply(5156223, 308.10)",
+    "ok": false,
+    "oob": 0,
+    "steps": 19
+   },
+   {
+    "id": "CME/2010/page_123.pdf-4",
+    "gen": "divide(1211143, 1211143 + 5978)",
+    "ok": true,
+    "oob": 0,
+    "steps": 26
+   },
+   {
+    "id": "VNO/2014/page_57.pdf-1",
+    "gen": "subtract(128, 100)",
+    "ok": false,
+    "oob": 0,
+    "steps": 12
+   }
+  ]
+ }
+}

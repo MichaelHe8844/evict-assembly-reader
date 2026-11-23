@@ -1,0 +1,1138 @@
+# -*- coding: utf-8 -*-
+"""
+Arm C：KV cache 手术 + 生成，检验「锚点组完整」是否真的因果地决定答对率。
+
+流程（每个样本只 prefill 一次）
+  1. prompt = 系统前缀 + 文档(行式线性化) + 问题后缀
+  2. prefill 拿到注意力与完整 KV
+  3. 每个条件按掩码裁剪 KV，用手写贪心解码（所有条件走同一路径）
+  4. 记录 EM 与该条件下的 ANR
+
+条件
+  full      : 不裁剪
+  snap@20/50: 只在文档区间按 SnapKV 分数选 top-B（问题后缀永远保留）
+  stream@20 : 文档尾部 B 个 + 前 4 个
+  anchor@20 : 强制保留锚点组，剩余按 SnapKV 填（oracle 上界）
+
+关键：预算 B 只作用于文档区间，问题与指令永远不裁 —— 这是 query-aware 协议，
+对所有条件一致，因此差异只来自「文档里保留了什么」。
+"""
+import json
+import os
+import re
+import copy
+import argparse
+import numpy as np
+from collections import defaultdict
+
+import torch
+from transformers import AutoModelForCausalLM, AutoTokenizer
+
+from common import build_dataset, norm_num
+from anchor_auto import extract, table_index
+from model_utils import load_model
+from pot_prompt import FEWSHOT, INSTR
+from arm_a import tokenize_sample, comp_status
+from chat_utils import build_split, render_probe
+from alloc import (build_units, greedy_density, greedy_static, rank_only,
+                    token_spans, dp_upper, best_single)
+from ground import (cells_from_segs, rank as g_rank, render_block, expand_cids,
+                    parse_selection)
+
+NUM_ANY = re.compile(r"[-+]?\d[\d,]*\.?\d*")
+# 装入预算时的优先级：表头最高（丢了绑定即失效），单位句最低（可牺牲）
+PRIO = {"col_name": 0, "unit": 0, "col_header": 0, "row_header": 1,
+        "cell": 2, "text": 3, "sep": 9}
+# 紧预算模式：先保数值、再保绑定。绑定是"让数说得清自己是谁"，
+# 但预算装不下两者时，丢掉数值比丢掉标签更致命（见 3.32 的实测）。
+PRIO_VF = {"cell": 0, "row_header": 1, "col_name": 2, "col_header": 2,
+           "unit": 2, "text": 3, "sep": 9}
+VALUE_FIRST = False
+MIN_BIND = False
+COVER_ASM = False
+ZERO_LAYERS = set()
+NO_FILL = False
+
+
+def greedy_cover(units, B):
+    """按边际 token 代价贪心选锚点：每 token 换来最多的完整闭包。"""
+    sel = 0
+    used = set()
+    while True:
+        best = None
+        cur = sel.bit_count()
+        for k, (toks, m) in enumerate(units):
+            if k in used:
+                continue
+            add = m & ~sel
+            c = add.bit_count()
+            if c == 0 or cur + c > B:
+                continue
+            r = 1.0 / c
+            if best is None or r > best[0]:
+                best = (r, k, add)
+        if best is None:
+            break
+        sel |= best[2]
+        used.add(best[1])
+    return [t for t in range(sel.bit_length()) if (sel >> t) & 1]
+
+
+_NUM_RE = re.compile(r"-?\d[\d,]*\.?\d*")
+
+
+def _nums(text):
+    out = set()
+    for m in _NUM_RE.findall(text or ""):
+        try:
+            out.add(abs(round(float(m.replace(",", "")), 6)))
+        except ValueError:
+            continue
+    return out
+
+def digit_retention(tok, text, g_start, kept_fn):
+    """gold 单元格里有多少「数字字符」还留在保留集里。
+
+    与 NumR 的区别：NumR 要求整格 token 全在，粗粒度分词器（Llama-3 三位一组）
+    丢一个逗号 token 就判定为「碎了」，但数字本身其实还在。跨族比较必须看这一层。
+    """
+    enc = tok(text, return_offsets_mapping=True, add_special_tokens=False)
+    total = kept = 0
+    for j, (a, b) in enumerate(enc["offset_mapping"]):
+        d = sum(ch.isdigit() for ch in text[a:b])
+        if not d:
+            continue
+        total += d
+        if kept_fn(g_start + j):
+            kept += d
+    return total, kept
+
+
+def fit_budget(seg_idxs, segs, g_spans, B):
+    """按优先级整段装入，装不下的整段丢弃 —— 绝不切碎锚点成分。"""
+    out = []
+    _prio = PRIO_VF if VALUE_FIRST else PRIO
+    for i in sorted(set(seg_idxs), key=lambda k: _prio.get(segs[k]["kind"], 5)):
+        a, b = g_spans[i]
+        if a < 0 or b <= a:
+            continue
+        if len(out) + (b - a) <= B:
+            out.extend(range(a, b))
+        elif i in SPAN2 and len(out) + (SPAN2[i][1] - a) <= B:
+            out.extend(range(a, SPAN2[i][1]))
+    return sorted(set(out))
+
+
+SPAN2 = {}   # 段索引 -> 最短可区分后缀的 token 区间（只对绑定段）
+
+
+def _contains(seq, cand):
+    n = len(cand)
+    return any(seq[i:i + n] == cand for i in range(len(seq) - n + 1))
+
+
+def _ok_span(cand, full, tok):
+    txt = tok.decode(cand).strip()
+    if len(txt) < 2 or not any(ch.isalnum() for ch in txt):
+        return False
+    if txt[0].isdigit():
+        prev = tok.decode(full[:len(full) - len(cand)]).strip()
+        if prev and prev[-1].isdigit():
+            return False
+        digits = "".join(ch for ch in txt if ch.isdigit())
+        if len(digits) < 4 and any(len(w) == 4 for w in
+                                   "".join(tok.decode(full).replace(",", " ").split())):
+            return False
+    return True
+
+
+def build_min_spans(segs, g_spans, ids, tok, min_save=2, question=""):
+    """只压缩「… <四位年份>」型表头：问句提到该年份时，仅保留年份 token。
+
+    这条规则是安全的：年份本身就是该列在表内的区分依据，而列名/行名里的
+    其它修饰（for the years ended december 31）对回答没有贡献。
+    其它绑定段一律保留整段——实测按「最短可区分后缀」压缩会删掉问句需要的
+    词（operating income → income），反而降低端到端准确率。
+    """
+    out = {}
+    q = question.lower()
+    if not q:
+        return out
+    for i, s in enumerate(segs):
+        a, b = g_spans[i]
+        if a < 0 or b <= a:
+            continue
+        k = s.get("kind")
+        if k not in ("row_header", "col_name", "col_header", "unit"):
+            continue
+        full = ids[a:b]
+        txt = tok.decode(full)
+        yrs = re.findall(r"(?:19|20)\d{2}", txt)
+        if not yrs:
+            continue
+        year = yrs[-1]
+        if year not in q:
+            continue
+        lo = hi = None
+        for u in range(len(full)):
+            for v in range(u + 1, len(full) + 1):
+                if year in tok.decode(full[u:v]).replace(" ", ""):
+                    if lo is None or (v - u) < (hi - lo):
+                        lo, hi = u, v
+        if lo is None:
+            continue
+        if (b - a) - (hi - lo) >= min_save:
+            out[i] = (a + lo, a + hi)
+    return out
+
+
+def pick_force(cells, core, bind, B, bind_min=None):
+    """固定预算下的强制保留：整对优先，装不下按「去绑定 → 单格 → 放弃」回退。
+
+    返回 (保留 token, 回退码, 整对代价)。回退码：
+        0 整对装入 / 1 只留两格数值（丢行头列名单位） / 2 只留一格 / 3 完全装不下。
+    """
+    full = sorted(set(core) | set(bind))
+    if len(full) <= B:
+        return full, 0, len(full)
+    if bind_min:
+        short = sorted(set(core) | set(bind_min))
+        if len(short) <= B:
+            return short, 4, len(full)
+    if len(core) <= B:
+        return sorted(set(core)), 1, len(full)
+    best = []
+    for g in cells:
+        g = sorted(set(g))
+        if len(g) <= B and len(g) > len(best):
+            best = g
+    if best:
+        return best, 2, len(full)
+    return [], 3, len(full)
+
+
+def slice_anchor(segs, r, c, mode):
+    """
+    行/列切片锚点。
+    单步算术需要两个操作数，它们通常同处一行（不同列）或同处一列（不同行）。
+    因此保留单元不该是「单元格」，而应是「切片 + 它的坐标标签」。
+        row  : 该行全部单元格 + 该行行头 + 全部列名 + 单位
+        col  : 该列全部单元格 + 该列列名 + 全部行头 + 单位
+        both : 两者的并集
+    """
+    cn, un, rh, cell, _, _ = table_index(segs)
+    idx = set()
+    if mode in ("row", "both"):
+        if r in rh:
+            idx.add(rh[r])
+        idx.update(i for (rr, _cc), i in cell.items() if rr == r)
+        idx.update(cn.values())
+        idx.update(un.values())
+    if mode in ("col", "both"):
+        if c in cn:
+            idx.add(cn[c])
+        idx.update(i for (_rr, cc), i in cell.items() if cc == c)
+        idx.update(rh.values())
+        if c in un:
+            idx.add(un[c])
+    return sorted(idx)
+
+
+def take_whole(seg_idxs, g_spans, B):
+    """整段装入；装不下返回 None（不切碎锚点）。"""
+    toks = sorted({t for i in seg_idxs if g_spans[i][0] >= 0
+                   for t in range(*g_spans[i])})
+    return toks if len(toks) <= B else None
+
+
+def parse_pred(text):
+    t = text.replace("$", "").replace(",", "")
+    m = NUM_ANY.search(t)
+    if not m:
+        return None
+    try:
+        return float(m.group(0))
+    except ValueError:
+        return None
+
+
+EXPR_CHARS = re.compile(r"[-+*/()0-9.\s]{3,200}")
+
+
+def safe_eval(text):
+    """只允许数字与四则运算，求值失败返回 None。
+    先去掉 $ 与千分位逗号：模型常写 '$116114 / $1244659 * 100'。"""
+    t = (text or "").replace("$", "").replace(",", "")
+    m = EXPR_CHARS.search(t)
+    if not m:
+        return None
+    expr = m.group(0).strip()
+    if not re.search(r"\d", expr):
+        return None
+    try:
+        val = eval(expr, {"__builtins__": {}}, {})
+    except Exception:
+        return None
+    if not isinstance(val, (int, float)):
+        return None
+    if val != val or abs(val) == float("inf"):
+        return None
+    return float(val)
+
+
+def em_scale(pred, gold):
+    """允许百分比/比率两种约定（×100 / ÷100）；仅用于真实算术任务。"""
+    if pred is None or gold is None:
+        return False
+    return em(pred, gold) or em(pred / 100.0, gold) or em(pred * 100.0, gold)
+
+
+def em(pred, gold):
+    if pred is None or gold is None:
+        return False
+    try:
+        g = float(gold)
+    except (TypeError, ValueError):
+        return False
+    return abs(pred - g) <= max(0.01, 0.005 * abs(g))
+
+
+def trim_cache(cache, idx):
+    idx = torch.as_tensor(idx, device="cuda", dtype=torch.long)
+    n = int(idx.numel())
+    for layer in cache.layers:
+        if layer.keys is None:
+            continue
+        layer.keys = layer.keys.index_select(2, idx).contiguous()
+        layer.values = layer.values.index_select(2, idx).contiguous()
+        # 只改张量是不够的：DynamicCache 用 cumulative_length 报长度，
+        # 不同步会让 mask 按原始长度生成（Phi3 上表现为 945 vs 946）。
+        if hasattr(layer, "cumulative_length") and layer.cumulative_length is not None:
+            layer.cumulative_length = n
+    return cache
+
+
+def greedy(model, cache, logits, start_pos, tok, n_new=20, attn=None):
+    toks, pos = [], start_pos
+    for _ in range(n_new):
+        nxt = int(logits[0, -1].argmax())
+        toks.append(nxt)
+        if nxt == tok.eos_token_id:
+            break
+        if attn is not None:
+            attn = torch.cat([attn, torch.ones((1, 1), dtype=attn.dtype, device=attn.device)], 1)
+        # cache_position / attention_mask 必须显式给：Phi3 一类模型靠它们算 mask，
+        # 否则 mask 长度会差 1（945 vs 946）。裁剪后的 cache 是连续前缀，
+        # 因此全 1 mask 与真实位置一致。
+        # cache 已被重排为紧凑前缀，cache_position 必须用「压缩后的下标」，
+        # 而 position_ids 仍用原始位置（RoPE 需要真实位置）。
+        n_keys = cache.get_seq_length() + 1
+        o = model(input_ids=torch.tensor([[nxt]], device="cuda"),
+                  past_key_values=cache,
+                  attention_mask=(attn if attn is not None else
+                                 torch.ones((1, n_keys), device="cuda", dtype=torch.long)),
+                  position_ids=torch.tensor([[pos]], device="cuda"),
+                  cache_position=torch.tensor([n_keys - 1], device="cuda"),
+                  use_cache=True)
+        cache, logits = o.past_key_values, o.logits
+        pos += 1
+    return toks
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--data", default="../data/dev.json")
+    ap.add_argument("--built_json", default="")
+    ap.add_argument("--no_attn", action="store_true")
+    ap.add_argument("--adapter", default="")
+    ap.add_argument("--model", default="E:/KV_models/Qwen2.5-3B-Instruct")
+    ap.add_argument("--limit", type=int, default=100)
+    ap.add_argument("--maxlen", type=int, default=1500)
+    ap.add_argument("--n_new", type=int, default=20)
+    ap.add_argument("--task", default="probe", choices=["probe", "finqa", "finqa_pot"],
+                    help="probe=单元格抽取绑定探针；finqa=原始问题的直接作答；finqa_pot=原始问题+程序化求解")
+    ap.add_argument("--conds", default="", help="只跑指定条件，逗号分隔")
+    ap.add_argument("--year_cols", action="store_true",
+                    help="年份定向补列：问句出现的年份对应的列全部保留（默认关）")
+    ap.add_argument("--load_4bit", action="store_true")
+    ap.add_argument("--load_8bit", action="store_true")
+    ap.add_argument("--no_fill", action="store_true",
+                    help="不把剩余预算用注意力补满（只装结构证据）")
+    ap.add_argument("--zero_bind_layers", default="",
+                    help="在这些层把绑定 token 的 V 置零（诊断用），如 12-23")
+    ap.add_argument("--cover_asm", action="store_true",
+                    help="按「边际代价贪心覆盖闭包」装配，用于精度-可审计性权衡")
+    ap.add_argument("--min_bind", action="store_true",
+                    help="绑定段装不下时改用最短可区分后缀（如只留年份）")
+    ap.add_argument("--value_first", action="store_true",
+                    help="紧预算下先保数值再保绑定（默认先保列名/行头）")
+    ap.add_argument("--single_step", action="store_true", help="只取单步算术样本")
+    ap.add_argument("--skip", type=int, default=0, help="跳过前 N 条（留出集用）")
+    ap.add_argument("--exclude", default="", help="逗号分隔的 id 子串，命中则跳过")
+    ap.add_argument("--pair_json", default="", help="指定每题的候选对（C 方案），格式 {\"id|gold\": [[r,c],[r,c]]}")
+    ap.add_argument("--budget_mode", default="free", choices=["free", "fixed"],
+                    help="free=强制保留可以超出预算（旧口径）；fixed=严格同预算，"
+                         "装不下按「去绑定→单格→放弃」回退并记录回退码")
+    ap.add_argument("--force_json", default="",
+                    help="强制保留的单元格对（R1 选择器引导保留）：即使预算装不下也保留，"
+                         "并连同其行头/列名/单位一起保留")
+    ap.add_argument("--emb", default="", help="句向量模型路径；启用后抽取器用 max(规则, 向量) 打分")
+    ap.add_argument("--emb_w", type=float, default=0.9, help="向量分的权重")
+    ap.add_argument("--emb_thresh", type=float, default=0.65, help="启用向量分时的列/行阈值")
+    ap.add_argument("--ground", action="store_true",
+                    help="问句→单元格定位模块：给候选格位置（不含数值），模型用 C# 引用")
+    ap.add_argument("--gk", type=int, default=6, help="候选格数量")
+    ap.add_argument("--keys", default="", help="固定样本集（probe 用）：json 列表，元素含 key=[id,row,col]")
+    ap.add_argument("--resume", action="store_true", help="从 .partial.json 续跑")
+    ap.add_argument("--out", default="../results/arm_c.json")
+    ap.add_argument("--trim_mode", default="refeed", choices=["refeed", "prefill", "mask"],
+                    help="refeed=裁剪 cache 后重喂末 token（默认）；prefill=按保留序列重跑前向（Phi3 必须）")
+    ap.add_argument("--scaffold", default="template", choices=["template", "legacy"],
+                    help="template=用 tokenizer 自带 chat template（跨族）；legacy=Qwen 硬编码")
+    args = ap.parse_args()
+    global VALUE_FIRST, MIN_BIND, COVER_ASM, NO_FILL
+    VALUE_FIRST = bool(args.value_first)
+    MIN_BIND = bool(args.min_bind)
+    COVER_ASM = bool(args.cover_asm)
+    NO_FILL = bool(args.no_fill)
+    if args.zero_bind_layers:
+        for part in args.zero_bind_layers.split(","):
+            a_, _, b_ = part.partition("-")
+            lo = int(a_); hi = int(b_ or a_)
+            ZERO_LAYERS.update(range(lo, hi + 1))
+
+    tok = AutoTokenizer.from_pretrained(args.model)
+    model = load_model(args.model, args.load_4bit, quant8=args.load_8bit,
+                        attn="sdpa" if args.no_attn else "eager").eval()
+    if args.adapter:
+        from peft import PeftModel
+        model = PeftModel.from_pretrained(model, args.adapter).eval()
+
+    FORCE = {}
+    if args.force_json:
+        FORCE = dict(json.load(open(args.force_json, encoding="utf-8")))
+        print("强制保留对：%d 题" % len(FORCE), flush=True)
+
+    PAIRS = {}
+    if args.pair_json:
+        PAIRS = dict(json.load(open(args.pair_json, encoding="utf-8")))
+        print("指定候选对：%d 题" % len(PAIRS), flush=True)
+
+    SCORER = None
+    if args.emb:
+        from emb_util import EmbScorer
+        SCORER = EmbScorer(args.emb)
+        print("句向量打分已启用：%s (w=%.2f, thresh=%.2f)" % (args.emb, args.emb_w, args.emb_thresh),
+              flush=True)
+
+    sys_text = ("You are a financial analyst. Answer with a single number only."
+                if args.task != "finqa_pot" else "You are a financial analyst.")
+    user_prefix = (FEWSHOT + "\nDocument:\n") if args.task == "finqa_pot" else ""
+    if args.scaffold == "legacy":
+        pre_ids = tok("<|im_start|>system\n" + sys_text + "<|im_end|>\n<|im_start|>user\n",
+                      add_special_tokens=False)["input_ids"]
+        few_ids = (tok(FEWSHOT + "\nDocument:\n", add_special_tokens=False)["input_ids"]
+                   if args.task == "finqa_pot" else [])
+    else:
+        pre_ids, few_ids = None, []
+
+    KEYS = None
+    if args.keys:
+        KEYS = {tuple(x["key"] if isinstance(x, dict) else x)
+                for x in json.load(open(args.keys, encoding="utf-8"))}
+        print("固定样本集 %d 条" % len(KEYS), flush=True)
+
+    if args.built_json:                       # 直接吃已构造好的样本（DocMath 等）
+        ds = json.load(open(args.built_json, encoding="utf-8"))
+        raw = {}
+    else:
+        ds = build_dataset(args.data)
+        raw = {e.get("id"): e for e in json.load(open(args.data, encoding="utf-8"))}
+    print("候选", len(ds))
+
+    # 预算扫描需要任意 "策略@比例"，不再用固定清单过滤
+    if args.conds:
+        conditions = [c.strip() for c in args.conds.split(",") if c.strip()]
+    else:
+        conditions = ["full", "snap@20", "snap@50", "stream@20",
+                      "anchor@20", "auto_p@20", "auto_f@20"]
+    recs = []
+    used = 0
+    alloc_log = []
+
+    seen_keys = set()
+    if args.resume and os.path.exists(args.out + ".partial.json"):
+        prev = json.load(open(args.out + ".partial.json", encoding="utf-8"))
+        recs = prev.get("records", [])
+        for r in recs:
+            if r.get("key"):
+                seen_keys.add(tuple(r["key"]))
+        used = len({r["key"][0] if r.get("key") else r["id"] for r in recs})
+        done_samples = len({tuple(r["key"]) if r.get("key") else (r["id"], r.get("gold"))
+                            for r in recs if r["cond"] == conditions[0]})
+        print("续跑：已有 %d 条记录 / %d 个样本" % (len(recs), done_samples), flush=True)
+    EXCL = [x for x in args.exclude.split(",") if x]
+    for d in ds[args.skip:]:
+        if any(e in d["id"] for e in EXCL):
+            continue
+        if used >= args.limit:
+            break
+        doc, spans = tokenize_sample(tok, d["segs"])
+        if len(doc) < 64 or len(doc) > args.maxlen:
+            continue
+        max_cells_g = max(1, int((0.85 * int(0.20 * len(doc))) / 6))
+        if args.single_step:
+            prog = ((raw.get(d["id"], {}) or {}).get("qa", {}) or {}).get("program", "") or ""
+            if not re.match(r"^[a-z]+\s*\([^()]*\)$", prog.strip()):
+                continue
+
+        # ---- 任务与 gold ----
+        if args.task == "probe":
+            # 只问「某列在某行是多少」，答案就是单一单元格 —— 剥离算术，只测绑定。
+            ci = d["group"]["C"][0] if d["group"].get("C") else None
+            ri = d["group"]["R"][0] if d["group"].get("R") else None
+            if ci is None or ri is None:
+                continue
+            col_name = d["segs"][ci]["text"]
+            row_name = d["segs"][ri]["text"]
+            question = "What is the value of %s for %s?" % (col_name, row_name)
+            g = norm_num(d["gold_value"])
+            if g is None:
+                continue
+            gold = float(g)
+            instruct = "Respond with only the final number."
+        else:
+            question = d["question"]
+            try:
+                gold = float(d["exe_ans"])
+            except (TypeError, ValueError):
+                continue
+            if args.task == "finqa_pot":
+                instruct = INSTR
+            else:
+                instruct = "Respond with only the final number."
+
+        # ---- 问句→单元格定位模块（4.5）----
+        # 候选只取「锚点方案 20% 预算下确实保留」的格，且只给「行名 | 列名」不给数值：
+        # 既不会把被压缩掉的值偷偷塞回上下文，模型也必须自己决定引用哪一格。
+        ranked = []
+        if args.ground and args.task == "finqa_pot":
+            try:
+                g_idx, _ = extract(d["segs"], d["question"], max_cells=max_cells_g)
+            except Exception:
+                g_idx = []
+            Bg = max(8, int(0.20 * len(doc)))
+            keep_rel = set(fit_budget([i for i in g_idx if spans[i][0] >= 0],
+                                      d["segs"], spans, Bg))
+            gcells = cells_from_segs(d["segs"], spans, keep_rel)
+            ranked = g_rank(gcells, d["question"], topk=args.gk)
+            if PAIRS and args.task == "finqa_pot":
+                _k = "%s|%.6f" % (d["id"], round(gold, 6))
+                _p = PAIRS.get(_k)
+                if _p:
+                    _by = {(c["r"], c["c"]): c for c in gcells}
+                    _sel = [_by.get((int(r), int(c))) for r, c in _p]
+                    if all(_sel):
+                        ranked = [(1.0, c) for c in _sel]
+            if ranked:
+                question = (question + """
+
+Candidate cells (row | column):
+""" + render_block(ranked))
+                instruct = ("Decide which cells are needed, then write the expression. "
+                            "Output two lines and nothing else. Always keep the C prefix on ids "
+                            "(write C1, not 1). Replace the placeholders with the ids you chose:\n"
+                            "Cells: <C#, C#>\n"
+                            "Expression: <formula over those ids>\n"
+                            "Never write the numbers themselves; each id stands for its cell's "
+                            "value. A change is a subtraction, a total an addition, a ratio a "
+                            "division; multiply by 100 only for a percentage.")
+
+        # 同一问题会因多个 gold 单元格被 build_dataset 重复产出；
+        # finqa/finqa_pot 下这些副本的题目与 gold 完全相同，必须去重。
+        key = ((d["id"], d["row"], d["col"]) if args.task == "probe"
+               else (d["id"], round(gold, 6)))
+        if key in seen_keys:
+            continue
+        if KEYS is not None and tuple(key) not in KEYS:
+            continue
+        seen_keys.add(key)
+        if args.scaffold == "legacy":
+            suf_text = ("\n\nQuestion: %s\n%s<|im_end|>\n<|im_start|>assistant\n"
+                        % (question, instruct))
+            suf_ids = tok(suf_text, add_special_tokens=False)["input_ids"]
+            p_ids, f_ids = pre_ids, few_ids
+        else:
+            p_ids, suf_ids = build_split(
+                tok, sys_text, user_prefix,
+                render_probe(sys_text, question, instruct))
+            f_ids = []
+
+        ids = p_ids + f_ids + doc + suf_ids
+        L = len(ids)
+        off = len(p_ids) + len(f_ids)
+        n_doc = len(doc)
+        doc_pos = np.arange(off, off + n_doc)          # 可裁区间
+        g_spans = [(a + off, b + off) if a >= 0 else (-1, -1) for a, b in spans]
+        SPAN2.clear()
+        if MIN_BIND:
+            _ids = [-1] * off + list(doc)
+            SPAN2.update(build_min_spans(d["segs"], g_spans, _ids, tok,
+                                        question=d["question"]))
+
+        with torch.no_grad():
+            o = model(input_ids=torch.tensor([ids], device="cuda"),
+                      output_attentions=not args.no_attn, use_cache=True)
+        if args.no_attn:
+            # 长文档（如 DocMath 3.5k token）上全层注意力会 OOM；
+            # 此模式下不做注意力类条件，填充分用「位置越靠后越高」代替。
+            snap = np.linspace(0.0, 1.0, n_doc).astype(np.float32)
+            h2o = snap.copy()
+        else:
+            atts = o.attentions
+            snap = torch.zeros(n_doc, dtype=torch.float32, device="cuda")
+            h2o = torch.zeros(n_doc, dtype=torch.float32, device="cuda")
+            W = min(64, len(suf_ids))
+            for a in atts:                                  # (1,H,Q,K)
+                a = a[0].float()
+                snap += a[:, -W:, off:off + n_doc].sum(dim=(0, 1))
+                h2o += a[:, :, off:off + n_doc].sum(dim=(0, 1))
+            del atts
+            snap = snap.cpu().numpy()
+            h2o = h2o.cpu().numpy()
+        base = copy.deepcopy(o.past_key_values)
+        logits0 = o.logits
+        torch.cuda.empty_cache()
+
+        used += 1
+        protected = list(range(0, off)) + list(range(off + n_doc, L))
+        anchor_segs = sorted({i for c in "VRCU" for i in d["group"].get(c, [])})
+        anchor_tok = sorted({t for i in anchor_segs
+                             for t in range(*g_spans[i]) if g_spans[i][0] >= off}
+                            & set(doc_pos.tolist()))
+
+        # 表格坐标（用于无标注自检）
+        cname, unit_seg, rhead, cmap, _, _ = table_index(d["segs"])
+
+        # 无监督抽取：一份用当前（探针）问题，一份用 FinQA 原始问题。
+        # auto_f 才是真实部署条件；auto_p 是抽取上界。
+        auto_sets = {"gold": anchor_tok}
+        # 切片锚点（同样是 oracle，用于检验「保留单元该多大」）
+        v_seg = d["group"]["V"][0] if d["group"].get("V") else None
+        if v_seg is not None:
+            ar, ac = d["segs"][v_seg]["row"], d["segs"][v_seg]["col"]
+            Bs = max(8, int(0.20 * n_doc))
+            row_i = slice_anchor(d["segs"], ar, ac, "row")
+            col_i = slice_anchor(d["segs"], ar, ac, "col")
+            both_i = sorted(set(row_i) | set(col_i))
+            # 整段优先，装不下退到更小的切片，最后退到单元格锚点
+            # 闭包：程序里出现的每个数值所对应单元格，各取一个十字再取并集。
+            # 多步算术的操作数常分处不同行/列，单以答案格为锚的十字覆盖不全。
+            prog = ((raw.get(d["id"], {}) or {}).get("qa") or {}).get("program") or ""
+            want = _nums(prog)
+            op_cells = [(rr, cc) for (rr, cc), si in cmap.items()
+                        if want and (_nums(d["segs"][si]["text"]) & want)]
+            if len(op_cells) >= 2:
+                clo = set()
+                for (rr, cc) in op_cells:
+                    clo |= set(slice_anchor(d["segs"], rr, cc, "both"))
+                clo_i = sorted(clo)
+            else:
+                clo_i = both_i
+
+            for key, cands in (("row", [row_i, anchor_segs]),
+                               ("col", [col_i, anchor_segs]),
+                               ("slice", [both_i, row_i, col_i, anchor_segs]),
+                               ("closure", [clo_i, both_i, anchor_segs])):
+                toks = None
+                for c in cands:
+                    toks = take_whole(c, g_spans, Bs)
+                    if toks is not None:
+                        break
+                auto_sets[key] = toks if toks is not None else anchor_tok
+        else:
+            for key in ("row", "col", "slice"):
+                auto_sets[key] = anchor_tok
+        # 锚点集必须装进预算：按每单元格约 6 token 折算上界，避免个别样本超预算
+        max_cells = max(1, int((0.85 * int(0.20 * n_doc)) / 6))
+        # auto_n 是 auto_f 的对照组：同一问题、同一预算，只关掉「亚军候选」。
+        # 放在同一进程里跑，共用一次 prefill，配对关系严格。
+        auto_src = {}
+        for key, qtext, use_cand2 in (("auto_p", question, True),
+                                      ("auto_f", d["question"], True),
+                                      ("auto_n", d["question"], False)):
+            try:
+                _kw = {}
+                if SCORER is not None:
+                    _kw = dict(emb=SCORER.scorer(qtext), emb_w=args.emb_w)
+                idxs, _ = extract(d["segs"], qtext, max_cells=max_cells,
+                                  year_cols=args.year_cols, cand2=use_cand2,
+                                  thresh=(args.emb_thresh if SCORER is not None else 0.6),
+                                  **_kw)
+            except Exception:
+                idxs = []
+            auto_src[key] = list(idxs)
+            toks = fit_budget([i for i in idxs if g_spans[i][0] >= off],
+                              d["segs"], g_spans, max(8, int(0.20 * n_doc)))
+            auto_sets[key] = toks
+
+        BIND_TOK = set()
+        if ZERO_LAYERS:
+            for j, s_ in enumerate(d["segs"]):
+                if s_.get("kind") in ("row_header", "col_name", "col_header", "unit"):
+                    a2, b2 = g_spans[j]
+                    if a2 >= 0:
+                        BIND_TOK.update(range(max(a2, off), b2))
+
+        # 覆盖贪心的候选单元：每个锚点的闭包（数值 + 行头 + 列名/单位）
+        COVER_UNITS = []
+        if COVER_ASM:
+            _row, _col = {}, {}
+            for j, s_ in enumerate(d["segs"]):
+                a2, b2 = g_spans[j]
+                if a2 < 0 or b2 <= a2:
+                    continue
+                mm = ((1 << (b2 - a2)) - 1) << a2
+                k_ = s_.get("kind")
+                if k_ == "row_header":
+                    _row[s_.get("row")] = _row.get(s_.get("row"), 0) | mm
+                elif k_ in ("col_name", "col_header", "unit"):
+                    _col[s_.get("col")] = _col.get(s_.get("col"), 0) | mm
+            for i in auto_src.get("auto_f", []):
+                a2, b2 = g_spans[i]
+                if a2 < 0 or b2 <= a2:
+                    continue
+                s_ = d["segs"][i]
+                mm = ((1 << (b2 - a2)) - 1) << a2
+                mm |= _row.get(s_.get("row"), 0)
+                mm |= _col.get(s_.get("col"), 0)
+                COVER_UNITS.append((None, mm))
+
+        # auto_x：无监督抽取 + 十字单元（论文 5.7 的结论落到方法上）
+        # 与切片 oracle 一样走整段降级链：十字 → 单元格 → 逐 token 兜底，
+        # 绝不用 fit_budget（那会先丢单元格，正好丢掉数值）。
+        try:
+            x_idx, _ = extract(d["segs"], d["question"], cross=True, max_cells=max_cells)
+            c_idx, _ = extract(d["segs"], d["question"], max_cells=max_cells)
+        except Exception:
+            x_idx, c_idx = [], []
+        _Bs = max(8, int(0.20 * n_doc))
+        x_tok = take_whole([i for i in x_idx if g_spans[i][0] >= off], g_spans, _Bs)
+        if x_tok is None:
+            x_tok = take_whole([i for i in c_idx if g_spans[i][0] >= off], g_spans, _Bs)
+        auto_sets["auto_x"] = x_tok if x_tok is not None else fit_budget(
+            [i for i in c_idx if g_spans[i][0] >= off],
+            d["segs"], g_spans, _Bs)
+
+        # ---- 结构基线：把「找对行列」与「绑定整体保留」分开 ----
+        # numb: 抽取器选中的数值单元格，但**不带**行头/列名/单位 → 检验绑定的价值
+        # arow / acol: 抽取器选中的整行 / 整列（含绑定）→ 检验「扩成切片」是否就够
+        try:
+            a_idx, a_diag = extract(d["segs"], d["question"], max_cells=max_cells)
+        except Exception:
+            a_idx, a_diag = [], {"rows": [], "cols": []}
+        _B2 = max(8, int(0.20 * n_doc))
+        numb = [i for i in a_idx if d["segs"][i]["kind"] == "cell"]
+        auto_sets["numb"] = fit_budget(numb, d["segs"], g_spans, _B2)
+
+        arow = set()
+        for r in a_diag.get("rows", []):
+            cc = [c for (rr, c) in cmap if rr == r]
+            if cc:
+                arow |= set(slice_anchor(d["segs"], r, min(cc), "row"))
+        auto_sets["arow"] = (take_whole(sorted(arow), g_spans, _B2)
+                             or fit_budget(sorted(arow), d["segs"], g_spans, _B2))
+
+        acol = set()
+        for c in a_diag.get("cols", []):
+            rr = [r for (r, cc) in cmap if cc == c]
+            if rr:
+                acol |= set(slice_anchor(d["segs"], min(rr), c, "col"))
+        auto_sets["acol"] = (take_whole(sorted(acol), g_spans, _B2)
+                             or fit_budget(sorted(acol), d["segs"], g_spans, _B2))
+
+        # ---- 4.4 组合优化分配器：把按类装箱换成带目标函数的密度贪心 ----
+        alloc_diag = []
+        for key, wmode in (("knap_u", "uniform"), ("knap_r", "relevance")):
+            units, abase = build_units(d["segs"], a_diag, g_spans, wmode=wmode, budget=_B2)
+            sel, info = greedy_density(units, g_spans, _B2, base=abase)
+            auto_sets[key] = [t for t in token_spans(sel, g_spans) if t >= off]
+            ub, _ = dp_upper(units, g_spans, _B2)
+            alloc_diag.append(dict(wmode=wmode, n_units=info["n_units"],
+                                   val=round(info["value"], 3), ub=round(ub, 3),
+                                   tokens=info["tokens"]))
+        alloc_log.append(dict(id=d["id"], budget=_B2, n_doc=n_doc, rows=alloc_diag))
+
+        # ---- R1：选择器给出的「必须一起保留」的两格 ----
+        force_parts = []          # [(kind, [tok,...])]，kind ∈ {cell, bind}
+        want = []
+        if FORCE:
+            # 优先按「id|gold」精确匹配，退回按 id：同一道题可能因多个 gold 格
+            # 被产出成多条记录，gold 值不同但该题要保留的是同一对。
+            _fp = FORCE.get("%s|%.6f" % (d["id"], round(gold, 6))) or FORCE.get(d["id"])
+            if _fp:
+                want = [(int(r_), int(c_)) for r_, c_ in _fp]
+                for si, s_ in enumerate(d["segs"]):
+                    a_, b_ = g_spans[si]
+                    if a_ < 0 or b_ <= a_:
+                        continue
+                    k_ = s_.get("kind")
+                    if k_ == "cell" and (s_.get("row"), s_.get("col")) in want:
+                        force_parts.append(("cell", [t for t in range(a_, b_) if t >= off]))
+                    elif k_ == "row_header" and any(s_.get("row") == r_ for r_, _ in want):
+                        force_parts.append(("bind", [t for t in range(a_, b_) if t >= off]))
+                    elif k_ in ("col_name", "col_header", "unit") and \
+                            any(s_.get("col") == c_ for _, c_ in want):
+                        force_parts.append(("bind", [t for t in range(a_, b_) if t >= off]))
+                force_parts = [(k_, ts) for k_, ts in force_parts if ts]
+        force_bind_min = []
+        if FORCE and MIN_BIND and want:
+            for si, s_ in enumerate(d["segs"]):
+                if si not in SPAN2:
+                    continue
+                k_ = s_.get("kind")
+                if k_ == "row_header" and any(s_.get("row") == r_ for r_, _ in want):
+                    force_bind_min += [t for t in range(*SPAN2[si]) if t >= off]
+                elif k_ in ("col_name", "col_header", "unit") and \
+                        any(s_.get("col") == c_ for _, c_ in want):
+                    force_bind_min += [t for t in range(*SPAN2[si]) if t >= off]
+            force_bind_min = sorted(set(force_bind_min))
+        force_cells = [ts for k_, ts in force_parts if k_ == "cell"]
+        force_core = sorted({t for ts in force_cells for t in ts})
+        force_bind = sorted({t for k_, ts in force_parts if k_ == "bind" for t in ts}
+                            - set(force_core))
+        force_toks = sorted(set(force_core) | set(force_bind))
+
+        for cond in conditions:
+            pol, _, frac = cond.partition("@")
+            frac = float(frac) / 100 if frac else 1.0
+            B = n_doc if pol == "full" else max(8, int(frac * n_doc))
+            fcode, fcost, fn_sel = -1, 0, 0
+
+            keep = np.zeros(n_doc, dtype=bool)
+            if pol == "full":
+                keep[:] = True
+            elif pol in ("snap_pin", "h2o_pin", "snap_rand"):
+                # 把「钉对」叠到外部压缩器的掩码上：先取该压缩器的 top-B，
+                # 再强制并入钉对，并按同一注意力分数从低到高等量挤出，
+                # 使 |keep| 严格等于 B（与基线逐样本同预算）。
+                if pol in ("snap_pin", "snap_rand"):
+                    keep[np.argsort(-snap)[:B]] = True
+                    score = snap
+                else:
+                    keep[:4] = True
+                    keep[np.argsort(-h2o)[:max(0, B - 4)]] = True
+                    score = h2o
+                forced = set(force_toks)
+                if len(forced) > B:            # 装不下：退到只钉数值，再退到不钉
+                    forced = set(force_core) if len(set(force_core)) <= B else set()
+                for t in forced:
+                    keep[t - off] = True
+                excess = int(keep.sum()) - B
+                if excess > 0:
+                    cand = [i for i in np.where(keep)[0] if (i + off) not in forced]
+                    cand.sort(key=lambda i: score[i])
+                    for i in cand[:excess]:
+                        keep[i] = False
+                need = B - int(keep.sum())
+                if need > 0:                   # H2O 的 sink 可能与 top-k 重叠，补满
+                    cand = np.where(~keep)[0]
+                    keep[cand[np.argsort(-score[cand])[:need]]] = True
+            elif pol == "snap":
+                keep[np.argsort(-snap)[:B]] = True
+            elif pol == "snapP":
+                # SnapKV 原实现：观测窗口的注意力先做一维平均池化（kernel 5），
+                # 再取池化分数最高的 top-B。与 snap/tkvt（不池化）对照，
+                # 用于检验"池化"这一步是否改变结论。
+                _k = 5
+                _pad = np.pad(snap, (_k // 2, _k // 2), mode="edge")
+                _pool = np.convolve(_pad, np.ones(_k) / _k, mode="valid")[:n_doc]
+                keep[np.argsort(-_pool)[:B]] = True
+            elif pol == "h2o":
+                # H2O：累计注意力 top-k，并按原实现保留 4 个 attention sink
+                keep[:4] = True
+                rest = np.argsort(-h2o)[:max(0, B - 4)]
+                keep[rest] = True
+            elif pol == "stream":
+                keep[:4] = True
+                keep[max(4, n_doc - B):] = True
+            elif pol in ("auto_p", "auto_f", "auto_n", "knap_u", "knap_r", "stat_r", "rank_r"):
+                # 必须按「该条件的预算 B」重新装配：否则 @3/@5/@10 会偷偷沿用
+                # 20% 下预先构建的保留集，几个预算档实测完全相同（踩过）。
+                if pol in ("knap_u", "knap_r", "stat_r", "rank_r"):
+                    wm = "uniform" if pol == "knap_u" else "relevance"
+                    units_b, base_b = build_units(d["segs"], a_diag, g_spans,
+                                                  wmode=wm, budget=B)
+                    algo = {"knap_u": greedy_density, "knap_r": greedy_density,
+                            "stat_r": greedy_static, "rank_r": rank_only}[pol]
+                    sel_b, info_b = algo(units_b, g_spans, B, base=base_b)
+                    # 命题 1 的 1/2 保证要求取「贪心解」与「单单元最优」的较优者；
+                    # 3% 预算下约有 4% 的样本单单元最优更好，所以这一步不能省。
+                    sel_s, val_s = best_single(units_b, g_spans, B)
+                    if val_s > info_b["value"] + 1e-9:
+                        sel_b = sel_s
+                    toks_b = [t for t in token_spans(sel_b, g_spans) if t >= off]
+                else:
+                    if args.budget_mode == "fixed" and force_parts:
+                        # 固定预算：先把（按回退规则选出的）操作数对钉进去，
+                        # 再用剩余预算装别的锚点。整对装不下时按回退码降级。
+                        fsel, fcode, fcost = pick_force(force_cells, force_core, force_bind, B,
+                                                bind_min=force_bind_min)
+                        fn_sel = len(fsel)
+                        for t in fsel:
+                            keep[t - off] = True
+                        fset = set(fsel)
+                        src_idx = [i for i in auto_src.get(pol, [])
+                                   if g_spans[i][0] >= off
+                                   and not all(t in fset for t in range(*g_spans[i]))]
+                        toks_b = fit_budget(src_idx, d["segs"], g_spans,
+                                            max(0, B - int(keep.sum())))
+                    else:
+                        toks_b = fit_budget([i for i in auto_src.get(pol, [])
+                                             if g_spans[i][0] >= off],
+                                            d["segs"], g_spans, B)
+                for t in toks_b:
+                    keep[t - off] = True
+                need = B - int(keep.sum())
+                if need > 0:
+                    cand = np.where(~keep)[0]
+                    keep[cand[np.argsort(-snap[cand])[:need]]] = True
+            elif pol in ("tkvt", "tkvu"):
+                # TableKV 对照（Corallo et al., TRL 2025）：注意力引导保留。
+                # tkvt = 忠实版（token 级 top-B，等价 Finch/SnapKV 的选择口径）；
+                # tkvu = 结构版（把注意力聚合到锚点组、整组保留），用于把
+                #        "结构粒度"与"学习式定位"两件事分离开。
+                if pol == "tkvt":
+                    keep[np.argsort(-snap)[:B]] = True
+                else:
+                    units_b, base_b = build_units(d["segs"], a_diag, g_spans,
+                                                  wmode="uniform", budget=B)
+                    for u in units_b:
+                        _ts = [t - off for t in token_spans(sorted(u["segs"]), g_spans)
+                               if t >= off]
+                        u["w"] = float(np.sum(snap[_ts])) if _ts else 0.0
+                    sel_b, _info = greedy_density(units_b, g_spans, B, base=base_b)
+                    for t in token_spans(sel_b, g_spans):
+                        if t >= off:
+                            keep[t - off] = True
+                    need = B - int(keep.sum())
+                    if need > 0 and not NO_FILL:
+                        cand = np.where(~keep)[0]
+                        keep[cand[np.argsort(-snap[cand])[:need]]] = True
+            elif pol == "cover":
+                for t in greedy_cover(COVER_UNITS, B):
+                    if t >= off:
+                        keep[t - off] = True
+                need = B - int(keep.sum())
+                if need > 0 and not NO_FILL:
+                    cand = np.where(~keep)[0]
+                    keep[cand[np.argsort(-snap[cand])[:need]]] = True
+            elif pol in ("anchor", "row", "col", "slice", "closure", "auto_x",
+                         "numb", "arow", "acol"):
+                key = {"anchor": "gold"}.get(pol, pol)
+                _ts = auto_sets[key]
+                if len(_ts) > B:
+                    # 结构基线与上界的候选集在 20% 预算上构造；预算更紧时必须
+                    # 按整段重装到 B，否则「名义 5%」实际仍保留 20% 的 token。
+                    _s = set(_ts)
+                    _idxs = [i for i, (a, b) in enumerate(g_spans)
+                             if a >= 0 and b > a and all(t in _s for t in range(a, b))]
+                    _ts = fit_budget(_idxs, d["segs"], g_spans, B)
+                for t in _ts:
+                    keep[t - off] = True
+                need = B - int(keep.sum())
+                if need > 0 and not NO_FILL:
+                    cand = np.where(~keep)[0]
+                    keep[cand[np.argsort(-snap[cand])[:need]]] = True
+            else:
+                raise ValueError(cond)
+
+            if not (args.budget_mode == "fixed" and force_parts):
+                for t in force_toks:
+                    keep[t - off] = True
+
+            idx = sorted(protected + (doc_pos[keep]).tolist())
+            if args.trim_mode == "refeed":
+                # 最后一个 token 从缓存摘掉，用「已裁剪的 cache」重新前向它，
+                # 这样第一个生成 token 的 logits 才真正基于保留集（否则会用到全量 cache）。
+                cut = [i for i in idx if i != L - 1]
+                c = copy.deepcopy(base)
+                trim_cache(c, cut)
+                if ZERO_LAYERS and BIND_TOK:
+                    _pos = [k for k, t_ in enumerate(cut) if t_ in BIND_TOK]
+                    if _pos:
+                        for _li in ZERO_LAYERS:
+                            if _li < len(c.layers) and c.layers[_li].values is not None:
+                                c.layers[_li].values[:, :, _pos, :] = 0
+                with torch.no_grad():
+                    o2 = model(input_ids=torch.tensor([[ids[L - 1]]], device="cuda"),
+                               past_key_values=c,
+                               attention_mask=torch.ones((1, len(cut) + 1), device="cuda",
+                                                         dtype=torch.long),
+                               position_ids=torch.tensor([[L - 1]], device="cuda"),
+                               cache_position=torch.tensor([len(cut)], device="cuda"),
+                               use_cache=True)
+            elif args.trim_mode == "mask":
+                # 不动物理 cache，直接屏蔽被丢弃的位置：softmax 里 -inf 等价于删除，
+                # 且所有模型族都走标准 attention_mask 通路，不必碰 cache 内部结构。
+                m4 = torch.zeros((1, L), dtype=torch.long, device="cuda")
+                m4[0, idx] = 1
+                with torch.no_grad():
+                    o2 = model(input_ids=torch.tensor([ids], device="cuda"),
+                               attention_mask=m4,
+                               position_ids=torch.arange(L, device="cuda").unsqueeze(0),
+                               use_cache=True)
+                attn_keep = m4
+            else:
+                # 等价构造：直接把保留序列重新 prefill 一遍，position_ids 用原始位置。
+                # 因果掩码下每个保留查询只看它之前的保留键，与「裁剪 cache」同义；
+                # Phi3 的 mask 只认完整序列长度，因此只能走这条路。
+                with torch.no_grad():
+                    o2 = model(input_ids=torch.tensor([[ids[t] for t in idx]], device="cuda"),
+                               attention_mask=torch.ones((1, len(idx)), device="cuda",
+                                                         dtype=torch.long),
+                               position_ids=torch.tensor([idx], device="cuda"),
+                               use_cache=True)
+            out = greedy(model, o2.past_key_values, o2.logits, L, tok, args.n_new,
+                         attn=(m4 if args.trim_mode == "mask" else None))
+            text = tok.decode(out, skip_special_tokens=True).strip()
+            if args.task == "finqa_pot":
+                if args.ground and ranked:
+                    sel_ids, expr = parse_selection(text)
+                    pred = safe_eval(expand_cids(expr or text, ranked))
+                    sel_cids = [c for c in sel_ids if c in
+                                {"C%d" % i for i in range(1, len(ranked) + 1)}]
+                else:
+                    pred = safe_eval(text)
+                    sel_cids = []
+            else:
+                pred = parse_pred(text)
+                sel_cids = []
+
+            # 该条件下的锚点组状态
+            m = np.zeros(L, dtype=bool)
+            m[idx] = True
+            # 数字级留存：只看 gold 数值的数字字符（跨分词器可比）
+            dg_tot = dg_kept = 0
+            if d["group"].get("V"):
+                for si in d["group"]["V"]:
+                    a0, b0 = g_spans[si]
+                    if a0 < 0:
+                        continue
+                    t_, k_ = digit_retention(tok, d["segs"][si]["text"], a0,
+                                             lambda t: bool(m[t]))
+                    dg_tot += t_
+                    dg_kept += k_
+            st = {k: comp_status(m, g_spans, d["group"].get(k, []))
+                  for k in ("V", "R", "C", "U")}
+            anr = all(v[0] is None or v[0] for v in st.values())
+            v_all = st["V"][0] is None or st["V"][0]
+
+            # ---- 无标注自检：Anchor Integrity Rate ----
+            # 分母=所有被保留下来的数字单元格；分子=其中行头/列名/单位也都在的。
+            # 不需要 gold，服务时即可计算。
+            def kept_seg(si):
+                a, b = g_spans[si]
+                return a >= 0 and b > a and bool(m[a:b].all())
+
+            kept_cells = [(i, j) for (i, j), si in cmap.items()
+                          if kept_seg(si) and rhead.get(i) is not None
+                          and cname.get(j) is not None]
+            if kept_cells:
+                good = 0
+                for (i, j) in kept_cells:
+                    uj_ = unit_seg.get(j)
+                    if kept_seg(rhead[i]) and kept_seg(cname[j]) and (uj_ is None or kept_seg(uj_)):
+                        good += 1
+                air = good / len(kept_cells)
+            else:
+                air = float("nan")
+
+            em_fn = em_scale if args.task == "finqa_pot" else em
+            # 诊断：答案数字是否还在保留文本里（同一数值可能在表格里出现多次，
+            # 「单元格碎了」不等于「这个数拿不到」，跨族比较时必须分开看）
+            kept_txt = tok.decode([ids[t] for t in sorted(doc_pos[keep])],
+                                  skip_special_tokens=True)
+            kept_txt = kept_txt.replace(",", "")
+            gstr = ("%g" % gold)
+            gold_in = gstr in kept_txt
+            n_dup = sum(1 for i, s in enumerate(d["segs"])
+                        if i not in anchor_segs and gstr in s["text"].replace(",", ""))
+
+            recs.append(dict(id=d["id"], cond=cond, key=list(key),
+                             anr=bool(anr), num=bool(v_all),
+                             air=air, pred=pred, gold=gold, correct=em_fn(pred, gold),
+                             cids=sel_cids,
+                             text=text[:80], L=L, n_doc=n_doc,
+                             gold_in_kept=bool(gold_in), n_dup=int(n_dup),
+                             dgr=(dg_kept / dg_tot if dg_tot else float("nan")),
+                             budget_tokens=int(keep.sum()),
+                             pair_fit=int(fcode), pair_cost=int(fcost),
+                             pair_kept=int(fn_sel)))
+            if args.trim_mode == "refeed":
+                del c
+            torch.cuda.empty_cache()
+
+        if used % 5 == 0:
+            print(f"  {used} samples (L={L})", flush=True)
+            # 增量落盘：长跑任务中途被杀也不丢已完成的部分
+            with open(args.out + ".partial.json", "w", encoding="utf-8") as f:
+                json.dump({"records": recs, "n": used, "done": False},
+                          f, ensure_ascii=False)
+
+    # ---------- 汇总 ----------
+    print("\n条件           n     EM     ANR   P(correct|ANR=1)  P(correct|ANR=0)")
+    summary = []
+    for cond in conditions:
+        rs = [r for r in recs if r["cond"] == cond]
+        if not rs:
+            continue
+        n = len(rs)
+        acc = np.mean([r["correct"] for r in rs])
+        anr_r = np.mean([r["anr"] for r in rs])
+        a1 = [r["correct"] for r in rs if r["anr"]]
+        a0 = [r["correct"] for r in rs if not r["anr"]]
+        p1 = np.mean(a1) if a1 else float("nan")
+        p0 = np.mean(a0) if a0 else float("nan")
+        summary.append(dict(cond=cond, n=n, em=float(acc), anr=float(anr_r),
+                            n_intact=len(a1), p_correct_intact=float(p1),
+                            n_frag=len(a0), p_correct_frag=float(p0)))
+        print("%-12s %4d  %6.3f %6.3f   %8.3f (%3d)   %8.3f (%3d)" % (
+            cond, n, acc, anr_r, p1, len(a1), p0, len(a0)))
+
+    # 跨条件合并：锚点完整 vs 碎裂
+    allr = [r for r in recs if r["cond"] != "full"]
+    a1 = [r["correct"] for r in allr if r["anr"]]
+    a0 = [r["correct"] for r in allr if not r["anr"]]
+    print("\n[合并] 锚点完整 n=%d acc=%.3f | 锚点碎裂 n=%d acc=%.3f | 差 %.3f" % (
+        len(a1), np.mean(a1) if a1 else np.nan,
+        len(a0), np.mean(a0) if a0 else np.nan,
+        (np.mean(a1) - np.mean(a0)) if a1 and a0 else np.nan))
+
+    # 无标注自检：AIR 与实际正确率的关系
+    print("\n无标注自检 AIR（保留的数字中，行头/列名/单位也都在的比例）")
+    print("%-12s %6s %11s %11s" % ("cond", "AIR", "acc|AIR=1", "acc|AIR<1"))
+    for cond in conditions:
+        rs = [r for r in recs if r["cond"] == cond and r.get("air") == r.get("air")]
+        if not rs:
+            continue
+        air = float(np.mean([r["air"] for r in rs]))
+        a1 = [r["correct"] for r in rs if r["air"] >= 0.999]
+        a0 = [r["correct"] for r in rs if r["air"] < 0.999]
+        print("%-12s %6.3f %7.3f(%3d) %7.3f(%3d)" % (
+            cond, air,
+            np.mean(a1) if a1 else float("nan"), len(a1),
+            np.mean(a0) if a0 else float("nan"), len(a0)))
+
+    json.dump({"summary": summary, "records": recs, "n": used, "alloc": alloc_log},
+              open(args.out, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+    print("\n写入", args.out)
+    # 完整结果落盘后清掉增量文件
+    try:
+        os.remove(args.out + ".partial.json")
+    except OSError:
+        pass
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,1802 @@
+[
+  {
+    "key": [
+      "V/2008/page_17.pdf-1",
+      3,
+      1
+    ],
+    "lens": {
+      "qwen": 782,
+      "llama": 726,
+      "phi": 899
+    }
+  },
+  {
+    "key": [
+      "C/2017/page_328.pdf-1",
+      6,
+      1
+    ],
+    "lens": {
+      "qwen": 389,
+      "llama": 305,
+      "phi": 432
+    }
+  },
+  {
+    "key": [
+      "DVN/2007/page_58.pdf-2",
+      3,
+      4
+    ],
+    "lens": {
+      "qwen": 999,
+      "llama": 902,
+      "phi": 1106
+    }
+  },
+  {
+    "key": [
+      "DVN/2007/page_58.pdf-2",
+      5,
+      4
+    ],
+    "lens": {
+      "qwen": 999,
+      "llama": 902,
+      "phi": 1106
+    }
+  },
+  {
+    "key": [
+      "PM/2017/page_38.pdf-1",
+      3,
+      1
+    ],
+    "lens": {
+      "qwen": 988,
+      "llama": 886,
+      "phi": 1073
+    }
+  },
+  {
+    "key": [
+      "PM/2017/page_38.pdf-1",
+      3,
+      2
+    ],
+    "lens": {
+      "qwen": 988,
+      "llama": 886,
+      "phi": 1073
+    }
+  },
+  {
+    "key": [
+      "PNC/2013/page_207.pdf-1",
+      1,
+      1
+    ],
+    "lens": {
+      "qwen": 821,
+      "llama": 752,
+      "phi": 891
+    }
+  },
+  {
+    "key": [
+      "PNC/2013/page_207.pdf-1",
+      1,
+      2
+    ],
+    "lens": {
+      "qwen": 821,
+      "llama": 752,
+      "phi": 891
+    }
+  },
+  {
+    "key": [
+      "CME/2017/page_97.pdf-5",
+      2,
+      1
+    ],
+    "lens": {
+      "qwen": 849,
+      "llama": 821,
+      "phi": 939
+    }
+  },
+  {
+    "key": [
+      "CME/2017/page_97.pdf-5",
+      2,
+      2
+    ],
+    "lens": {
+      "qwen": 849,
+      "llama": 821,
+      "phi": 939
+    }
+  },
+  {
+    "key": [
+      "LMT/2013/page_74.pdf-4",
+      3,
+      1
+    ],
+    "lens": {
+      "qwen": 1046,
+      "llama": 956,
+      "phi": 1141
+    }
+  },
+  {
+    "key": [
+      "LMT/2013/page_74.pdf-4",
+      3,
+      2
+    ],
+    "lens": {
+      "qwen": 1046,
+      "llama": 956,
+      "phi": 1141
+    }
+  },
+  {
+    "key": [
+      "MRO/2007/page_149.pdf-2",
+      4,
+      1
+    ],
+    "lens": {
+      "qwen": 586,
+      "llama": 451,
+      "phi": 637
+    }
+  },
+  {
+    "key": [
+      "MRO/2007/page_149.pdf-2",
+      4,
+      2
+    ],
+    "lens": {
+      "qwen": 586,
+      "llama": 451,
+      "phi": 637
+    }
+  },
+  {
+    "key": [
+      "C/2010/page_223.pdf-3",
+      1,
+      2
+    ],
+    "lens": {
+      "qwen": 675,
+      "llama": 599,
+      "phi": 751
+    }
+  },
+  {
+    "key": [
+      "C/2010/page_223.pdf-3",
+      1,
+      3
+    ],
+    "lens": {
+      "qwen": 675,
+      "llama": 599,
+      "phi": 751
+    }
+  },
+  {
+    "key": [
+      "C/2010/page_223.pdf-3",
+      8,
+      2
+    ],
+    "lens": {
+      "qwen": 675,
+      "llama": 599,
+      "phi": 751
+    }
+  },
+  {
+    "key": [
+      "C/2010/page_223.pdf-3",
+      8,
+      3
+    ],
+    "lens": {
+      "qwen": 675,
+      "llama": 599,
+      "phi": 751
+    }
+  },
+  {
+    "key": [
+      "AMT/2005/page_105.pdf-2",
+      5,
+      1
+    ],
+    "lens": {
+      "qwen": 950,
+      "llama": 844,
+      "phi": 1040
+    }
+  },
+  {
+    "key": [
+      "AMT/2005/page_105.pdf-2",
+      5,
+      2
+    ],
+    "lens": {
+      "qwen": 950,
+      "llama": 844,
+      "phi": 1040
+    }
+  },
+  {
+    "key": [
+      "UNP/2008/page_77.pdf-1",
+      2,
+      1
+    ],
+    "lens": {
+      "qwen": 683,
+      "llama": 622,
+      "phi": 761
+    }
+  },
+  {
+    "key": [
+      "UNP/2008/page_77.pdf-1",
+      8,
+      1
+    ],
+    "lens": {
+      "qwen": 683,
+      "llama": 622,
+      "phi": 761
+    }
+  },
+  {
+    "key": [
+      "AON/2010/page_28.pdf-1",
+      2,
+      1
+    ],
+    "lens": {
+      "qwen": 783,
+      "llama": 703,
+      "phi": 879
+    }
+  },
+  {
+    "key": [
+      "AON/2010/page_28.pdf-1",
+      3,
+      1
+    ],
+    "lens": {
+      "qwen": 783,
+      "llama": 703,
+      "phi": 879
+    }
+  },
+  {
+    "key": [
+      "AES/2002/page_46.pdf-4",
+      3,
+      1
+    ],
+    "lens": {
+      "qwen": 510,
+      "llama": 447,
+      "phi": 559
+    }
+  },
+  {
+    "key": [
+      "AES/2002/page_46.pdf-4",
+      3,
+      2
+    ],
+    "lens": {
+      "qwen": 510,
+      "llama": 447,
+      "phi": 559
+    }
+  },
+  {
+    "key": [
+      "CB/2010/page_200.pdf-4",
+      1,
+      1
+    ],
+    "lens": {
+      "qwen": 1028,
+      "llama": 919,
+      "phi": 1189
+    }
+  },
+  {
+    "key": [
+      "CB/2010/page_200.pdf-4",
+      2,
+      1
+    ],
+    "lens": {
+      "qwen": 1028,
+      "llama": 919,
+      "phi": 1189
+    }
+  },
+  {
+    "key": [
+      "ETFC/2014/page_26.pdf-2",
+      1,
+      6
+    ],
+    "lens": {
+      "qwen": 283,
+      "llama": 209,
+      "phi": 317
+    }
+  },
+  {
+    "key": [
+      "LMT/2012/page_47.pdf-3",
+      2,
+      2
+    ],
+    "lens": {
+      "qwen": 1075,
+      "llama": 952,
+      "phi": 1171
+    }
+  },
+  {
+    "key": [
+      "LMT/2012/page_47.pdf-3",
+      2,
+      3
+    ],
+    "lens": {
+      "qwen": 1075,
+      "llama": 952,
+      "phi": 1171
+    }
+  },
+  {
+    "key": [
+      "MAS/2018/page_35.pdf-3",
+      1,
+      1
+    ],
+    "lens": {
+      "qwen": 1013,
+      "llama": 930,
+      "phi": 1142
+    }
+  },
+  {
+    "key": [
+      "MAS/2018/page_35.pdf-3",
+      1,
+      2
+    ],
+    "lens": {
+      "qwen": 1013,
+      "llama": 930,
+      "phi": 1142
+    }
+  },
+  {
+    "key": [
+      "RSG/2016/page_144.pdf-1",
+      1,
+      1
+    ],
+    "lens": {
+      "qwen": 882,
+      "llama": 836,
+      "phi": 990
+    }
+  },
+  {
+    "key": [
+      "RSG/2016/page_144.pdf-1",
+      2,
+      1
+    ],
+    "lens": {
+      "qwen": 882,
+      "llama": 836,
+      "phi": 990
+    }
+  },
+  {
+    "key": [
+      "STT/2008/page_83.pdf-2",
+      2,
+      1
+    ],
+    "lens": {
+      "qwen": 831,
+      "llama": 807,
+      "phi": 953
+    }
+  },
+  {
+    "key": [
+      "STT/2008/page_83.pdf-2",
+      2,
+      4
+    ],
+    "lens": {
+      "qwen": 831,
+      "llama": 807,
+      "phi": 953
+    }
+  },
+  {
+    "key": [
+      "CDNS/2012/page_30.pdf-4",
+      2,
+      2
+    ],
+    "lens": {
+      "qwen": 486,
+      "llama": 385,
+      "phi": 535
+    }
+  },
+  {
+    "key": [
+      "LMT/2006/page_90.pdf-3",
+      2,
+      1
+    ],
+    "lens": {
+      "qwen": 1055,
+      "llama": 923,
+      "phi": 1167
+    }
+  },
+  {
+    "key": [
+      "LMT/2006/page_90.pdf-3",
+      6,
+      1
+    ],
+    "lens": {
+      "qwen": 1055,
+      "llama": 923,
+      "phi": 1167
+    }
+  },
+  {
+    "key": [
+      "CDNS/2018/page_31.pdf-3",
+      2,
+      5
+    ],
+    "lens": {
+      "qwen": 695,
+      "llama": 544,
+      "phi": 760
+    }
+  },
+  {
+    "key": [
+      "CDNS/2018/page_31.pdf-3",
+      2,
+      6
+    ],
+    "lens": {
+      "qwen": 695,
+      "llama": 544,
+      "phi": 760
+    }
+  },
+  {
+    "key": [
+      "ADI/2011/page_81.pdf-1",
+      1,
+      1
+    ],
+    "lens": {
+      "qwen": 882,
+      "llama": 825,
+      "phi": 1020
+    }
+  },
+  {
+    "key": [
+      "ADI/2011/page_81.pdf-1",
+      3,
+      1
+    ],
+    "lens": {
+      "qwen": 882,
+      "llama": 825,
+      "phi": 1020
+    }
+  },
+  {
+    "key": [
+      "FBHS/2017/page_23.pdf-2",
+      1,
+      1
+    ],
+    "lens": {
+      "qwen": 961,
+      "llama": 878,
+      "phi": 1094
+    }
+  },
+  {
+    "key": [
+      "FBHS/2017/page_23.pdf-2",
+      1,
+      2
+    ],
+    "lens": {
+      "qwen": 961,
+      "llama": 878,
+      "phi": 1094
+    }
+  },
+  {
+    "key": [
+      "AON/2009/page_48.pdf-4",
+      2,
+      1
+    ],
+    "lens": {
+      "qwen": 834,
+      "llama": 770,
+      "phi": 963
+    }
+  },
+  {
+    "key": [
+      "CDNS/2006/page_30.pdf-1",
+      1,
+      6
+    ],
+    "lens": {
+      "qwen": 606,
+      "llama": 477,
+      "phi": 654
+    }
+  },
+  {
+    "key": [
+      "AAP/2011/page_28.pdf-2",
+      2,
+      3
+    ],
+    "lens": {
+      "qwen": 763,
+      "llama": 600,
+      "phi": 809
+    }
+  },
+  {
+    "key": [
+      "GS/2013/page_152.pdf-2",
+      1,
+      1
+    ],
+    "lens": {
+      "qwen": 933,
+      "llama": 830,
+      "phi": 1066
+    }
+  },
+  {
+    "key": [
+      "LMT/2006/page_37.pdf-1",
+      1,
+      1
+    ],
+    "lens": {
+      "qwen": 424,
+      "llama": 353,
+      "phi": 463
+    }
+  },
+  {
+    "key": [
+      "LMT/2006/page_37.pdf-1",
+      1,
+      3
+    ],
+    "lens": {
+      "qwen": 424,
+      "llama": 353,
+      "phi": 463
+    }
+  },
+  {
+    "key": [
+      "LMT/2006/page_37.pdf-1",
+      3,
+      1
+    ],
+    "lens": {
+      "qwen": 424,
+      "llama": 353,
+      "phi": 463
+    }
+  },
+  {
+    "key": [
+      "LMT/2006/page_37.pdf-1",
+      3,
+      3
+    ],
+    "lens": {
+      "qwen": 424,
+      "llama": 353,
+      "phi": 463
+    }
+  },
+  {
+    "key": [
+      "AMT/2005/page_85.pdf-1",
+      10,
+      1
+    ],
+    "lens": {
+      "qwen": 797,
+      "llama": 677,
+      "phi": 869
+    }
+  },
+  {
+    "key": [
+      "AMT/2005/page_85.pdf-1",
+      10,
+      2
+    ],
+    "lens": {
+      "qwen": 797,
+      "llama": 677,
+      "phi": 869
+    }
+  },
+  {
+    "key": [
+      "PM/2018/page_24.pdf-2",
+      6,
+      1
+    ],
+    "lens": {
+      "qwen": 617,
+      "llama": 535,
+      "phi": 659
+    }
+  },
+  {
+    "key": [
+      "PM/2018/page_24.pdf-2",
+      6,
+      3
+    ],
+    "lens": {
+      "qwen": 617,
+      "llama": 535,
+      "phi": 659
+    }
+  },
+  {
+    "key": [
+      "LMT/2013/page_74.pdf-1",
+      3,
+      1
+    ],
+    "lens": {
+      "qwen": 1046,
+      "llama": 956,
+      "phi": 1141
+    }
+  },
+  {
+    "key": [
+      "LMT/2013/page_74.pdf-1",
+      3,
+      2
+    ],
+    "lens": {
+      "qwen": 1046,
+      "llama": 956,
+      "phi": 1141
+    }
+  },
+  {
+    "key": [
+      "LMT/2013/page_74.pdf-1",
+      3,
+      3
+    ],
+    "lens": {
+      "qwen": 1046,
+      "llama": 956,
+      "phi": 1141
+    }
+  },
+  {
+    "key": [
+      "AMT/2008/page_32.pdf-3",
+      1,
+      1
+    ],
+    "lens": {
+      "qwen": 792,
+      "llama": 669,
+      "phi": 846
+    }
+  },
+  {
+    "key": [
+      "AMT/2008/page_32.pdf-3",
+      1,
+      2
+    ],
+    "lens": {
+      "qwen": 792,
+      "llama": 669,
+      "phi": 846
+    }
+  },
+  {
+    "key": [
+      "UNP/2008/page_27.pdf-1",
+      2,
+      1
+    ],
+    "lens": {
+      "qwen": 854,
+      "llama": 765,
+      "phi": 968
+    }
+  },
+  {
+    "key": [
+      "UNP/2008/page_27.pdf-1",
+      3,
+      1
+    ],
+    "lens": {
+      "qwen": 854,
+      "llama": 765,
+      "phi": 968
+    }
+  },
+  {
+    "key": [
+      "INTC/2013/page_29.pdf-3",
+      1,
+      2
+    ],
+    "lens": {
+      "qwen": 581,
+      "llama": 547,
+      "phi": 642
+    }
+  },
+  {
+    "key": [
+      "INTC/2013/page_29.pdf-3",
+      1,
+      3
+    ],
+    "lens": {
+      "qwen": 581,
+      "llama": 547,
+      "phi": 642
+    }
+  },
+  {
+    "key": [
+      "UNP/2015/page_24.pdf-1",
+      1,
+      1
+    ],
+    "lens": {
+      "qwen": 830,
+      "llama": 758,
+      "phi": 916
+    }
+  },
+  {
+    "key": [
+      "UNP/2015/page_24.pdf-1",
+      4,
+      1
+    ],
+    "lens": {
+      "qwen": 830,
+      "llama": 758,
+      "phi": 916
+    }
+  },
+  {
+    "key": [
+      "IPG/2008/page_62.pdf-2",
+      1,
+      4
+    ],
+    "lens": {
+      "qwen": 531,
+      "llama": 486,
+      "phi": 567
+    }
+  },
+  {
+    "key": [
+      "IPG/2008/page_62.pdf-2",
+      7,
+      4
+    ],
+    "lens": {
+      "qwen": 531,
+      "llama": 486,
+      "phi": 567
+    }
+  },
+  {
+    "key": [
+      "MAS/2018/page_60.pdf-2",
+      5,
+      2
+    ],
+    "lens": {
+      "qwen": 657,
+      "llama": 607,
+      "phi": 761
+    }
+  },
+  {
+    "key": [
+      "GS/2012/page_165.pdf-2",
+      2,
+      2
+    ],
+    "lens": {
+      "qwen": 859,
+      "llama": 768,
+      "phi": 949
+    }
+  },
+  {
+    "key": [
+      "GS/2012/page_165.pdf-2",
+      6,
+      2
+    ],
+    "lens": {
+      "qwen": 859,
+      "llama": 768,
+      "phi": 949
+    }
+  },
+  {
+    "key": [
+      "CME/2017/page_97.pdf-4",
+      5,
+      1
+    ],
+    "lens": {
+      "qwen": 849,
+      "llama": 821,
+      "phi": 939
+    }
+  },
+  {
+    "key": [
+      "CME/2017/page_97.pdf-4",
+      5,
+      2
+    ],
+    "lens": {
+      "qwen": 849,
+      "llama": 821,
+      "phi": 939
+    }
+  },
+  {
+    "key": [
+      "MRO/2015/page_18.pdf-2",
+      1,
+      3
+    ],
+    "lens": {
+      "qwen": 390,
+      "llama": 342,
+      "phi": 450
+    }
+  },
+  {
+    "key": [
+      "MRO/2015/page_18.pdf-2",
+      6,
+      3
+    ],
+    "lens": {
+      "qwen": 390,
+      "llama": 342,
+      "phi": 450
+    }
+  },
+  {
+    "key": [
+      "IPG/2008/page_62.pdf-1",
+      7,
+      1
+    ],
+    "lens": {
+      "qwen": 531,
+      "llama": 486,
+      "phi": 567
+    }
+  },
+  {
+    "key": [
+      "IPG/2008/page_62.pdf-1",
+      7,
+      2
+    ],
+    "lens": {
+      "qwen": 531,
+      "llama": 486,
+      "phi": 567
+    }
+  },
+  {
+    "key": [
+      "IPG/2008/page_62.pdf-1",
+      7,
+      3
+    ],
+    "lens": {
+      "qwen": 531,
+      "llama": 486,
+      "phi": 567
+    }
+  },
+  {
+    "key": [
+      "APD/2013/page_36.pdf-1",
+      1,
+      1
+    ],
+    "lens": {
+      "qwen": 535,
+      "llama": 465,
+      "phi": 585
+    }
+  },
+  {
+    "key": [
+      "APD/2013/page_36.pdf-1",
+      2,
+      1
+    ],
+    "lens": {
+      "qwen": 535,
+      "llama": 465,
+      "phi": 585
+    }
+  },
+  {
+    "key": [
+      "HIG/2011/page_188.pdf-2",
+      1,
+      1
+    ],
+    "lens": {
+      "qwen": 905,
+      "llama": 778,
+      "phi": 999
+    }
+  },
+  {
+    "key": [
+      "HIG/2011/page_188.pdf-2",
+      1,
+      2
+    ],
+    "lens": {
+      "qwen": 905,
+      "llama": 778,
+      "phi": 999
+    }
+  },
+  {
+    "key": [
+      "HIG/2011/page_188.pdf-2",
+      9,
+      2
+    ],
+    "lens": {
+      "qwen": 905,
+      "llama": 778,
+      "phi": 999
+    }
+  },
+  {
+    "key": [
+      "HIG/2011/page_188.pdf-2",
+      9,
+      3
+    ],
+    "lens": {
+      "qwen": 905,
+      "llama": 778,
+      "phi": 999
+    }
+  },
+  {
+    "key": [
+      "BLL/2010/page_28.pdf-3",
+      1,
+      1
+    ],
+    "lens": {
+      "qwen": 822,
+      "llama": 694,
+      "phi": 902
+    }
+  },
+  {
+    "key": [
+      "BLL/2010/page_28.pdf-3",
+      1,
+      5
+    ],
+    "lens": {
+      "qwen": 822,
+      "llama": 694,
+      "phi": 902
+    }
+  },
+  {
+    "key": [
+      "KHC/2016/page_23.pdf-3",
+      4,
+      1
+    ],
+    "lens": {
+      "qwen": 820,
+      "llama": 769,
+      "phi": 918
+    }
+  },
+  {
+    "key": [
+      "GS/2017/page_106.pdf-2",
+      1,
+      1
+    ],
+    "lens": {
+      "qwen": 949,
+      "llama": 871,
+      "phi": 1063
+    }
+  },
+  {
+    "key": [
+      "GS/2017/page_106.pdf-2",
+      3,
+      1
+    ],
+    "lens": {
+      "qwen": 949,
+      "llama": 871,
+      "phi": 1063
+    }
+  },
+  {
+    "key": [
+      "UAA/2016/page_52.pdf-1",
+      3,
+      1
+    ],
+    "lens": {
+      "qwen": 949,
+      "llama": 788,
+      "phi": 1015
+    }
+  },
+  {
+    "key": [
+      "UAA/2016/page_52.pdf-1",
+      6,
+      1
+    ],
+    "lens": {
+      "qwen": 949,
+      "llama": 788,
+      "phi": 1015
+    }
+  },
+  {
+    "key": [
+      "DVN/2007/page_58.pdf-3",
+      3,
+      4
+    ],
+    "lens": {
+      "qwen": 999,
+      "llama": 902,
+      "phi": 1106
+    }
+  },
+  {
+    "key": [
+      "DVN/2007/page_58.pdf-3",
+      5,
+      4
+    ],
+    "lens": {
+      "qwen": 999,
+      "llama": 902,
+      "phi": 1106
+    }
+  },
+  {
+    "key": [
+      "INTC/2013/page_29.pdf-1",
+      1,
+      3
+    ],
+    "lens": {
+      "qwen": 581,
+      "llama": 547,
+      "phi": 642
+    }
+  },
+  {
+    "key": [
+      "INTC/2013/page_29.pdf-1",
+      3,
+      3
+    ],
+    "lens": {
+      "qwen": 581,
+      "llama": 547,
+      "phi": 642
+    }
+  },
+  {
+    "key": [
+      "CDNS/2012/page_30.pdf-1",
+      1,
+      6
+    ],
+    "lens": {
+      "qwen": 486,
+      "llama": 385,
+      "phi": 535
+    }
+  },
+  {
+    "key": [
+      "STT/2009/page_73.pdf-1",
+      2,
+      1
+    ],
+    "lens": {
+      "qwen": 760,
+      "llama": 694,
+      "phi": 884
+    }
+  },
+  {
+    "key": [
+      "STT/2009/page_73.pdf-1",
+      2,
+      2
+    ],
+    "lens": {
+      "qwen": 760,
+      "llama": 694,
+      "phi": 884
+    }
+  },
+  {
+    "key": [
+      "VLO/2018/page_25.pdf-1",
+      2,
+      1
+    ],
+    "lens": {
+      "qwen": 825,
+      "llama": 730,
+      "phi": 900
+    }
+  },
+  {
+    "key": [
+      "VLO/2018/page_25.pdf-1",
+      4,
+      1
+    ],
+    "lens": {
+      "qwen": 825,
+      "llama": 730,
+      "phi": 900
+    }
+  },
+  {
+    "key": [
+      "LMT/2012/page_47.pdf-1",
+      2,
+      1
+    ],
+    "lens": {
+      "qwen": 1075,
+      "llama": 952,
+      "phi": 1171
+    }
+  },
+  {
+    "key": [
+      "LMT/2012/page_47.pdf-1",
+      2,
+      2
+    ],
+    "lens": {
+      "qwen": 1075,
+      "llama": 952,
+      "phi": 1171
+    }
+  },
+  {
+    "key": [
+      "DRE/2002/page_40.pdf-1",
+      4,
+      3
+    ],
+    "lens": {
+      "qwen": 382,
+      "llama": 311,
+      "phi": 409
+    }
+  },
+  {
+    "key": [
+      "CDNS/2006/page_30.pdf-2",
+      2,
+      4
+    ],
+    "lens": {
+      "qwen": 606,
+      "llama": 477,
+      "phi": 654
+    }
+  },
+  {
+    "key": [
+      "UA/2015/page_71.pdf-1",
+      2,
+      1
+    ],
+    "lens": {
+      "qwen": 698,
+      "llama": 618,
+      "phi": 761
+    }
+  },
+  {
+    "key": [
+      "GIS/2019/page_37.pdf-2",
+      1,
+      1
+    ],
+    "lens": {
+      "qwen": 1027,
+      "llama": 937,
+      "phi": 1184
+    }
+  },
+  {
+    "key": [
+      "GIS/2019/page_37.pdf-2",
+      1,
+      2
+    ],
+    "lens": {
+      "qwen": 1027,
+      "llama": 937,
+      "phi": 1184
+    }
+  },
+  {
+    "key": [
+      "UNP/2006/page_37.pdf-2",
+      5,
+      1
+    ],
+    "lens": {
+      "qwen": 994,
+      "llama": 884,
+      "phi": 1080
+    }
+  },
+  {
+    "key": [
+      "UNP/2006/page_37.pdf-1",
+      1,
+      1
+    ],
+    "lens": {
+      "qwen": 994,
+      "llama": 884,
+      "phi": 1080
+    }
+  },
+  {
+    "key": [
+      "UNP/2006/page_37.pdf-1",
+      5,
+      1
+    ],
+    "lens": {
+      "qwen": 994,
+      "llama": 884,
+      "phi": 1080
+    }
+  },
+  {
+    "key": [
+      "C/2017/page_328.pdf-4",
+      5,
+      3
+    ],
+    "lens": {
+      "qwen": 389,
+      "llama": 305,
+      "phi": 432
+    }
+  },
+  {
+    "key": [
+      "LLY/2018/page_63.pdf-1",
+      6,
+      1
+    ],
+    "lens": {
+      "qwen": 751,
+      "llama": 710,
+      "phi": 853
+    }
+  },
+  {
+    "key": [
+      "LLY/2018/page_63.pdf-1",
+      6,
+      2
+    ],
+    "lens": {
+      "qwen": 751,
+      "llama": 710,
+      "phi": 853
+    }
+  },
+  {
+    "key": [
+      "C/2017/page_328.pdf-3",
+      6,
+      1
+    ],
+    "lens": {
+      "qwen": 389,
+      "llama": 305,
+      "phi": 432
+    }
+  },
+  {
+    "key": [
+      "C/2017/page_328.pdf-3",
+      6,
+      3
+    ],
+    "lens": {
+      "qwen": 389,
+      "llama": 305,
+      "phi": 432
+    }
+  },
+  {
+    "key": [
+      "CDNS/2018/page_31.pdf-2",
+      1,
+      6
+    ],
+    "lens": {
+      "qwen": 695,
+      "llama": 544,
+      "phi": 760
+    }
+  },
+  {
+    "key": [
+      "CDNS/2018/page_31.pdf-2",
+      2,
+      6
+    ],
+    "lens": {
+      "qwen": 695,
+      "llama": 544,
+      "phi": 760
+    }
+  },
+  {
+    "key": [
+      "HWM/2016/page_40.pdf-2",
+      1,
+      1
+    ],
+    "lens": {
+      "qwen": 933,
+      "llama": 808,
+      "phi": 999
+    }
+  },
+  {
+    "key": [
+      "HWM/2016/page_40.pdf-2",
+      2,
+      1
+    ],
+    "lens": {
+      "qwen": 933,
+      "llama": 808,
+      "phi": 999
+    }
+  },
+  {
+    "key": [
+      "UNP/2013/page_54.pdf-2",
+      9,
+      1
+    ],
+    "lens": {
+      "qwen": 948,
+      "llama": 818,
+      "phi": 1073
+    }
+  },
+  {
+    "key": [
+      "AES/2002/page_46.pdf-2",
+      1,
+      1
+    ],
+    "lens": {
+      "qwen": 510,
+      "llama": 447,
+      "phi": 559
+    }
+  },
+  {
+    "key": [
+      "AES/2002/page_46.pdf-2",
+      1,
+      2
+    ],
+    "lens": {
+      "qwen": 510,
+      "llama": 447,
+      "phi": 559
+    }
+  },
+  {
+    "key": [
+      "DRE/2009/page_72.pdf-1",
+      2,
+      1
+    ],
+    "lens": {
+      "qwen": 887,
+      "llama": 786,
+      "phi": 970
+    }
+  },
+  {
+    "key": [
+      "DRE/2009/page_72.pdf-1",
+      2,
+      2
+    ],
+    "lens": {
+      "qwen": 887,
+      "llama": 786,
+      "phi": 970
+    }
+  },
+  {
+    "key": [
+      "APTV/2014/page_49.pdf-2",
+      1,
+      5
+    ],
+    "lens": {
+      "qwen": 696,
+      "llama": 586,
+      "phi": 768
+    }
+  },
+  {
+    "key": [
+      "ILMN/2007/page_78.pdf-2",
+      2,
+      1
+    ],
+    "lens": {
+      "qwen": 768,
+      "llama": 694,
+      "phi": 828
+    }
+  },
+  {
+    "key": [
+      "ETR/2002/page_24.pdf-2",
+      1,
+      1
+    ],
+    "lens": {
+      "qwen": 832,
+      "llama": 725,
+      "phi": 920
+    }
+  },
+  {
+    "key": [
+      "ETR/2002/page_24.pdf-2",
+      2,
+      1
+    ],
+    "lens": {
+      "qwen": 832,
+      "llama": 725,
+      "phi": 920
+    }
+  },
+  {
+    "key": [
+      "UNP/2011/page_76.pdf-2",
+      4,
+      1
+    ],
+    "lens": {
+      "qwen": 832,
+      "llama": 762,
+      "phi": 962
+    }
+  },
+  {
+    "key": [
+      "UNP/2011/page_76.pdf-2",
+      6,
+      1
+    ],
+    "lens": {
+      "qwen": 832,
+      "llama": 762,
+      "phi": 962
+    }
+  },
+  {
+    "key": [
+      "ANSS/2013/page_55.pdf-1",
+      6,
+      1
+    ],
+    "lens": {
+      "qwen": 805,
+      "llama": 681,
+      "phi": 890
+    }
+  },
+  {
+    "key": [
+      "ANSS/2013/page_55.pdf-1",
+      1,
+      1
+    ],
+    "lens": {
+      "qwen": 805,
+      "llama": 681,
+      "phi": 890
+    }
+  },
+  {
+    "key": [
+      "HII/2017/page_47.pdf-1",
+      4,
+      5
+    ],
+    "lens": {
+      "qwen": 592,
+      "llama": 468,
+      "phi": 656
+    }
+  },
+  {
+    "key": [
+      "HII/2017/page_47.pdf-1",
+      5,
+      5
+    ],
+    "lens": {
+      "qwen": 592,
+      "llama": 468,
+      "phi": 656
+    }
+  },
+  {
+    "key": [
+      "L/2015/page_59.pdf-1",
+      1,
+      2
+    ],
+    "lens": {
+      "qwen": 520,
+      "llama": 419,
+      "phi": 584
+    }
+  },
+  {
+    "key": [
+      "CAG/2008/page_75.pdf-1",
+      3,
+      2
+    ],
+    "lens": {
+      "qwen": 578,
+      "llama": 510,
+      "phi": 628
+    }
+  },
+  {
+    "key": [
+      "CAG/2008/page_75.pdf-1",
+      5,
+      2
+    ],
+    "lens": {
+      "qwen": 578,
+      "llama": 510,
+      "phi": 628
+    }
+  },
+  {
+    "key": [
+      "DISCA/2012/page_39.pdf-1",
+      1,
+      1
+    ],
+    "lens": {
+      "qwen": 909,
+      "llama": 857,
+      "phi": 1024
+    }
+  },
+  {
+    "key": [
+      "ILMN/2007/page_78.pdf-1",
+      1,
+      1
+    ],
+    "lens": {
+      "qwen": 768,
+      "llama": 694,
+      "phi": 828
+    }
+  },
+  {
+    "key": [
+      "ILMN/2007/page_78.pdf-1",
+      2,
+      1
+    ],
+    "lens": {
+      "qwen": 768,
+      "llama": 694,
+      "phi": 828
+    }
+  },
+  {
+    "key": [
+      "CDNS/2018/page_31.pdf-4",
+      1,
+      6
+    ],
+    "lens": {
+      "qwen": 695,
+      "llama": 544,
+      "phi": 760
+    }
+  },
+  {
+    "key": [
+      "SNA/2012/page_33.pdf-3",
+      6,
+      1
+    ],
+    "lens": {
+      "qwen": 570,
+      "llama": 459,
+      "phi": 620
+    }
+  },
+  {
+    "key": [
+      "SNA/2012/page_33.pdf-3",
+      6,
+      3
+    ],
+    "lens": {
+      "qwen": 570,
+      "llama": 459,
+      "phi": 620
+    }
+  },
+  {
+    "key": [
+      "RSG/2015/page_126.pdf-1",
+      7,
+      1
+    ],
+    "lens": {
+      "qwen": 821,
+      "llama": 761,
+      "phi": 894
+    }
+  },
+  {
+    "key": [
+      "RSG/2015/page_126.pdf-1",
+      7,
+      2
+    ],
+    "lens": {
+      "qwen": 821,
+      "llama": 761,
+      "phi": 894
+    }
+  },
+  {
+    "key": [
+      "AAP/2012/page_12.pdf-2",
+      4,
+      2
+    ],
+    "lens": {
+      "qwen": 858,
+      "llama": 802,
+      "phi": 991
+    }
+  },
+  {
+    "key": [
+      "AAP/2012/page_12.pdf-2",
+      4,
+      3
+    ],
+    "lens": {
+      "qwen": 858,
+      "llama": 802,
+      "phi": 991
+    }
+  }
+]

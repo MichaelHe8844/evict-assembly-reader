@@ -1,0 +1,287 @@
+{
+ "summary": {
+  "20": {
+   "n": 34,
+   "exec": 1.0,
+   "em": 0.17647058823529413,
+   "med_ctx": 80,
+   "sec": 64.9
+  }
+ },
+ "detail": {
+  "20": [
+   {
+    "id": "GPN/2010/page_87.pdf-3",
+    "gen": "divide(6.3, 18.1)",
+    "val": 0.3480662983425414,
+    "gold": 0.34807,
+    "ok": true,
+    "ctx_tokens": 72
+   },
+   {
+    "id": "AMT/2012/page_50.pdf-3",
+    "gen": "divide(102400, 16000)",
+    "val": 6.4,
+    "gold": 6.48512,
+    "ok": false,
+    "ctx_tokens": 48
+   },
+   {
+    "id": "MRO/2004/page_46.pdf-1",
+    "gen": "divide(2019, 45686)",
+    "val": 0.04419296939981614,
+    "gold": 0.93571,
+    "ok": false,
+    "ctx_tokens": 31
+   },
+   {
+    "id": "AAPL/2006/page_131.pdf-2",
+    "gen": "add(362400, 10)",
+    "val": 362410.0,
+    "gold": 364400.0,
+    "ok": false,
+    "ctx_tokens": 56
+   },
+   {
+    "id": "AES/2002/page_128.pdf-2",
+    "gen": "subtract(15, 16)",
+    "val": -1.0,
+    "gold": 1.0,
+    "ok": false,
+    "ctx_tokens": 35
+   },
+   {
+    "id": "ETR/2008/page_298.pdf-3",
+    "gen": "subtract(1439, 100)",
+    "val": 1339.0,
+    "gold": 43920.0,
+    "ok": false,
+    "ctx_tokens": 30
+   },
+   {
+    "id": "AMT/2007/page_29.pdf-4",
+    "gen": "divide(20, 30)",
+    "val": 0.6666666666666666,
+    "gold": 0.3546,
+    "ok": false,
+    "ctx_tokens": 39
+   },
+   {
+    "id": "GPN/2010/page_87.pdf-1",
+    "gen": "multiply(18.1, 15%)",
+    "val": 271.5,
+    "gold": 11.8,
+    "ok": false,
+    "ctx_tokens": 36
+   },
+   {
+    "id": "CDW/2015/page_93.pdf-4",
+    "gen": "add(171.8, 1.0)",
+    "val": 172.8,
+    "gold": 172.2,
+    "ok": false,
+    "ctx_tokens": 90
+   },
+   {
+    "id": "SNA/2013/page_84.pdf-1",
+    "gen": "divide(14.9, 531.6)",
+    "val": 0.02802859292701279,
+    "gold": 0.02726,
+    "ok": true,
+    "ctx_tokens": 117
+   },
+   {
+    "id": "CDW/2015/page_93.pdf-3",
+    "gen": "add(171.8, 1.9)",
+    "val": 173.70000000000002,
+    "gold": 172.2,
+    "ok": false,
+    "ctx_tokens": 90
+   },
+   {
+    "id": "HWM/2018/page_96.pdf-1",
+    "gen": "multiply(9, 50)",
+    "val": 450.0,
+    "gold": 241.11,
+    "ok": false,
+    "ctx_tokens": 73
+   },
+   {
+    "id": "MO/2014/page_62.pdf-2",
+    "gen": "divide(12, 5070)",
+    "val": 0.002366863905325444,
+    "gold": 0.01696,
+    "ok": false,
+    "ctx_tokens": 110
+   },
+   {
+    "id": "AMT/2010/page_99.pdf-2",
+    "gen": "divide(175000, 1750000)",
+    "val": 0.1,
+    "gold": 0.0134,
+    "ok": false,
+    "ctx_tokens": 215
+   },
+   {
+    "id": "AAPL/2006/page_100.pdf-1",
+    "gen": "multiply(829, 29%)",
+    "val": 24041.0,
+    "gold": 240.41,
+    "ok": false,
+    "ctx_tokens": 90
+   },
+   {
+    "id": "RSG/2018/page_135.pdf-1",
+    "gen": "divide(82%, 18)",
+    "val": 4.555555555555555,
+    "gold": 4.55556,
+    "ok": true,
+    "ctx_tokens": 80
+   },
+   {
+    "id": "RSG/2010/page_98.pdf-2",
+    "gen": "divide(14.8, 5.1)",
+    "val": 2.901960784313726,
+    "gold": 3.39489,
+    "ok": false,
+    "ctx_tokens": 50
+   },
+   {
+    "id": "UNP/2010/page_21.pdf-2",
+    "gen": "divide(1470, 3063816)",
+    "val": 0.0004797938257388825,
+    "gold": 0.18383,
+    "ok": false,
+    "ctx_tokens": 76
+   },
+   {
+    "id": "RSG/2015/page_98.pdf-2",
+    "gen": "divide(100, 10)",
+    "val": 10.0,
+    "gold": 2.14775,
+    "ok": false,
+    "ctx_tokens": 50
+   },
+   {
+    "id": "FBHS/2017/page_22.pdf-2",
+    "gen": "multiply(5283.3, 12%)",
+    "val": 63399.600000000006,
+    "gold": 792.495,
+    "ok": false,
+    "ctx_tokens": 191
+   },
+   {
+    "id": "BLL/2010/page_37.pdf-4",
+    "gen": "add(515.2, 10)",
+    "val": 525.2,
+    "gold": 765.2,
+    "ok": false,
+    "ctx_tokens": 92
+   },
+   {
+    "id": "AAPL/2006/page_100.pdf-2",
+    "gen": "multiply(480, 27%)",
+    "val": 12960.0,
+    "gold": 129.6,
+    "ok": false,
+    "ctx_tokens": 100
+   },
+   {
+    "id": "UNP/2009/page_42.pdf-2",
+    "gen": "subtract(2975, 100)",
+    "val": 2875.0,
+    "gold": 2061.0,
+    "ok": false,
+    "ctx_tokens": 22
+   },
+   {
+    "id": "AMT/2014/page_149.pdf-2",
+    "gen": "add(156, 4934)",
+    "val": 5090.0,
+    "gold": 33458.0,
+    "ok": false,
+    "ctx_tokens": 75
+   },
+   {
+    "id": "AAPL/2006/page_131.pdf-1",
+    "gen": "add(149768, 100)",
+    "val": 149868.0,
+    "gold": 599768.0,
+    "ok": false,
+    "ctx_tokens": 185
+   },
+   {
+    "id": "IPG/2008/page_72.pdf-4",
+    "gen": "divide(15.1, 148.8)",
+    "val": 0.10147849462365591,
+    "gold": 0.88575,
+    "ok": false,
+    "ctx_tokens": 94
+   },
+   {
+    "id": "SNA/2013/page_84.pdf-3",
+    "gen": "divide(14.9, 546.5)",
+    "val": 0.0272644098810613,
+    "gold": 0.02726,
+    "ok": true,
+    "ctx_tokens": 106
+   },
+   {
+    "id": "PNC/2012/page_174.pdf-1",
+    "gen": "divide(1037, 2859)",
+    "val": 0.3627142357467646,
+    "gold": 0.20532,
+    "ok": false,
+    "ctx_tokens": 91
+   },
+   {
+    "id": "RSG/2016/page_135.pdf-1",
+    "gen": "divide(72%, 28)",
+    "val": 2.5714285714285716,
+    "gold": 2.57143,
+    "ok": true,
+    "ctx_tokens": 70
+   },
+   {
+    "id": "JPM/2005/page_80.pdf-2",
+    "gen": "add(265, 557)",
+    "val": 822.0,
+    "gold": -292.0,
+    "ok": false,
+    "ctx_tokens": 97
+   },
+   {
+    "id": "UNP/2011/page_24.pdf-2",
+    "gen": "divide(1000, 5873)",
+    "val": 0.17027073046143368,
+    "gold": 0.14252,
+    "ok": false,
+    "ctx_tokens": 57
+   },
+   {
+    "id": "ILMN/2008/page_82.pdf-2",
+    "gen": "multiply(18322320, 31.44)",
+    "val": 576053740.8000001,
+    "gold": 12281757.94,
+    "ok": false,
+    "ctx_tokens": 77
+   },
+   {
+    "id": "HOLX/2009/page_151.pdf-3",
+    "gen": "multiply(150, 23.44)",
+    "val": 3516.0,
+    "gold": 3516.0,
+    "ok": true,
+    "ctx_tokens": 103
+   },
+   {
+    "id": "TFX/2015/page_89.pdf-3",
+    "gen": "subtract(7819, 170)",
+    "val": 7649.0,
+    "gold": 7989.0,
+    "ok": false,
+    "ctx_tokens": 106
+   }
+  ]
+ }
+}

@@ -1,0 +1,419 @@
+{
+  "summary": [
+    {
+      "cond": "auto_f@20",
+      "n": 8,
+      "em": 0.25,
+      "anr": 1.0,
+      "n_intact": 8,
+      "p_correct_intact": 0.25,
+      "n_frag": 0,
+      "p_correct_frag": NaN
+    }
+  ],
+  "records": [
+    {
+      "id": "V/2008/page_17.pdf-1",
+      "cond": "auto_f@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 98.45440494590417,
+      "gold": 127.4,
+      "correct": false,
+      "cids": [
+        "C1",
+        "C2"
+      ],
+      "text": "Cells: C1, C2\nExpression: C1 / C2 * 100",
+      "L": 1151,
+      "n_doc": 782,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 156
+    },
+    {
+      "id": "PM/2017/page_38.pdf-1",
+      "cond": "auto_f@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 6.361534905224225,
+      "gold": 688.0,
+      "correct": false,
+      "cids": [
+        "C1",
+        "C2"
+      ],
+      "text": "Cells: C1, C2\nExpression: (C1 - C2) / C2 * 100",
+      "L": 1411,
+      "n_doc": 988,
+      "gold_in_kept": true,
+      "n_dup": 2,
+      "dgr": 1.0,
+      "budget_tokens": 197
+    },
+    {
+      "id": "PNC/2013/page_207.pdf-1",
+      "cond": "auto_f@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 3.2848026079509354,
+      "gold": 30.44323,
+      "correct": false,
+      "cids": [
+        "C1",
+        "C2"
+      ],
+      "text": "Cells: C1, C2\nExpression: (C2 / C1) * 100",
+      "L": 1381,
+      "n_doc": 821,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 164
+    },
+    {
+      "id": "CME/2017/page_97.pdf-5",
+      "cond": "auto_f@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 99.99982313145756,
+      "gold": 995.0,
+      "correct": false,
+      "cids": [
+        "C1",
+        "C2"
+      ],
+      "text": "Cells: C1, C2\nExpression: (C1 - C2) / C1 * 100",
+      "L": 1369,
+      "n_doc": 849,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 169
+    },
+    {
+      "id": "AMT/2005/page_105.pdf-2",
+      "cond": "auto_f@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 45755.15,
+      "gold": 4575515.0,
+      "correct": true,
+      "cids": [
+        "C1",
+        "C2"
+      ],
+      "text": "Cells: C1, C2\nExpression: (C1 + C2) / 100",
+      "L": 1320,
+      "n_doc": 950,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 190
+    },
+    {
+      "id": "UNP/2008/page_77.pdf-1",
+      "cond": "auto_f@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 14.335937500000002,
+      "gold": 0.14336,
+      "correct": true,
+      "cids": [
+        "C1",
+        "C2"
+      ],
+      "text": "Cells: C1, C2\nExpression: (C1 / C2) * 100",
+      "L": 1134,
+      "n_doc": 683,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 136
+    },
+    {
+      "id": "AON/2010/page_28.pdf-1",
+      "cond": "auto_f@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 4040.0,
+      "gold": 778000.0,
+      "correct": false,
+      "cids": [
+        "C2",
+        "C3"
+      ],
+      "text": "Cells: C2, C3\nExpression: (C2 + C3) / 100 * 100",
+      "L": 1283,
+      "n_doc": 783,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 156
+    },
+    {
+      "id": "AES/2002/page_46.pdf-4",
+      "cond": "auto_f@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": -8.03,
+      "gold": 2.62,
+      "correct": false,
+      "cids": [
+        "C1",
+        "C4"
+      ],
+      "text": "Cells: C1, C4\nExpression: (C1 - C4)",
+      "L": 986,
+      "n_doc": 510,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 102
+    }
+  ],
+  "n": 8,
+  "alloc": [
+    {
+      "id": "V/2008/page_17.pdf-1",
+      "budget": 156,
+      "n_doc": 782,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 2,
+          "val": 2.0,
+          "ub": 2.0,
+          "tokens": 18
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 2,
+          "val": 3.05,
+          "ub": 3.05,
+          "tokens": 18
+        }
+      ]
+    },
+    {
+      "id": "PM/2017/page_38.pdf-1",
+      "budget": 197,
+      "n_doc": 988,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 3,
+          "val": 3.0,
+          "ub": 3.0,
+          "tokens": 54
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 3,
+          "val": 4.32,
+          "ub": 4.32,
+          "tokens": 54
+        }
+      ]
+    },
+    {
+      "id": "PNC/2013/page_207.pdf-1",
+      "budget": 164,
+      "n_doc": 821,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 12,
+          "val": 11.0,
+          "ub": 12.0,
+          "tokens": 163
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 12,
+          "val": 14.643,
+          "ub": 15.943,
+          "tokens": 164
+        }
+      ]
+    },
+    {
+      "id": "CME/2017/page_97.pdf-5",
+      "budget": 169,
+      "n_doc": 849,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 6,
+          "val": 6.0,
+          "ub": 6.0,
+          "tokens": 88
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 6,
+          "val": 7.382,
+          "ub": 7.382,
+          "tokens": 88
+        }
+      ]
+    },
+    {
+      "id": "AMT/2005/page_105.pdf-2",
+      "budget": 190,
+      "n_doc": 950,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 2,
+          "val": 2.0,
+          "ub": 2.0,
+          "tokens": 49
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 2,
+          "val": 2.6,
+          "ub": 2.6,
+          "tokens": 49
+        }
+      ]
+    },
+    {
+      "id": "UNP/2008/page_77.pdf-1",
+      "budget": 136,
+      "n_doc": 683,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 4,
+          "val": 4.0,
+          "ub": 4.0,
+          "tokens": 43
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 4,
+          "val": 5.99,
+          "ub": 5.99,
+          "tokens": 43
+        }
+      ]
+    },
+    {
+      "id": "AON/2010/page_28.pdf-1",
+      "budget": 156,
+      "n_doc": 783,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 14,
+          "val": 12.0,
+          "ub": 14.0,
+          "tokens": 142
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 14,
+          "val": 14.82,
+          "ub": 15.99,
+          "tokens": 156
+        }
+      ]
+    },
+    {
+      "id": "AES/2002/page_46.pdf-4",
+      "budget": 102,
+      "n_doc": 510,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 8,
+          "val": 8.0,
+          "ub": 8.0,
+          "tokens": 72
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 8,
+          "val": 12.2,
+          "ub": 12.2,
+          "tokens": 72
+        }
+      ]
+    }
+  ]
+}

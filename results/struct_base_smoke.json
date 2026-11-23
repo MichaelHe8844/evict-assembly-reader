@@ -1,0 +1,159 @@
+{
+  "summary": [
+    {
+      "cond": "full",
+      "n": 2,
+      "em": 0.5,
+      "anr": 1.0,
+      "n_intact": 2,
+      "p_correct_intact": 0.5,
+      "n_frag": 0,
+      "p_correct_frag": NaN
+    },
+    {
+      "cond": "numb@20",
+      "n": 2,
+      "em": 0.5,
+      "anr": 0.0,
+      "n_intact": 0,
+      "p_correct_intact": NaN,
+      "n_frag": 2,
+      "p_correct_frag": 0.5
+    },
+    {
+      "cond": "arow@20",
+      "n": 2,
+      "em": 0.5,
+      "anr": 1.0,
+      "n_intact": 2,
+      "p_correct_intact": 0.5,
+      "n_frag": 0,
+      "p_correct_frag": NaN
+    },
+    {
+      "cond": "acol@20",
+      "n": 2,
+      "em": 0.5,
+      "anr": 1.0,
+      "n_intact": 2,
+      "p_correct_intact": 0.5,
+      "n_frag": 0,
+      "p_correct_frag": NaN
+    }
+  ],
+  "records": [
+    {
+      "id": "V/2008/page_17.pdf-1",
+      "cond": "full",
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 104.5,
+      "gold": 127.4,
+      "correct": false,
+      "text": "Expression: 627 / 6.0",
+      "L": 1032,
+      "n_doc": 782,
+      "budget_tokens": 782
+    },
+    {
+      "id": "V/2008/page_17.pdf-1",
+      "cond": "numb@20",
+      "anr": false,
+      "num": true,
+      "air": 0.0,
+      "pred": 0.9690880989180835,
+      "gold": 127.4,
+      "correct": false,
+      "text": "627 / 647",
+      "L": 1032,
+      "n_doc": 782,
+      "budget_tokens": 156
+    },
+    {
+      "id": "V/2008/page_17.pdf-1",
+      "cond": "arow@20",
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 104.5,
+      "gold": 127.4,
+      "correct": false,
+      "text": "Expression: 627 / 6.0",
+      "L": 1032,
+      "n_doc": 782,
+      "budget_tokens": 156
+    },
+    {
+      "id": "V/2008/page_17.pdf-1",
+      "cond": "acol@20",
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": null,
+      "gold": 127.4,
+      "correct": false,
+      "text": "(627 / 647) *",
+      "L": 1032,
+      "n_doc": 782,
+      "budget_tokens": 156
+    },
+    {
+      "id": "PM/2017/page_38.pdf-1",
+      "cond": "full",
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 688.0,
+      "gold": 688.0,
+      "correct": true,
+      "text": "11503 - 10815",
+      "L": 1248,
+      "n_doc": 988,
+      "budget_tokens": 988
+    },
+    {
+      "id": "PM/2017/page_38.pdf-1",
+      "cond": "numb@20",
+      "anr": false,
+      "num": true,
+      "air": 0.0,
+      "pred": 688.0,
+      "gold": 688.0,
+      "correct": true,
+      "text": "11503 - 10815",
+      "L": 1248,
+      "n_doc": 988,
+      "budget_tokens": 197
+    },
+    {
+      "id": "PM/2017/page_38.pdf-1",
+      "cond": "arow@20",
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 688.0,
+      "gold": 688.0,
+      "correct": true,
+      "text": "11503 - 10815",
+      "L": 1248,
+      "n_doc": 988,
+      "budget_tokens": 197
+    },
+    {
+      "id": "PM/2017/page_38.pdf-1",
+      "cond": "acol@20",
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 688.0,
+      "gold": 688.0,
+      "correct": true,
+      "text": "11503 - 10815",
+      "L": 1248,
+      "n_doc": 988,
+      "budget_tokens": 197
+    }
+  ],
+  "n": 2
+}

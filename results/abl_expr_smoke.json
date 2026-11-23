@@ -1,0 +1,44 @@
+[
+ {
+  "qid": "V/2008/page_17.pdf-1",
+  "gen": "637 / 10",
+  "val": 63.7,
+  "gold": 127.4,
+  "ok": false
+ },
+ {
+  "qid": "PM/2017/page_38.pdf-1",
+  "gen": "11503 - 10815",
+  "val": 688.0,
+  "gold": 688.0,
+  "ok": true
+ },
+ {
+  "qid": "PNC/2013/page_207.pdf-1",
+  "gen": "($29270 / $36197) * 100",
+  "val": 80.8630549493052,
+  "gold": 30.44323,
+  "ok": false
+ },
+ {
+  "qid": "LMT/2013/page_74.pdf-4",
+  "gen": "328.4 - 326.5",
+  "val": 1.8999999999999773,
+  "gold": -1.9,
+  "ok": false
+ },
+ {
+  "qid": "AMT/2005/page_105.pdf-2",
+  "gen": "total_state - total_federal",
+  "val": null,
+  "gold": 4575515.0,
+  "ok": false
+ },
+ {
+  "qid": "UNP/2008/page_77.pdf-1",
+  "gen": "(367 / 629) * 100",
+  "val": 58.34658187599364,
+  "gold": 0.14336,
+  "ok": false
+ }
+]

@@ -1,0 +1,26 @@
+{
+  "probe": {
+    "recall_seg": 1.0,
+    "prec_seg": 0.75,
+    "recall_tok": 1.0,
+    "cost_tok": 0.048797996953408154,
+    "n_rows": 1.0,
+    "n_cols": 1.0,
+    "n_pairs": 1.0,
+    "n": 300,
+    "full_recall_rate": 1.0,
+    "fb_row_rate": 0.0
+  },
+  "finqa": {
+    "recall_seg": 1.0,
+    "prec_seg": 0.4,
+    "recall_tok": 1.0,
+    "cost_tok": 0.053585547821859064,
+    "n_rows": 2.0,
+    "n_cols": 1.0,
+    "n_pairs": 2.0,
+    "n": 300,
+    "full_recall_rate": 0.7266666666666667,
+    "fb_row_rate": 0.21333333333333335
+  }
+}

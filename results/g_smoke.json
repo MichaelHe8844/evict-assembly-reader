@@ -1,0 +1,266 @@
+{
+  "summary": [
+    {
+      "cond": "full",
+      "n": 3,
+      "em": 0.0,
+      "anr": 1.0,
+      "n_intact": 3,
+      "p_correct_intact": 0.0,
+      "n_frag": 0,
+      "p_correct_frag": NaN
+    },
+    {
+      "cond": "auto_f@20",
+      "n": 3,
+      "em": 0.0,
+      "anr": 1.0,
+      "n_intact": 3,
+      "p_correct_intact": 0.0,
+      "n_frag": 0,
+      "p_correct_frag": NaN
+    }
+  ],
+  "records": [
+    {
+      "id": "V/2008/page_17.pdf-1",
+      "cond": "full",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": -1.545595054095827,
+      "gold": 127.4,
+      "correct": false,
+      "cids": [
+        "C1",
+        "C2"
+      ],
+      "text": "(C2 - C1) / C1 * 100",
+      "L": 1097,
+      "n_doc": 782,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 782
+    },
+    {
+      "id": "V/2008/page_17.pdf-1",
+      "cond": "auto_f@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": -1.545595054095827,
+      "gold": 127.4,
+      "correct": false,
+      "cids": [
+        "C1",
+        "C2"
+      ],
+      "text": "(C2 - C1) / C1 * 100",
+      "L": 1097,
+      "n_doc": 782,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 156
+    },
+    {
+      "id": "PM/2017/page_38.pdf-1",
+      "cond": "full",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 6.361534905224225,
+      "gold": 688.0,
+      "correct": false,
+      "cids": [
+        "C1",
+        "C2"
+      ],
+      "text": "(C1 - C2) / C2 * 100",
+      "L": 1349,
+      "n_doc": 988,
+      "gold_in_kept": true,
+      "n_dup": 2,
+      "dgr": 1.0,
+      "budget_tokens": 988
+    },
+    {
+      "id": "PM/2017/page_38.pdf-1",
+      "cond": "auto_f@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 6.361534905224225,
+      "gold": 688.0,
+      "correct": false,
+      "cids": [
+        "C1",
+        "C2"
+      ],
+      "text": "(C1 - C2) / C2 * 100",
+      "L": 1349,
+      "n_doc": 988,
+      "gold_in_kept": true,
+      "n_dup": 2,
+      "dgr": 1.0,
+      "budget_tokens": 197
+    },
+    {
+      "id": "PNC/2013/page_207.pdf-1",
+      "cond": "full",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 2944.322960470984,
+      "gold": 30.44323,
+      "correct": false,
+      "cids": [
+        "C1",
+        "C2"
+      ],
+      "text": "(C1 - C2) / C2 * 100",
+      "L": 1293,
+      "n_doc": 821,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 821
+    },
+    {
+      "id": "PNC/2013/page_207.pdf-1",
+      "cond": "auto_f@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 2944.322960470984,
+      "gold": 30.44323,
+      "correct": false,
+      "cids": [
+        "C1",
+        "C2"
+      ],
+      "text": "(C1 - C2) / C2 * 100",
+      "L": 1293,
+      "n_doc": 821,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 164
+    }
+  ],
+  "n": 3,
+  "alloc": [
+    {
+      "id": "V/2008/page_17.pdf-1",
+      "budget": 156,
+      "n_doc": 782,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 2,
+          "val": 2.0,
+          "ub": 2.0,
+          "tokens": 18
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 2,
+          "val": 3.05,
+          "ub": 3.05,
+          "tokens": 18
+        }
+      ]
+    },
+    {
+      "id": "PM/2017/page_38.pdf-1",
+      "budget": 197,
+      "n_doc": 988,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 3,
+          "val": 3.0,
+          "ub": 3.0,
+          "tokens": 54
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 3,
+          "val": 4.32,
+          "ub": 4.32,
+          "tokens": 54
+        }
+      ]
+    },
+    {
+      "id": "PNC/2013/page_207.pdf-1",
+      "budget": 164,
+      "n_doc": 821,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 12,
+          "val": 11.0,
+          "ub": 12.0,
+          "tokens": 163
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 12,
+          "val": 14.643,
+          "ub": 15.943,
+          "tokens": 164
+        }
+      ]
+    }
+  ]
+}

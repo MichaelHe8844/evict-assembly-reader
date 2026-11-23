@@ -1,0 +1,111 @@
+{
+  "summary": [
+    {
+      "cond": "full",
+      "n": 3,
+      "em": 1.0,
+      "anr": 1.0,
+      "n_intact": 3,
+      "p_correct_intact": 1.0,
+      "n_frag": 0,
+      "p_correct_frag": NaN
+    },
+    {
+      "cond": "snap@20",
+      "n": 3,
+      "em": 1.0,
+      "anr": 0.3333333333333333,
+      "n_intact": 1,
+      "p_correct_intact": 1.0,
+      "n_frag": 2,
+      "p_correct_frag": 1.0
+    }
+  ],
+  "records": [
+    {
+      "id": "V/2008/page_17.pdf-1",
+      "cond": "full",
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 637.0,
+      "gold": 637.0,
+      "correct": true,
+      "text": "637",
+      "L": 795,
+      "n_doc": 726,
+      "budget_tokens": 726
+    },
+    {
+      "id": "V/2008/page_17.pdf-1",
+      "cond": "snap@20",
+      "anr": false,
+      "num": true,
+      "air": 0.0,
+      "pred": 637.0,
+      "gold": 637.0,
+      "correct": true,
+      "text": "637",
+      "L": 795,
+      "n_doc": 726,
+      "budget_tokens": 145
+    },
+    {
+      "id": "C/2017/page_328.pdf-1",
+      "cond": "full",
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 193.5,
+      "gold": 193.5,
+      "correct": true,
+      "text": "193.5",
+      "L": 379,
+      "n_doc": 305,
+      "budget_tokens": 305
+    },
+    {
+      "id": "C/2017/page_328.pdf-1",
+      "cond": "snap@20",
+      "anr": false,
+      "num": false,
+      "air": NaN,
+      "pred": 193.0,
+      "gold": 193.5,
+      "correct": true,
+      "text": "193",
+      "L": 379,
+      "n_doc": 305,
+      "budget_tokens": 61
+    },
+    {
+      "id": "DVN/2007/page_58.pdf-2",
+      "cond": "full",
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 60.0,
+      "gold": 60.0,
+      "correct": true,
+      "text": "60",
+      "L": 974,
+      "n_doc": 902,
+      "budget_tokens": 902
+    },
+    {
+      "id": "DVN/2007/page_58.pdf-2",
+      "cond": "snap@20",
+      "anr": true,
+      "num": true,
+      "air": 0.3333333333333333,
+      "pred": 60.0,
+      "gold": 60.0,
+      "correct": true,
+      "text": "60",
+      "L": 974,
+      "n_doc": 902,
+      "budget_tokens": 180
+    }
+  ],
+  "n": 3
+}

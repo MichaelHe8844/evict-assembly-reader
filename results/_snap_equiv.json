@@ -1,0 +1,345 @@
+{
+  "summary": [
+    {
+      "cond": "tkvt@20",
+      "n": 4,
+      "em": 0.0,
+      "anr": 0.0,
+      "n_intact": 0,
+      "p_correct_intact": NaN,
+      "n_frag": 4,
+      "p_correct_frag": 0.0
+    },
+    {
+      "cond": "snap@20",
+      "n": 4,
+      "em": 0.0,
+      "anr": 0.0,
+      "n_intact": 0,
+      "p_correct_intact": NaN,
+      "n_frag": 4,
+      "p_correct_frag": 0.0
+    }
+  ],
+  "records": [
+    {
+      "id": "INTC/2015/page_41.pdf-4",
+      "cond": "tkvt@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": false,
+      "num": false,
+      "air": NaN,
+      "pred": 62.5,
+      "gold": 0.14464,
+      "correct": false,
+      "cids": [],
+      "text": "250 / 400 * 100",
+      "L": 878,
+      "n_doc": 627,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 0.0,
+      "budget_tokens": 125,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    },
+    {
+      "id": "INTC/2015/page_41.pdf-4",
+      "cond": "snap@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": false,
+      "num": false,
+      "air": NaN,
+      "pred": 62.5,
+      "gold": 0.14464,
+      "correct": false,
+      "cids": [],
+      "text": "250 / 400 * 100",
+      "L": 878,
+      "n_doc": 627,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 0.0,
+      "budget_tokens": 125,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    },
+    {
+      "id": "CMCSA/2015/page_112.pdf-2",
+      "cond": "tkvt@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": false,
+      "num": false,
+      "air": NaN,
+      "pred": null,
+      "gold": -35.0,
+      "correct": false,
+      "cids": [],
+      "text": "subtract(6, 14)",
+      "L": 1285,
+      "n_doc": 1020,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 0.25,
+      "budget_tokens": 204,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    },
+    {
+      "id": "CMCSA/2015/page_112.pdf-2",
+      "cond": "snap@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": false,
+      "num": false,
+      "air": NaN,
+      "pred": null,
+      "gold": -35.0,
+      "correct": false,
+      "cids": [],
+      "text": "subtract(6, 14)",
+      "L": 1285,
+      "n_doc": 1020,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 0.25,
+      "budget_tokens": 204,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    },
+    {
+      "id": "UAA/2016/page_42.pdf-2",
+      "cond": "tkvt@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": false,
+      "num": false,
+      "air": NaN,
+      "pred": 0.0032653061224489797,
+      "gold": 0.22429,
+      "correct": false,
+      "cids": [],
+      "text": "8/2450",
+      "L": 671,
+      "n_doc": 424,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 0.0,
+      "budget_tokens": 84,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    },
+    {
+      "id": "UAA/2016/page_42.pdf-2",
+      "cond": "snap@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": false,
+      "num": false,
+      "air": NaN,
+      "pred": 0.0032653061224489797,
+      "gold": 0.22429,
+      "correct": false,
+      "cids": [],
+      "text": "8/2450",
+      "L": 671,
+      "n_doc": 424,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 0.0,
+      "budget_tokens": 84,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    },
+    {
+      "id": "GIS/2018/page_110.pdf-2",
+      "cond": "tkvt@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": false,
+      "num": false,
+      "air": NaN,
+      "pred": 0.16326530612244897,
+      "gold": 0.24566,
+      "correct": false,
+      "cids": [],
+      "text": "400 / 2450",
+      "L": 1030,
+      "n_doc": 769,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 0.0,
+      "budget_tokens": 153,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    },
+    {
+      "id": "GIS/2018/page_110.pdf-2",
+      "cond": "snap@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": false,
+      "num": false,
+      "air": NaN,
+      "pred": 0.16326530612244897,
+      "gold": 0.24566,
+      "correct": false,
+      "cids": [],
+      "text": "400 / 2450",
+      "L": 1030,
+      "n_doc": 769,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 0.0,
+      "budget_tokens": 153,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    }
+  ],
+  "n": 4,
+  "alloc": [
+    {
+      "id": "INTC/2015/page_41.pdf-4",
+      "budget": 125,
+      "n_doc": 627,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 2,
+          "val": 2.0,
+          "ub": 2.0,
+          "tokens": 47
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 2,
+          "val": 3.155,
+          "ub": 3.155,
+          "tokens": 47
+        }
+      ]
+    },
+    {
+      "id": "CMCSA/2015/page_112.pdf-2",
+      "budget": 204,
+      "n_doc": 1020,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 16,
+          "val": 16.0,
+          "ub": 16.0,
+          "tokens": 162
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 16,
+          "val": 19.851,
+          "ub": 19.851,
+          "tokens": 162
+        }
+      ]
+    },
+    {
+      "id": "UAA/2016/page_42.pdf-2",
+      "budget": 84,
+      "n_doc": 424,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 6,
+          "val": 5.0,
+          "ub": 6.0,
+          "tokens": 67
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 6,
+          "val": 5.0,
+          "ub": 6.0,
+          "tokens": 67
+        }
+      ]
+    },
+    {
+      "id": "GIS/2018/page_110.pdf-2",
+      "budget": 153,
+      "n_doc": 769,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 4,
+          "val": 4.0,
+          "ub": 4.0,
+          "tokens": 58
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 4,
+          "val": 5.62,
+          "ub": 5.62,
+          "tokens": 58
+        }
+      ]
+    }
+  ]
+}

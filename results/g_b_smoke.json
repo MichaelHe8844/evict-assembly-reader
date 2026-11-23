@@ -1,0 +1,317 @@
+{
+  "summary": [
+    {
+      "cond": "auto_f@20",
+      "n": 6,
+      "em": 0.0,
+      "anr": 1.0,
+      "n_intact": 6,
+      "p_correct_intact": 0.0,
+      "n_frag": 0,
+      "p_correct_frag": NaN
+    }
+  ],
+  "records": [
+    {
+      "id": "V/2008/page_17.pdf-1",
+      "cond": "auto_f@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": null,
+      "gold": 127.4,
+      "correct": false,
+      "cids": [
+        "C1"
+      ],
+      "text": "Cells: C1, C3\nExpression: C1 - C3",
+      "L": 1145,
+      "n_doc": 782,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 156
+    },
+    {
+      "id": "PM/2017/page_38.pdf-1",
+      "cond": "auto_f@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 10815.0,
+      "gold": 688.0,
+      "correct": false,
+      "cids": [
+        "C1",
+        "C3"
+      ],
+      "text": "Cells: C1, C3\nExpression: C1 - C3",
+      "L": 1405,
+      "n_doc": 988,
+      "gold_in_kept": true,
+      "n_dup": 2,
+      "dgr": 1.0,
+      "budget_tokens": 197
+    },
+    {
+      "id": "PNC/2013/page_207.pdf-1",
+      "cond": "auto_f@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 9944.23076923077,
+      "gold": 30.44323,
+      "correct": false,
+      "cids": [
+        "C1",
+        "C3"
+      ],
+      "text": "Cells: C1, C3\nExpression: C1 / C3 * 100",
+      "L": 1375,
+      "n_doc": 821,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 164
+    },
+    {
+      "id": "CME/2017/page_97.pdf-5",
+      "cond": "auto_f@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 339234.2,
+      "gold": 995.0,
+      "correct": false,
+      "cids": [
+        "C1",
+        "C3"
+      ],
+      "text": "Cells: C1, C3\nExpression: C1 - C3",
+      "L": 1363,
+      "n_doc": 849,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 169
+    },
+    {
+      "id": "AMT/2005/page_105.pdf-2",
+      "cond": "auto_f@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": null,
+      "gold": 4575515.0,
+      "correct": false,
+      "cids": [
+        "C1"
+      ],
+      "text": "Cells: C1, C3\nExpression: C1 - C3",
+      "L": 1314,
+      "n_doc": 950,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 190
+    },
+    {
+      "id": "UNP/2008/page_77.pdf-1",
+      "cond": "auto_f@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": -0.4165341812400636,
+      "gold": 0.14336,
+      "correct": false,
+      "cids": [
+        "C1",
+        "C3"
+      ],
+      "text": "Cells: C1, C3\nExpression: (C1 - C3) / C3",
+      "L": 1128,
+      "n_doc": 683,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 136
+    }
+  ],
+  "n": 6,
+  "alloc": [
+    {
+      "id": "V/2008/page_17.pdf-1",
+      "budget": 156,
+      "n_doc": 782,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 2,
+          "val": 2.0,
+          "ub": 2.0,
+          "tokens": 18
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 2,
+          "val": 3.05,
+          "ub": 3.05,
+          "tokens": 18
+        }
+      ]
+    },
+    {
+      "id": "PM/2017/page_38.pdf-1",
+      "budget": 197,
+      "n_doc": 988,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 3,
+          "val": 3.0,
+          "ub": 3.0,
+          "tokens": 54
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 3,
+          "val": 4.32,
+          "ub": 4.32,
+          "tokens": 54
+        }
+      ]
+    },
+    {
+      "id": "PNC/2013/page_207.pdf-1",
+      "budget": 164,
+      "n_doc": 821,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 12,
+          "val": 11.0,
+          "ub": 12.0,
+          "tokens": 163
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 12,
+          "val": 14.643,
+          "ub": 15.943,
+          "tokens": 164
+        }
+      ]
+    },
+    {
+      "id": "CME/2017/page_97.pdf-5",
+      "budget": 169,
+      "n_doc": 849,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 6,
+          "val": 6.0,
+          "ub": 6.0,
+          "tokens": 88
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 6,
+          "val": 7.382,
+          "ub": 7.382,
+          "tokens": 88
+        }
+      ]
+    },
+    {
+      "id": "AMT/2005/page_105.pdf-2",
+      "budget": 190,
+      "n_doc": 950,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 2,
+          "val": 2.0,
+          "ub": 2.0,
+          "tokens": 49
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 2,
+          "val": 2.6,
+          "ub": 2.6,
+          "tokens": 49
+        }
+      ]
+    },
+    {
+      "id": "UNP/2008/page_77.pdf-1",
+      "budget": 136,
+      "n_doc": 683,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 4,
+          "val": 4.0,
+          "ub": 4.0,
+          "tokens": 43
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 4,
+          "val": 5.99,
+          "ub": 5.99,
+          "tokens": 43
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,503 @@
+{
+  "summary": [
+    {
+      "cond": "full",
+      "n": 6,
+      "em": 0.3333333333333333,
+      "anr": 1.0,
+      "n_intact": 6,
+      "p_correct_intact": 0.3333333333333333,
+      "n_frag": 0,
+      "p_correct_frag": NaN
+    },
+    {
+      "cond": "auto_f@20",
+      "n": 6,
+      "em": 0.3333333333333333,
+      "anr": 1.0,
+      "n_intact": 6,
+      "p_correct_intact": 0.3333333333333333,
+      "n_frag": 0,
+      "p_correct_frag": NaN
+    }
+  ],
+  "records": [
+    {
+      "id": "V/2008/page_17.pdf-1",
+      "cond": "full",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 98.45440494590417,
+      "gold": 127.4,
+      "correct": false,
+      "cids": [
+        "C1",
+        "C2"
+      ],
+      "text": "C1 / C2 * 100",
+      "L": 1129,
+      "n_doc": 782,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 782
+    },
+    {
+      "id": "V/2008/page_17.pdf-1",
+      "cond": "auto_f@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 98.45440494590417,
+      "gold": 127.4,
+      "correct": false,
+      "cids": [
+        "C1",
+        "C2"
+      ],
+      "text": "C1 / C2 * 100",
+      "L": 1129,
+      "n_doc": 782,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 156
+    },
+    {
+      "id": "PM/2017/page_38.pdf-1",
+      "cond": "full",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 688.0,
+      "gold": 688.0,
+      "correct": true,
+      "cids": [
+        "C1",
+        "C2"
+      ],
+      "text": "C1 - C2",
+      "L": 1381,
+      "n_doc": 988,
+      "gold_in_kept": true,
+      "n_dup": 2,
+      "dgr": 1.0,
+      "budget_tokens": 988
+    },
+    {
+      "id": "PM/2017/page_38.pdf-1",
+      "cond": "auto_f@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 688.0,
+      "gold": 688.0,
+      "correct": true,
+      "cids": [
+        "C1",
+        "C2"
+      ],
+      "text": "C1 - C2",
+      "L": 1381,
+      "n_doc": 988,
+      "gold_in_kept": true,
+      "n_dup": 2,
+      "dgr": 1.0,
+      "budget_tokens": 197
+    },
+    {
+      "id": "PNC/2013/page_207.pdf-1",
+      "cond": "full",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 3044.322960470984,
+      "gold": 30.44323,
+      "correct": true,
+      "cids": [
+        "C1",
+        "C2"
+      ],
+      "text": "(C1 / C2) * 100",
+      "L": 1325,
+      "n_doc": 821,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 821
+    },
+    {
+      "id": "PNC/2013/page_207.pdf-1",
+      "cond": "auto_f@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 3044.322960470984,
+      "gold": 30.44323,
+      "correct": true,
+      "cids": [
+        "C1",
+        "C2"
+      ],
+      "text": "(C1 / C2) * 100",
+      "L": 1325,
+      "n_doc": 821,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 164
+    },
+    {
+      "id": "CME/2017/page_97.pdf-5",
+      "cond": "full",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 339234.4,
+      "gold": 995.0,
+      "correct": false,
+      "cids": [
+        "C1",
+        "C2"
+      ],
+      "text": "C1 - C2",
+      "L": 1322,
+      "n_doc": 849,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 849
+    },
+    {
+      "id": "CME/2017/page_97.pdf-5",
+      "cond": "auto_f@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 339234.4,
+      "gold": 995.0,
+      "correct": false,
+      "cids": [
+        "C1",
+        "C2"
+      ],
+      "text": "C1 - C2",
+      "L": 1322,
+      "n_doc": 849,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 169
+    },
+    {
+      "id": "LMT/2013/page_74.pdf-4",
+      "cond": "full",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": -0.5785627283800175,
+      "gold": -1.9,
+      "correct": false,
+      "cids": [
+        "C1",
+        "C2"
+      ],
+      "text": "(C1 - C2) / C2 * 100",
+      "L": 1497,
+      "n_doc": 1046,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 1046
+    },
+    {
+      "id": "LMT/2013/page_74.pdf-4",
+      "cond": "auto_f@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": -0.5785627283800175,
+      "gold": -1.9,
+      "correct": false,
+      "cids": [
+        "C1",
+        "C2"
+      ],
+      "text": "(C1 - C2) / C2 * 100",
+      "L": 1497,
+      "n_doc": 1046,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 209
+    },
+    {
+      "id": "AMT/2005/page_105.pdf-2",
+      "cond": "full",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 2.1575,
+      "gold": 4575515.0,
+      "correct": false,
+      "cids": [
+        "C1",
+        "C2"
+      ],
+      "text": "C1 + C2",
+      "L": 1290,
+      "n_doc": 950,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 950
+    },
+    {
+      "id": "AMT/2005/page_105.pdf-2",
+      "cond": "auto_f@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 2.1575,
+      "gold": 4575515.0,
+      "correct": false,
+      "cids": [
+        "C1",
+        "C2"
+      ],
+      "text": "C1 + C2",
+      "L": 1290,
+      "n_doc": 950,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 190
+    }
+  ],
+  "n": 6,
+  "alloc": [
+    {
+      "id": "V/2008/page_17.pdf-1",
+      "budget": 156,
+      "n_doc": 782,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 2,
+          "val": 2.0,
+          "ub": 2.0,
+          "tokens": 18
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 2,
+          "val": 3.05,
+          "ub": 3.05,
+          "tokens": 18
+        }
+      ]
+    },
+    {
+      "id": "PM/2017/page_38.pdf-1",
+      "budget": 197,
+      "n_doc": 988,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 3,
+          "val": 3.0,
+          "ub": 3.0,
+          "tokens": 54
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 3,
+          "val": 4.32,
+          "ub": 4.32,
+          "tokens": 54
+        }
+      ]
+    },
+    {
+      "id": "PNC/2013/page_207.pdf-1",
+      "budget": 164,
+      "n_doc": 821,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 12,
+          "val": 11.0,
+          "ub": 12.0,
+          "tokens": 163
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 12,
+          "val": 14.643,
+          "ub": 15.943,
+          "tokens": 164
+        }
+      ]
+    },
+    {
+      "id": "CME/2017/page_97.pdf-5",
+      "budget": 169,
+      "n_doc": 849,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 6,
+          "val": 6.0,
+          "ub": 6.0,
+          "tokens": 88
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 6,
+          "val": 7.382,
+          "ub": 7.382,
+          "tokens": 88
+        }
+      ]
+    },
+    {
+      "id": "LMT/2013/page_74.pdf-4",
+      "budget": 209,
+      "n_doc": 1046,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 6,
+          "val": 6.0,
+          "ub": 6.0,
+          "tokens": 92
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 6,
+          "val": 8.511,
+          "ub": 8.511,
+          "tokens": 92
+        }
+      ]
+    },
+    {
+      "id": "AMT/2005/page_105.pdf-2",
+      "budget": 190,
+      "n_doc": 950,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 2,
+          "val": 2.0,
+          "ub": 2.0,
+          "tokens": 49
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 2,
+          "val": 2.6,
+          "ub": 2.6,
+          "tokens": 49
+        }
+      ]
+    }
+  ]
+}

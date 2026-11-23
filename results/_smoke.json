@@ -1,0 +1,146 @@
+{
+ "summary": {
+  "20": {
+   "base": {
+    "n": 8,
+    "em": 0.75
+   },
+   "oracle": {
+    "n": 8,
+    "em": 0.875
+   }
+  }
+ },
+ "detail": {
+  "20": [
+   {
+    "id": "V/2008/page_17.pdf-1",
+    "cond": "base",
+    "ok": false,
+    "val": 6.10377358490566,
+    "gold": 127.4,
+    "ctx_tokens": 67
+   },
+   {
+    "id": "PM/2017/page_38.pdf-1",
+    "cond": "base",
+    "ok": true,
+    "val": 688.0,
+    "gold": 688.0,
+    "ctx_tokens": 56
+   },
+   {
+    "id": "PNC/2013/page_207.pdf-1",
+    "cond": "base",
+    "ok": true,
+    "val": 30.443229604709842,
+    "gold": 30.44323,
+    "ctx_tokens": 159
+   },
+   {
+    "id": "CME/2017/page_97.pdf-5",
+    "cond": "base",
+    "ok": false,
+    "val": 0.0,
+    "gold": 995.0,
+    "ctx_tokens": 94
+   },
+   {
+    "id": "LMT/2013/page_74.pdf-4",
+    "cond": "base",
+    "ok": true,
+    "val": -1.8999999999999773,
+    "gold": -1.9,
+    "ctx_tokens": 101
+   },
+   {
+    "id": "AMT/2005/page_105.pdf-2",
+    "cond": "base",
+    "ok": true,
+    "val": 4575515.0,
+    "gold": 4575515.0,
+    "ctx_tokens": 48
+   },
+   {
+    "id": "UNP/2008/page_77.pdf-1",
+    "cond": "base",
+    "ok": true,
+    "val": 0.143359375,
+    "gold": 0.14336,
+    "ctx_tokens": 43
+   },
+   {
+    "id": "AON/2010/page_28.pdf-1",
+    "cond": "base",
+    "ok": true,
+    "val": 778000.0,
+    "gold": 778000.0,
+    "ctx_tokens": 174
+   },
+   {
+    "id": "V/2008/page_17.pdf-1",
+    "cond": "oracle",
+    "ok": false,
+    "val": 6.10377358490566,
+    "gold": 127.4,
+    "ctx_tokens": 67
+   },
+   {
+    "id": "PM/2017/page_38.pdf-1",
+    "cond": "oracle",
+    "ok": true,
+    "val": 688.0,
+    "gold": 688.0,
+    "ctx_tokens": 56
+   },
+   {
+    "id": "PNC/2013/page_207.pdf-1",
+    "cond": "oracle",
+    "ok": true,
+    "val": 30.443229604709842,
+    "gold": 30.44323,
+    "ctx_tokens": 163
+   },
+   {
+    "id": "CME/2017/page_97.pdf-5",
+    "cond": "oracle",
+    "ok": true,
+    "val": 995.0,
+    "gold": 995.0,
+    "ctx_tokens": 111
+   },
+   {
+    "id": "LMT/2013/page_74.pdf-4",
+    "cond": "oracle",
+    "ok": true,
+    "val": -1.8999999999999773,
+    "gold": -1.9,
+    "ctx_tokens": 101
+   },
+   {
+    "id": "AMT/2005/page_105.pdf-2",
+    "cond": "oracle",
+    "ok": true,
+    "val": 4575515.0,
+    "gold": 4575515.0,
+    "ctx_tokens": 48
+   },
+   {
+    "id": "UNP/2008/page_77.pdf-1",
+    "cond": "oracle",
+    "ok": true,
+    "val": 0.143359375,
+    "gold": 0.14336,
+    "ctx_tokens": 43
+   },
+   {
+    "id": "AON/2010/page_28.pdf-1",
+    "cond": "oracle",
+    "ok": true,
+    "val": 778000.0,
+    "gold": 778000.0,
+    "ctx_tokens": 171
+   }
+  ]
+ }
+}

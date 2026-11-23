@@ -1,0 +1,849 @@
+{
+ "summary": {
+  "3": {
+   "n": 34,
+   "exec": 0.0,
+   "em": 0.0,
+   "med_ctx": 25,
+   "sec": 65.1
+  },
+  "5": {
+   "n": 34,
+   "exec": 0.0,
+   "em": 0.0,
+   "med_ctx": 38,
+   "sec": 69.0
+  },
+  "10": {
+   "n": 34,
+   "exec": 0.0,
+   "em": 0.0,
+   "med_ctx": 60,
+   "sec": 64.0
+  }
+ },
+ "detail": {
+  "3": [
+   {
+    "id": "GPN/2010/page_87.pdf-3",
+    "gen": "百分比",
+    "val": null,
+    "gold": 0.34807,
+    "ok": false,
+    "ctx_tokens": 27
+   },
+   {
+    "id": "AMT/2012/page_50.pdf-3",
+    "gen": "购买的股份总数（1）2012年10月 27524",
+    "val": null,
+    "gold": 6.48512,
+    "ok": false,
+    "ctx_tokens": 22
+   },
+   {
+    "id": "MRO/2004/page_46.pdf-1",
+    "gen": "(b) / (d) * 100%",
+    "val": null,
+    "gold": 0.93571,
+    "ok": false,
+    "ctx_tokens": 29
+   },
+   {
+    "id": "AAPL/2006/page_131.pdf-2",
+    "gen": "使用给定的背景信息来回",
+    "val": null,
+    "gold": 364400.0,
+    "ok": false,
+    "ctx_tokens": 27
+   },
+   {
+    "id": "AES/2002/page_128.pdf-2",
+    "gen": "从2003年到2003年，持续经营的租赁费用（百万）减少了多少？",
+    "val": null,
+    "gold": 1.0,
+    "ok": false,
+    "ctx_tokens": 15
+   },
+   {
+    "id": "ETR/2008/page_298.pdf-3",
+    "gen": "2007 2006 2005 ( 千万 ) ( 千万 ) ( 千万 )",
+    "val": null,
+    "gold": 43920.0,
+    "ok": false,
+    "ctx_tokens": 26
+   },
+   {
+    "id": "AMT/2007/page_29.pdf-4",
+    "gen": "使用 Boston 的财产部分百分比为 0.5。",
+    "val": null,
+    "gold": 0.3546,
+    "ok": false,
+    "ctx_tokens": 19
+   },
+   {
+    "id": "GPN/2010/page_87.pdf-1",
+    "gen": "在2010年，税后股权补偿成本是多少？",
+    "val": null,
+    "gold": 11.8,
+    "ok": false,
+    "ctx_tokens": 24
+   },
+   {
+    "id": "CDW/2015/page_93.pdf-4",
+    "gen": "基本加稀释加权平均股份 年结 2015 年结 2014 年份的潜在普通股全部包括在内，以及年结",
+    "val": null,
+    "gold": 172.2,
+    "ok": false,
+    "ctx_tokens": 29
+   },
+   {
+    "id": "SNA/2013/page_84.pdf-1",
+    "gen": "在2013年，坏账准备金占什么比例",
+    "val": null,
+    "gold": 0.02726,
+    "ok": false,
+    "ctx_tokens": 22
+   },
+   {
+    "id": "CDW/2015/page_93.pdf-3",
+    "gen": "基本加权平均股份数",
+    "val": null,
+    "gold": 172.2,
+    "ok": false,
+    "ctx_tokens": 29
+   },
+   {
+    "id": "HWM/2018/page_96.pdf-1",
+    "gen": "平均期权行权价",
+    "val": null,
+    "gold": 241.11,
+    "ok": false,
+    "ctx_tokens": 6
+   },
+   {
+    "id": "MO/2014/page_62.pdf-2",
+    "gen": "2014年12月31日结束的年度",
+    "val": null,
+    "gold": 0.01696,
+    "ok": false,
+    "ctx_tokens": 14
+   },
+   {
+    "id": "AMT/2010/page_99.pdf-2",
+    "gen": "2010年的公司2019年长期融资安排的未偿付金额百分比是多少？",
+    "val": null,
+    "gold": 0.0134,
+    "ok": false,
+    "ctx_tokens": 27
+   },
+   {
+    "id": "AAPL/2006/page_100.pdf-1",
+    "gen": "2006年的税负是多少？",
+    "val": null,
+    "gold": 240.41,
+    "ok": false,
+    "ctx_tokens": 24
+   },
+   {
+    "id": "RSG/2018/page_135.pdf-1",
+    "gen": "2018年12月31日的目标资产配置中，债务与权益比是多少？",
+    "val": null,
+    "gold": 4.55556,
+    "ok": false,
+    "ctx_tokens": 20
+   },
+   {
+    "id": "RSG/2010/page_98.pdf-2",
+    "gen": "2010年12月31日的受限现金和受限市场证券与坏账准备金的比例是多少",
+    "val": null,
+    "gold": 3.39489,
+    "ok": false,
+    "ctx_tokens": 21
+   },
+   {
+    "id": "UNP/2010/page_21.pdf-2",
+    "gen": "percentage of total number of shares attested to UPC by employees to pay stock option exercise prices",
+    "val": null,
+    "gold": 0.18383,
+    "ok": false,
+    "ctx_tokens": 15
+   },
+   {
+    "id": "RSG/2015/page_98.pdf-2",
+    "gen": "在2015年12月，受限现金和市场证券与坏账准备金的比率是多少？",
+    "val": null,
+    "gold": 2.14775,
+    "ok": false,
+    "ctx_tokens": 21
+   },
+   {
+    "id": "FBHS/2017/page_22.pdf-2",
+    "gen": "国际市场的销售额是多少（以百万为单位）",
+    "val": null,
+    "gold": 792.495,
+    "ok": false,
+    "ctx_tokens": 26
+   },
+   {
+    "id": "BLL/2010/page_37.pdf-4",
+    "gen": "在排除应收账款的证券化费用后，2010年所有操作的现金流量提供的运营活动将会是多少（以百万为单位）？",
+    "val": null,
+    "gold": 765.2,
+    "ok": false,
+    "ctx_tokens": 22
+   },
+   {
+    "id": "AAPL/2006/page_100.pdf-2",
+    "gen": "重新表述 ( 1 )",
+    "val": null,
+    "gold": 129.6,
+    "ok": false,
+    "ctx_tokens": 23
+   },
+   {
+    "id": "UNP/2009/page_42.pdf-2",
+    "gen": "总成本（百万）",
+    "val": null,
+    "gold": 2061.0,
+    "ok": false,
+    "ctx_tokens": 22
+   },
+   {
+    "id": "AMT/2014/page_149.pdf-2",
+    "gen": "2014 偿债基金考虑 -4934 (4934) 没有外币转换调整，以百万为单位是多少？",
+    "val": null,
+    "gold": 33458.0,
+    "ok": false,
+    "ctx_tokens": 25
+   },
+   {
+    "id": "AAPL/2006/page_131.pdf-1",
+    "gen": "如果张先生的RSU到期，他总共会有多少股？",
+    "val": null,
+    "gold": 599768.0,
+    "ok": false,
+    "ctx_tokens": 26
+   },
+   {
+    "id": "IPG/2008/page_72.pdf-4",
+    "gen": "unrecognized tax benefits",
+    "val": null,
+    "gold": 0.88575,
+    "ok": false,
+    "ctx_tokens": 26
+   },
+   {
+    "id": "SNA/2013/page_84.pdf-3",
+    "gen": "在2013年，可疑的应收账款占应收账款总额的比例是多少？",
+    "val": null,
+    "gold": 0.02726,
+    "ok": false,
+    "ctx_tokens": 23
+   },
+   {
+    "id": "PNC/2012/page_174.pdf-1",
+    "gen": "所有资产的特定储备在2012年12月31日的具体tdr投资组合百分比是多少？",
+    "val": null,
+    "gold": 0.20532,
+    "ok": false,
+    "ctx_tokens": 30
+   },
+   {
+    "id": "RSG/2016/page_135.pdf-1",
+    "gen": "基于2016年的实际资产配置，债务与股权比是多少",
+    "val": null,
+    "gold": 2.57143,
+    "ok": false,
+    "ctx_tokens": 17
+   },
+   {
+    "id": "JPM/2005/page_80.pdf-2",
+    "gen": "2005年和2004年的利率提高2%（2%）对收益的影响是多少（以百万为单位）？",
+    "val": null,
+    "gold": -292.0,
+    "ok": false,
+    "ctx_tokens": 28
+   },
+   {
+    "id": "UNP/2011/page_24.pdf-2",
+    "gen": "operating cash flow distributed to shareholders",
+    "val": null,
+    "gold": 0.14252,
+    "ok": false,
+    "ctx_tokens": 28
+   },
+   {
+    "id": "ILMN/2008/page_82.pdf-2",
+    "gen": "exercise price 238510 864040 809246 1125734",
+    "val": null,
+    "gold": 12281757.94,
+    "ok": false,
+    "ctx_tokens": 31
+   },
+   {
+    "id": "HOLX/2009/page_151.pdf-3",
+    "gen": "基于授予的公平价值，公司因一些授予的股票被取消而损失了多少钱。",
+    "val": null,
+    "gold": 3516.0,
+    "ok": false,
+    "ctx_tokens": 25
+   },
+   {
+    "id": "TFX/2015/page_89.pdf-3",
+    "gen": "2015年总成本",
+    "val": null,
+    "gold": 7989.0,
+    "ok": false,
+    "ctx_tokens": 28
+   }
+  ],
+  "5": [
+   {
+    "id": "GPN/2010/page_87.pdf-3",
+    "gen": "百分比",
+    "val": null,
+    "gold": 0.34807,
+    "ok": false,
+    "ctx_tokens": 44
+   },
+   {
+    "id": "AMT/2012/page_50.pdf-3",
+    "gen": "购买的比率（1）2012年10月/2012年11月",
+    "val": null,
+    "gold": 6.48512,
+    "ok": false,
+    "ctx_tokens": 34
+   },
+   {
+    "id": "MRO/2004/page_46.pdf-1",
+    "gen": "(b) / (d) * 100%",
+    "val": null,
+    "gold": 0.93571,
+    "ok": false,
+    "ctx_tokens": 31
+   },
+   {
+    "id": "AAPL/2006/page_131.pdf-2",
+    "gen": "在計算間接持有的股份的情況下，arthur d . levinson 共持有多少股？",
+    "val": null,
+    "gold": 364400.0,
+    "ok": false,
+    "ctx_tokens": 48
+   },
+   {
+    "id": "AES/2002/page_128.pdf-2",
+    "gen": "在持续经营的运营租赁中，2003年的租金费用（百万）与2003年相比减少了什么？",
+    "val": null,
+    "gold": 1.0,
+    "ok": false,
+    "ctx_tokens": 35
+   },
+   {
+    "id": "ETR/2008/page_298.pdf-3",
+    "gen": "2007年到2008年的现金流量如何受钱池余额的影响，以千为单位？",
+    "val": null,
+    "gold": 43920.0,
+    "ok": false,
+    "ctx_tokens": 30
+   },
+   {
+    "id": "AMT/2007/page_29.pdf-4",
+    "gen": "这个",
+    "val": null,
+    "gold": 0.3546,
+    "ok": false,
+    "ctx_tokens": 29
+   },
+   {
+    "id": "GPN/2010/page_87.pdf-1",
+    "gen": "税后授予基于股票的补偿成本",
+    "val": null,
+    "gold": 11.8,
+    "ok": false,
+    "ctx_tokens": 36
+   },
+   {
+    "id": "CDW/2015/page_93.pdf-4",
+    "gen": "潜在普通股全部被包括在内，以及已发行的稀释加权平均普通股数量，对于2015年12月31日结束的年度，总共有",
+    "val": null,
+    "gold": 172.2,
+    "ok": false,
+    "ctx_tokens": 51
+   },
+   {
+    "id": "SNA/2013/page_84.pdf-1",
+    "gen": "在2013年，坏账准备占总应收帐款的比例是多少",
+    "val": null,
+    "gold": 0.02726,
+    "ok": false,
+    "ctx_tokens": 38
+   },
+   {
+    "id": "CDW/2015/page_93.pdf-3",
+    "gen": "如果在2015年12月31日未排除反稀释的普通股，则总稀释加权平均普通股数量是多少，单位为百万？",
+    "val": null,
+    "gold": 172.2,
+    "ok": false,
+    "ctx_tokens": 51
+   },
+   {
+    "id": "HWM/2018/page_96.pdf-1",
+    "gen": "平均行权价的期权的平均价值",
+    "val": null,
+    "gold": 241.11,
+    "ok": false,
+    "ctx_tokens": 17
+   },
+   {
+    "id": "MO/2014/page_62.pdf-2",
+    "gen": "2014年12月31日结束的年度的授予股票和递延股票在2014年兑现所占阿斯特里亚集团2014年",
+    "val": null,
+    "gold": 0.01696,
+    "ok": false,
+    "ctx_tokens": 28
+   },
+   {
+    "id": "AMT/2010/page_99.pdf-2",
+    "gen": "2010年的公司2019年长期融资安排的未偿付金额百分比是多少在2010年？",
+    "val": null,
+    "gold": 0.0134,
+    "ok": false,
+    "ctx_tokens": 47
+   },
+   {
+    "id": "AAPL/2006/page_100.pdf-1",
+    "gen": "2006年的税务费用是多少？",
+    "val": null,
+    "gold": 240.41,
+    "ok": false,
+    "ctx_tokens": 35
+   },
+   {
+    "id": "RSG/2018/page_135.pdf-1",
+    "gen": "基于2018年12月31日的目标，债务与权益比是多少",
+    "val": null,
+    "gold": 4.55556,
+    "ok": false,
+    "ctx_tokens": 32
+   },
+   {
+    "id": "RSG/2010/page_98.pdf-2",
+    "gen": "2010年12月31日，受限现金和受限市场证券与坏账准备金的比值是多少",
+    "val": null,
+    "gold": 3.39489,
+    "ok": false,
+    "ctx_tokens": 38
+   },
+   {
+    "id": "UNP/2010/page_21.pdf-2",
+    "gen": "在2010年12月31日结束的季度中，员工通过股票期权支付行权价格的股份总数占总股份的比例是多少百分比",
+    "val": null,
+    "gold": 0.18383,
+    "ok": false,
+    "ctx_tokens": 31
+   },
+   {
+    "id": "RSG/2015/page_98.pdf-2",
+    "gen": "在2015年12月，受限现金和市场证券与坏账准备金的比率是多少？",
+    "val": null,
+    "gold": 2.14775,
+    "ok": false,
+    "ctx_tokens": 38
+   },
+   {
+    "id": "FBHS/2017/page_22.pdf-2",
+    "gen": "国际市场的销售额是多少百万美元？",
+    "val": null,
+    "gold": 792.495,
+    "ok": false,
+    "ctx_tokens": 50
+   },
+   {
+    "id": "BLL/2010/page_37.pdf-4",
+    "gen": "不考虑应收账款的证券化费用，2010年所有运营活动产生的现金流量会是多少（以百万为单位）？",
+    "val": null,
+    "gold": 765.2,
+    "ok": false,
+    "ctx_tokens": 43
+   },
+   {
+    "id": "AAPL/2006/page_100.pdf-2",
+    "gen": "2005年稅費支出為？",
+    "val": null,
+    "gold": 129.6,
+    "ok": false,
+    "ctx_tokens": 34
+   },
+   {
+    "id": "UNP/2009/page_42.pdf-2",
+    "gen": "总成本（百万）",
+    "val": null,
+    "gold": 2061.0,
+    "ok": false,
+    "ctx_tokens": 22
+   },
+   {
+    "id": "AMT/2014/page_149.pdf-2",
+    "gen": "2014 剩余的 合并 财务报表中的 未 确认 买价 -4934 ( 4934 ) -",
+    "val": null,
+    "gold": 33458.0,
+    "ok": false,
+    "ctx_tokens": 37
+   },
+   {
+    "id": "AAPL/2006/page_131.pdf-1",
+    "gen": "如果张先生的RSU到期，他总共会有多少股？",
+    "val": null,
+    "gold": 599768.0,
+    "ok": false,
+    "ctx_tokens": 44
+   },
+   {
+    "id": "IPG/2008/page_72.pdf-4",
+    "gen": "unrecognized tax benefits",
+    "val": null,
+    "gold": 0.88575,
+    "ok": false,
+    "ctx_tokens": 47
+   },
+   {
+    "id": "SNA/2013/page_84.pdf-3",
+    "gen": "2013年贸易和其他应收账款中有多少百分比被认为是可疑的应收账款",
+    "val": null,
+    "gold": 0.02726,
+    "ok": false,
+    "ctx_tokens": 39
+   },
+   {
+    "id": "PNC/2012/page_174.pdf-1",
+    "gen": "所有截至2012年12月31日的特定储备占tdr组合的百分比是多少？",
+    "val": null,
+    "gold": 0.20532,
+    "ok": false,
+    "ctx_tokens": 52
+   },
+   {
+    "id": "RSG/2016/page_135.pdf-1",
+    "gen": "基于2016年的实际资产配置，债务与股权比是多少",
+    "val": null,
+    "gold": 2.57143,
+    "ok": false,
+    "ctx_tokens": 25
+   },
+   {
+    "id": "JPM/2005/page_80.pdf-2",
+    "gen": "对于利率增加2%（2%），2005年和2004年的总收益影响是多少（以百万为单位）？",
+    "val": null,
+    "gold": -292.0,
+    "ok": false,
+    "ctx_tokens": 46
+   },
+   {
+    "id": "UNP/2011/page_24.pdf-2",
+    "gen": "operating cash flow 分配给股东的比例",
+    "val": null,
+    "gold": 0.14252,
+    "ok": false,
+    "ctx_tokens": 52
+   },
+   {
+    "id": "ILMN/2008/page_82.pdf-2",
+    "gen": "exercise price 238510 864040 809246 1125734 $ 10.91 1",
+    "val": null,
+    "gold": 12281757.94,
+    "ok": false,
+    "ctx_tokens": 51
+   },
+   {
+    "id": "HOLX/2009/page_151.pdf-3",
+    "gen": "基于授予的公平价值，公司因一些授予的股票被取消而损失了多少钱。",
+    "val": null,
+    "gold": 3516.0,
+    "ok": false,
+    "ctx_tokens": 40
+   },
+   {
+    "id": "TFX/2015/page_89.pdf-3",
+    "gen": "总重组费用",
+    "val": null,
+    "gold": 7989.0,
+    "ok": false,
+    "ctx_tokens": 45
+   }
+  ],
+  "10": [
+   {
+    "id": "GPN/2010/page_87.pdf-3",
+    "gen": "百分比",
+    "val": null,
+    "gold": 0.34807,
+    "ok": false,
+    "ctx_tokens": 72
+   },
+   {
+    "id": "AMT/2012/page_50.pdf-3",
+    "gen": "ratio of the purchase in december 2012 to the purchase in january 2013",
+    "val": null,
+    "gold": 6.48512,
+    "ok": false,
+    "ctx_tokens": 48
+   },
+   {
+    "id": "MRO/2004/page_46.pdf-1",
+    "gen": "(b) / (d) * 100%",
+    "val": null,
+    "gold": 0.93571,
+    "ok": false,
+    "ctx_tokens": 31
+   },
+   {
+    "id": "AAPL/2006/page_131.pdf-2",
+    "gen": "间接持股计入的话，Arthur D. Levinson 总共拥有多少股？",
+    "val": null,
+    "gold": 364400.0,
+    "ok": false,
+    "ctx_tokens": 56
+   },
+   {
+    "id": "AES/2002/page_128.pdf-2",
+    "gen": "在持续经营的运营租赁中，2003年的租金费用（百万）与2003年相比减少了什么？",
+    "val": null,
+    "gold": 1.0,
+    "ok": false,
+    "ctx_tokens": 35
+   },
+   {
+    "id": "ETR/2008/page_298.pdf-3",
+    "gen": "2007年到2008年的现金流量如何受钱池余额的影响，以千为单位？",
+    "val": null,
+    "gold": 43920.0,
+    "ok": false,
+    "ctx_tokens": 30
+   },
+   {
+    "id": "AMT/2007/page_29.pdf-4",
+    "gen": "这个",
+    "val": null,
+    "gold": 0.3546,
+    "ok": false,
+    "ctx_tokens": 39
+   },
+   {
+    "id": "GPN/2010/page_87.pdf-1",
+    "gen": "税后授予基于股票的补偿成本",
+    "val": null,
+    "gold": 11.8,
+    "ok": false,
+    "ctx_tokens": 36
+   },
+   {
+    "id": "CDW/2015/page_93.pdf-4",
+    "gen": "潜在普通股加上稀释每股平均股数后，2015年12月31日的总稀释每股平均股数是多少？",
+    "val": null,
+    "gold": 172.2,
+    "ok": false,
+    "ctx_tokens": 90
+   },
+   {
+    "id": "SNA/2013/page_84.pdf-1",
+    "gen": "在2013年，坏账准备金占总额的百分比是多少？",
+    "val": null,
+    "gold": 0.02726,
+    "ok": false,
+    "ctx_tokens": 64
+   },
+   {
+    "id": "CDW/2015/page_93.pdf-3",
+    "gen": "如果在2015年12月31日排除反稀释性普通股，则总稀释加权平均普通股数量是多少，单位为百万？",
+    "val": null,
+    "gold": 172.2,
+    "ok": false,
+    "ctx_tokens": 90
+   },
+   {
+    "id": "HWM/2018/page_96.pdf-1",
+    "gen": "平均行权价的期权的总价值，以百万美元为单位，2018年的估计是多少？",
+    "val": null,
+    "gold": 241.11,
+    "ok": false,
+    "ctx_tokens": 35
+   },
+   {
+    "id": "MO/2014/page_62.pdf-2",
+    "gen": "2014年授予的受限股票和延期股票占2014年归属于奥利拉集团公司的净利润的百分比是多少？",
+    "val": null,
+    "gold": 0.01696,
+    "ok": false,
+    "ctx_tokens": 60
+   },
+   {
+    "id": "AMT/2010/page_99.pdf-2",
+    "gen": "2010年公司的长期融资安排的未偿付金额百分比是多少？",
+    "val": null,
+    "gold": 0.0134,
+    "ok": false,
+    "ctx_tokens": 101
+   },
+   {
+    "id": "AAPL/2006/page_100.pdf-1",
+    "gen": "2006年的税务费用是多少？",
+    "val": null,
+    "gold": 240.41,
+    "ok": false,
+    "ctx_tokens": 74
+   },
+   {
+    "id": "RSG/2018/page_135.pdf-1",
+    "gen": "目标债务/目标权益",
+    "val": null,
+    "gold": 4.55556,
+    "ok": false,
+    "ctx_tokens": 70
+   },
+   {
+    "id": "RSG/2010/page_98.pdf-2",
+    "gen": "2010年12月31日，受限现金和受限市场证券与坏账准备金的比率是多少？",
+    "val": null,
+    "gold": 3.39489,
+    "ok": false,
+    "ctx_tokens": 50
+   },
+   {
+    "id": "UNP/2010/page_21.pdf-2",
+    "gen": "在2010年12月31日结束的季度中，员工通过股票期权行使价格所占的总发行股份数的比例是多少？",
+    "val": null,
+    "gold": 0.18383,
+    "ok": false,
+    "ctx_tokens": 61
+   },
+   {
+    "id": "RSG/2015/page_98.pdf-2",
+    "gen": "在2015年12月，受限现金和市场证券与坏账准备金的比率是多少？",
+    "val": null,
+    "gold": 2.14775,
+    "ok": false,
+    "ctx_tokens": 50
+   },
+   {
+    "id": "FBHS/2017/page_22.pdf-2",
+    "gen": "国际市场的销售额是多少百万美元？",
+    "val": null,
+    "gold": 792.495,
+    "ok": false,
+    "ctx_tokens": 50
+   },
+   {
+    "id": "BLL/2010/page_37.pdf-4",
+    "gen": "在不考虑应收账款的证券化费用的情况下，所有运营活动的现金流量在2010年会是多少（以百万为单位）？",
+    "val": null,
+    "gold": 765.2,
+    "ok": false,
+    "ctx_tokens": 92
+   },
+   {
+    "id": "AAPL/2006/page_100.pdf-2",
+    "gen": "2005年的税额支出为：",
+    "val": null,
+    "gold": 129.6,
+    "ok": false,
+    "ctx_tokens": 69
+   },
+   {
+    "id": "UNP/2009/page_42.pdf-2",
+    "gen": "总成本（百万）",
+    "val": null,
+    "gold": 2061.0,
+    "ok": false,
+    "ctx_tokens": 22
+   },
+   {
+    "id": "AMT/2014/page_149.pdf-2",
+    "gen": "2014年的 contingent consideration 会是多少，不考虑外币折算调整，单位是百万？",
+    "val": null,
+    "gold": 33458.0,
+    "ok": false,
+    "ctx_tokens": 75
+   },
+   {
+    "id": "AAPL/2006/page_131.pdf-1",
+    "gen": "如果张先生的RSU在行权，他总共会有多少股？",
+    "val": null,
+    "gold": 599768.0,
+    "ok": false,
+    "ctx_tokens": 96
+   },
+   {
+    "id": "IPG/2008/page_72.pdf-4",
+    "gen": "(Ending Balance - Beginning Balance) / Ending Balance * 100%",
+    "val": null,
+    "gold": 0.88575,
+    "ok": false,
+    "ctx_tokens": 94
+   },
+   {
+    "id": "SNA/2013/page_84.pdf-3",
+    "gen": "(坏账准备 / 贸易和其他应收账款) * 100%",
+    "val": null,
+    "gold": 0.02726,
+    "ok": false,
+    "ctx_tokens": 53
+   },
+   {
+    "id": "PNC/2012/page_174.pdf-1",
+    "gen": "在2012年12月31日的总资产中，特定储备占tdr组合的百分比是多少？",
+    "val": null,
+    "gold": 0.20532,
+    "ok": false,
+    "ctx_tokens": 91
+   },
+   {
+    "id": "RSG/2016/page_135.pdf-1",
+    "gen": "基于2016年的实际资产配置，债务与股权比是多少",
+    "val": null,
+    "gold": 2.57143,
+    "ok": false,
+    "ctx_tokens": 60
+   },
+   {
+    "id": "JPM/2005/page_80.pdf-2",
+    "gen": "对于利率增加2%（2%），2005和2004年的总收益影响（以百万为单位）是多少？",
+    "val": null,
+    "gold": -292.0,
+    "ok": false,
+    "ctx_tokens": 97
+   },
+   {
+    "id": "UNP/2011/page_24.pdf-2",
+    "gen": "分配给股东的现金流量",
+    "val": null,
+    "gold": 0.14252,
+    "ok": false,
+    "ctx_tokens": 57
+   },
+   {
+    "id": "ILMN/2008/page_82.pdf-2",
+    "gen": "2011年的行权股份价值是多少",
+    "val": null,
+    "gold": 12281757.94,
+    "ok": false,
+    "ctx_tokens": 77
+   },
+   {
+    "id": "HOLX/2009/page_151.pdf-3",
+    "gen": "基于授予的公平价值，公司因一些授予的股票被取消而损失了多少钱。",
+    "val": null,
+    "gold": 3516.0,
+    "ok": false,
+    "ctx_tokens": 40
+   },
+   {
+    "id": "TFX/2015/page_89.pdf-3",
+    "gen": "总重组费用为不包括2014年以前的费用，总重组费用是多少？",
+    "val": null,
+    "gold": 7989.0,
+    "ok": false,
+    "ctx_tokens": 51
+   }
+  ]
+ }
+}

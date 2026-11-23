@@ -1,0 +1,1019 @@
+{
+  "summary": [
+    {
+      "cond": "snap@20",
+      "n": 20,
+      "em": 0.0,
+      "anr": 0.0,
+      "n_intact": 0,
+      "p_correct_intact": NaN,
+      "n_frag": 20,
+      "p_correct_frag": 0.0
+    }
+  ],
+  "records": [
+    {
+      "id": "INTC/2015/page_41.pdf-4",
+      "cond": "snap@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": false,
+      "num": false,
+      "air": NaN,
+      "pred": 52.083333333333336,
+      "gold": 0.14464,
+      "correct": false,
+      "cids": [],
+      "text": "(2.5 / 4.8) * 100",
+      "L": 878,
+      "n_doc": 627,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 0.0,
+      "budget_tokens": 125,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    },
+    {
+      "id": "CMCSA/2015/page_112.pdf-2",
+      "cond": "snap@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": false,
+      "num": false,
+      "air": NaN,
+      "pred": null,
+      "gold": -35.0,
+      "correct": false,
+      "cids": [],
+      "text": "(2451 - 2512) / 2512 *",
+      "L": 1285,
+      "n_doc": 1020,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 0.25,
+      "budget_tokens": 204,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    },
+    {
+      "id": "UAA/2016/page_42.pdf-2",
+      "cond": "snap@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": false,
+      "num": false,
+      "air": NaN,
+      "pred": null,
+      "gold": 0.22429,
+      "correct": false,
+      "cids": [],
+      "text": "(total_debt_including including including / total_assets) * 1000000",
+      "L": 671,
+      "n_doc": 424,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 0.0,
+      "budget_tokens": 84,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    },
+    {
+      "id": "GIS/2018/page_110.pdf-2",
+      "cond": "snap@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": false,
+      "num": false,
+      "air": NaN,
+      "pred": null,
+      "gold": 0.24566,
+      "correct": false,
+      "cids": [],
+      "text": "(fiscal 2019 / total noncancelable future lease commitments) * 10",
+      "L": 1030,
+      "n_doc": 769,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 0.0,
+      "budget_tokens": 153,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    },
+    {
+      "id": "GPN/2010/page_87.pdf-3",
+      "cond": "snap@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": false,
+      "num": false,
+      "air": NaN,
+      "pred": -34.80662983425414,
+      "gold": 0.34807,
+      "correct": false,
+      "cids": [],
+      "text": "(-6.3) / 18.1 * 100",
+      "L": 1188,
+      "n_doc": 928,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 0.6666666666666666,
+      "budget_tokens": 185,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    },
+    {
+      "id": "UNP/2015/page_56.pdf-1",
+      "cond": "snap@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": false,
+      "num": false,
+      "air": NaN,
+      "pred": 99.98000399920016,
+      "gold": 0.16417,
+      "correct": false,
+      "cids": [],
+      "text": "(100 * 10000) / 10002",
+      "L": 1190,
+      "n_doc": 932,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 0.2,
+      "budget_tokens": 186,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    },
+    {
+      "id": "FBHS/2017/page_83.pdf-1",
+      "cond": "snap@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": false,
+      "num": false,
+      "air": NaN,
+      "pred": 40000000.0,
+      "gold": 9294571.92,
+      "correct": false,
+      "cids": [],
+      "text": "40000000",
+      "L": 1162,
+      "n_doc": 902,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 0.0,
+      "budget_tokens": 180,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    },
+    {
+      "id": "SNA/2018/page_31.pdf-1",
+      "cond": "snap@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": false,
+      "num": false,
+      "air": NaN,
+      "pred": 4.0,
+      "gold": 0.3254,
+      "correct": false,
+      "cids": [],
+      "text": "(250000 / 625000) * 10",
+      "L": 1357,
+      "n_doc": 1082,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 0.0,
+      "budget_tokens": 216,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    },
+    {
+      "id": "CME/2010/page_123.pdf-2",
+      "cond": "snap@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": false,
+      "num": false,
+      "air": NaN,
+      "pred": 42000.0,
+      "gold": 373153158.3,
+      "correct": false,
+      "cids": [],
+      "text": "350 * 120",
+      "L": 815,
+      "n_doc": 553,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 0.0,
+      "budget_tokens": 110,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    },
+    {
+      "id": "CME/2010/page_123.pdf-4",
+      "cond": "snap@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": false,
+      "num": false,
+      "air": NaN,
+      "pred": 87.5,
+      "gold": 0.99509,
+      "correct": false,
+      "cids": [],
+      "text": "(350 / 400) * 100",
+      "L": 805,
+      "n_doc": 553,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 0.0,
+      "budget_tokens": 110,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    },
+    {
+      "id": "VNO/2014/page_57.pdf-1",
+      "cond": "snap@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": false,
+      "num": false,
+      "air": NaN,
+      "pred": 0.0,
+      "gold": 101.0,
+      "correct": false,
+      "cids": [],
+      "text": "($100 - $100) / $100 * 100",
+      "L": 570,
+      "n_doc": 317,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 0.3333333333333333,
+      "budget_tokens": 63,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    },
+    {
+      "id": "GS/2017/page_86.pdf-2",
+      "cond": "snap@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": false,
+      "num": false,
+      "air": NaN,
+      "pred": 732.0,
+      "gold": 160035.0,
+      "correct": false,
+      "cids": [],
+      "text": "732",
+      "L": 1332,
+      "n_doc": 1066,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 0.4,
+      "budget_tokens": 213,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    },
+    {
+      "id": "BLL/2012/page_31.pdf-3",
+      "cond": "snap@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": false,
+      "num": false,
+      "air": NaN,
+      "pred": null,
+      "gold": 2.13755,
+      "correct": false,
+      "cids": [],
+      "text": "(2450 - 350) / (2450 / 1",
+      "L": 674,
+      "n_doc": 395,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 0.0,
+      "budget_tokens": 79,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    },
+    {
+      "id": "BLL/2012/page_31.pdf-4",
+      "cond": "snap@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": false,
+      "num": false,
+      "air": NaN,
+      "pred": 1800.0,
+      "gold": 110.49,
+      "correct": false,
+      "cids": [],
+      "text": "(2450 - 400) - 250",
+      "L": 674,
+      "n_doc": 395,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 0.0,
+      "budget_tokens": 79,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    },
+    {
+      "id": "AMT/2012/page_50.pdf-3",
+      "cond": "snap@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": false,
+      "num": false,
+      "air": NaN,
+      "pred": 1250000.0,
+      "gold": 6.48512,
+      "correct": false,
+      "cids": [],
+      "text": "(1000000 + 250000) / 1",
+      "L": 980,
+      "n_doc": 716,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 0.0,
+      "budget_tokens": 143,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    },
+    {
+      "id": "MRO/2004/page_46.pdf-1",
+      "cond": "snap@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": false,
+      "num": false,
+      "air": NaN,
+      "pred": 100.0,
+      "gold": 0.93571,
+      "correct": false,
+      "cids": [],
+      "text": "(6 * 100 / 6)",
+      "L": 1240,
+      "n_doc": 986,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 0.2,
+      "budget_tokens": 197,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    },
+    {
+      "id": "AAPL/2006/page_131.pdf-2",
+      "cond": "snap@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": false,
+      "num": false,
+      "air": NaN,
+      "pred": 33750000000.0,
+      "gold": 364400.0,
+      "correct": false,
+      "cids": [],
+      "text": "33750000000",
+      "L": 1230,
+      "n_doc": 973,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 0.16666666666666666,
+      "budget_tokens": 194,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    },
+    {
+      "id": "AES/2002/page_128.pdf-2",
+      "cond": "snap@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": false,
+      "num": false,
+      "air": NaN,
+      "pred": 10.0,
+      "gold": 1.0,
+      "correct": false,
+      "cids": [],
+      "text": "(40 - 30)",
+      "L": 1030,
+      "n_doc": 763,
+      "gold_in_kept": true,
+      "n_dup": 17,
+      "dgr": 0.0,
+      "budget_tokens": 152,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    },
+    {
+      "id": "AMT/2012/page_50.pdf-1",
+      "cond": "snap@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": false,
+      "num": false,
+      "air": NaN,
+      "pred": 4.0,
+      "gold": 0.16534,
+      "correct": false,
+      "cids": [],
+      "text": "(120000 / 300000) * 10",
+      "L": 981,
+      "n_doc": 716,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 0.0,
+      "budget_tokens": 143,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    },
+    {
+      "id": "C/2018/page_175.pdf-3",
+      "cond": "snap@20",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": false,
+      "num": false,
+      "air": NaN,
+      "pred": 88.56853818917551,
+      "gold": 0.57228,
+      "correct": false,
+      "cids": [],
+      "text": "(3502 / 3954) * 100",
+      "L": 774,
+      "n_doc": 516,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 0.0,
+      "budget_tokens": 103,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    }
+  ],
+  "n": 20,
+  "alloc": [
+    {
+      "id": "INTC/2015/page_41.pdf-4",
+      "budget": 125,
+      "n_doc": 627,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 2,
+          "val": 2.0,
+          "ub": 2.0,
+          "tokens": 47
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 2,
+          "val": 3.155,
+          "ub": 3.155,
+          "tokens": 47
+        }
+      ]
+    },
+    {
+      "id": "CMCSA/2015/page_112.pdf-2",
+      "budget": 204,
+      "n_doc": 1020,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 16,
+          "val": 16.0,
+          "ub": 16.0,
+          "tokens": 162
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 16,
+          "val": 19.851,
+          "ub": 19.851,
+          "tokens": 162
+        }
+      ]
+    },
+    {
+      "id": "UAA/2016/page_42.pdf-2",
+      "budget": 84,
+      "n_doc": 424,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 6,
+          "val": 5.0,
+          "ub": 6.0,
+          "tokens": 67
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 6,
+          "val": 5.0,
+          "ub": 6.0,
+          "tokens": 67
+        }
+      ]
+    },
+    {
+      "id": "GIS/2018/page_110.pdf-2",
+      "budget": 153,
+      "n_doc": 769,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 4,
+          "val": 4.0,
+          "ub": 4.0,
+          "tokens": 58
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 4,
+          "val": 5.62,
+          "ub": 5.62,
+          "tokens": 58
+        }
+      ]
+    },
+    {
+      "id": "GPN/2010/page_87.pdf-3",
+      "budget": 185,
+      "n_doc": 928,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 6,
+          "val": 6.0,
+          "ub": 6.0,
+          "tokens": 70
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 6,
+          "val": 7.92,
+          "ub": 7.92,
+          "tokens": 70
+        }
+      ]
+    },
+    {
+      "id": "UNP/2015/page_56.pdf-1",
+      "budget": 186,
+      "n_doc": 932,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 3,
+          "val": 3.0,
+          "ub": 3.0,
+          "tokens": 34
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 3,
+          "val": 4.385,
+          "ub": 4.385,
+          "tokens": 34
+        }
+      ]
+    },
+    {
+      "id": "FBHS/2017/page_83.pdf-1",
+      "budget": 180,
+      "n_doc": 902,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 4,
+          "val": 4.0,
+          "ub": 4.0,
+          "tokens": 51
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 4,
+          "val": 5.62,
+          "ub": 5.62,
+          "tokens": 51
+        }
+      ]
+    },
+    {
+      "id": "SNA/2018/page_31.pdf-1",
+      "budget": 216,
+      "n_doc": 1082,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 8,
+          "val": 8.0,
+          "ub": 8.0,
+          "tokens": 119
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 8,
+          "val": 9.72,
+          "ub": 9.72,
+          "tokens": 119
+        }
+      ]
+    },
+    {
+      "id": "CME/2010/page_123.pdf-2",
+      "budget": 110,
+      "n_doc": 553,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 6,
+          "val": 6.0,
+          "ub": 6.0,
+          "tokens": 103
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 6,
+          "val": 7.943,
+          "ub": 7.943,
+          "tokens": 103
+        }
+      ]
+    },
+    {
+      "id": "CME/2010/page_123.pdf-4",
+      "budget": 110,
+      "n_doc": 553,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 6,
+          "val": 6.0,
+          "ub": 6.0,
+          "tokens": 103
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 6,
+          "val": 7.658,
+          "ub": 7.658,
+          "tokens": 103
+        }
+      ]
+    },
+    {
+      "id": "VNO/2014/page_57.pdf-1",
+      "budget": 63,
+      "n_doc": 317,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 12,
+          "val": 6.0,
+          "ub": 12.0,
+          "tokens": 59
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 12,
+          "val": 7.8,
+          "ub": 15.6,
+          "tokens": 59
+        }
+      ]
+    },
+    {
+      "id": "GS/2017/page_86.pdf-2",
+      "budget": 213,
+      "n_doc": 1066,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 4,
+          "val": 4.0,
+          "ub": 4.0,
+          "tokens": 100
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 4,
+          "val": 5.84,
+          "ub": 5.84,
+          "tokens": 100
+        }
+      ]
+    },
+    {
+      "id": "BLL/2012/page_31.pdf-3",
+      "budget": 79,
+      "n_doc": 395,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 12,
+          "val": 5.0,
+          "ub": 10.0,
+          "tokens": 74
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 12,
+          "val": 6.92,
+          "ub": 13.42,
+          "tokens": 74
+        }
+      ]
+    },
+    {
+      "id": "BLL/2012/page_31.pdf-4",
+      "budget": 79,
+      "n_doc": 395,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 12,
+          "val": 5.0,
+          "ub": 10.0,
+          "tokens": 73
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 12,
+          "val": 6.92,
+          "ub": 13.42,
+          "tokens": 74
+        }
+      ]
+    },
+    {
+      "id": "AMT/2012/page_50.pdf-3",
+      "budget": 143,
+      "n_doc": 716,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 3,
+          "val": 3.0,
+          "ub": 3.0,
+          "tokens": 47
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 3,
+          "val": 3.821,
+          "ub": 3.821,
+          "tokens": 47
+        }
+      ]
+    },
+    {
+      "id": "MRO/2004/page_46.pdf-1",
+      "budget": 197,
+      "n_doc": 986,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 4,
+          "val": 4.0,
+          "ub": 4.0,
+          "tokens": 30
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 4,
+          "val": 5.2,
+          "ub": 5.2,
+          "tokens": 30
+        }
+      ]
+    },
+    {
+      "id": "AAPL/2006/page_131.pdf-2",
+      "budget": 194,
+      "n_doc": 973,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 3,
+          "val": 3.0,
+          "ub": 3.0,
+          "tokens": 54
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 3,
+          "val": 3.9,
+          "ub": 3.9,
+          "tokens": 54
+        }
+      ]
+    },
+    {
+      "id": "AES/2002/page_128.pdf-2",
+      "budget": 152,
+      "n_doc": 763,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 2,
+          "val": 2.0,
+          "ub": 2.0,
+          "tokens": 35
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 2,
+          "val": 2.57,
+          "ub": 2.57,
+          "tokens": 35
+        }
+      ]
+    },
+    {
+      "id": "AMT/2012/page_50.pdf-1",
+      "budget": 143,
+      "n_doc": 716,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 8,
+          "val": 8.0,
+          "ub": 8.0,
+          "tokens": 92
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 8,
+          "val": 11.393,
+          "ub": 11.393,
+          "tokens": 92
+        }
+      ]
+    },
+    {
+      "id": "C/2018/page_175.pdf-3",
+      "budget": 103,
+      "n_doc": 516,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 6,
+          "val": 6.0,
+          "ub": 6.0,
+          "tokens": 56
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 6,
+          "val": 8.22,
+          "ub": 8.22,
+          "tokens": 56
+        }
+      ]
+    }
+  ]
+}

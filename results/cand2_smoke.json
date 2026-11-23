@@ -1,0 +1,111 @@
+{
+  "summary": [
+    {
+      "cond": "auto_f@20",
+      "n": 3,
+      "em": 0.6666666666666666,
+      "anr": 1.0,
+      "n_intact": 3,
+      "p_correct_intact": 0.6666666666666666,
+      "n_frag": 0,
+      "p_correct_frag": NaN
+    },
+    {
+      "cond": "auto_n@20",
+      "n": 3,
+      "em": 0.6666666666666666,
+      "anr": 1.0,
+      "n_intact": 3,
+      "p_correct_intact": 0.6666666666666666,
+      "n_frag": 0,
+      "p_correct_frag": NaN
+    }
+  ],
+  "records": [
+    {
+      "id": "V/2008/page_17.pdf-1",
+      "cond": "auto_f@20",
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 0.9843014128728415,
+      "gold": 127.4,
+      "correct": false,
+      "text": "Expression: 627 / 637",
+      "L": 1032,
+      "n_doc": 782,
+      "budget_tokens": 156
+    },
+    {
+      "id": "V/2008/page_17.pdf-1",
+      "cond": "auto_n@20",
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 0.9843014128728415,
+      "gold": 127.4,
+      "correct": false,
+      "text": "Expression: 627 / 637",
+      "L": 1032,
+      "n_doc": 782,
+      "budget_tokens": 156
+    },
+    {
+      "id": "PM/2017/page_38.pdf-1",
+      "cond": "auto_f@20",
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 688.0,
+      "gold": 688.0,
+      "correct": true,
+      "text": "11503 - 10815",
+      "L": 1248,
+      "n_doc": 988,
+      "budget_tokens": 197
+    },
+    {
+      "id": "PM/2017/page_38.pdf-1",
+      "cond": "auto_n@20",
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 688.0,
+      "gold": 688.0,
+      "correct": true,
+      "text": "11503 - 10815",
+      "L": 1248,
+      "n_doc": 988,
+      "budget_tokens": 197
+    },
+    {
+      "id": "PM/2017/page_38.pdf-1",
+      "cond": "auto_f@20",
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 688.0,
+      "gold": 688.0,
+      "correct": true,
+      "text": "11503 - 10815",
+      "L": 1248,
+      "n_doc": 988,
+      "budget_tokens": 197
+    },
+    {
+      "id": "PM/2017/page_38.pdf-1",
+      "cond": "auto_n@20",
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 688.0,
+      "gold": 688.0,
+      "correct": true,
+      "text": "11503 - 10815",
+      "L": 1248,
+      "n_doc": 988,
+      "budget_tokens": 197
+    }
+  ],
+  "n": 3
+}

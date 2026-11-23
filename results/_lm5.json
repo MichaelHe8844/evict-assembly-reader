@@ -1,0 +1,55 @@
+{
+ "summary": {
+  "10": {
+   "n": 5,
+   "exec": 0.0,
+   "em": 0.0,
+   "med_ctx": 49,
+   "sec": 8.8
+  }
+ },
+ "detail": {
+  "10": [
+   {
+    "id": "INTC/2015/page_41.pdf-4",
+    "gen": "(total leased facilities / total facilities) * 100",
+    "val": null,
+    "gold": 0.14464,
+    "ok": false,
+    "ctx_tokens": 49
+   },
+   {
+    "id": "CMCSA/2015/page_112.pdf-2",
+    "gen": "2015年末的未确认税务利益与2014年末相比变化了多少？",
+    "val": null,
+    "gold": -35.0,
+    "ok": false,
+    "ctx_tokens": 99
+   },
+   {
+    "id": "UAA/2016/page_42.pdf-2",
+    "gen": "资产负债率",
+    "val": null,
+    "gold": 0.22429,
+    "ok": false,
+    "ctx_tokens": 39
+   },
+   {
+    "id": "GIS/2018/page_110.pdf-2",
+    "gen": "total noncancelable future lease commitments / (operating leases + capital leases) * operating leases",
+    "val": null,
+    "gold": 0.24566,
+    "ok": false,
+    "ctx_tokens": 56
+   },
+   {
+    "id": "UNP/2015/page_56.pdf-1",
+    "gen": "百分比",
+    "val": null,
+    "gold": 0.16417,
+    "ok": false,
+    "ctx_tokens": 32
+   }
+  ]
+ }
+}

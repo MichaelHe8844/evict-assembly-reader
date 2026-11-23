@@ -1,0 +1,131 @@
+{
+  "rows": [
+    {
+      "policy": "snapkv",
+      "budget": 0.1,
+      "NumR": 0.2,
+      "ANR": 0.0,
+      "R": 0.4,
+      "C": 0.4,
+      "U": 0.0,
+      "frag_cond": 1.0
+    },
+    {
+      "policy": "snapkv",
+      "budget": 0.2,
+      "NumR": 0.6,
+      "ANR": 0.0,
+      "R": 0.4,
+      "C": 0.4,
+      "U": 0.0,
+      "frag_cond": 1.0
+    },
+    {
+      "policy": "snapkv",
+      "budget": 0.3,
+      "NumR": 0.6,
+      "ANR": 0.0,
+      "R": 0.4,
+      "C": 0.4,
+      "U": 0.0,
+      "frag_cond": 1.0
+    },
+    {
+      "policy": "snapkv",
+      "budget": 0.5,
+      "NumR": 0.6,
+      "ANR": 0.0,
+      "R": 0.6,
+      "C": 0.6,
+      "U": 0.0,
+      "frag_cond": 1.0
+    },
+    {
+      "policy": "h2o",
+      "budget": 0.1,
+      "NumR": 0.0,
+      "ANR": 0.0,
+      "R": 0.0,
+      "C": 0.0,
+      "U": 0.0,
+      "frag_cond": NaN
+    },
+    {
+      "policy": "h2o",
+      "budget": 0.2,
+      "NumR": 0.0,
+      "ANR": 0.0,
+      "R": 0.2,
+      "C": 0.2,
+      "U": 0.0,
+      "frag_cond": NaN
+    },
+    {
+      "policy": "h2o",
+      "budget": 0.3,
+      "NumR": 0.0,
+      "ANR": 0.0,
+      "R": 0.2,
+      "C": 0.4,
+      "U": 1.0,
+      "frag_cond": NaN
+    },
+    {
+      "policy": "h2o",
+      "budget": 0.5,
+      "NumR": 0.0,
+      "ANR": 0.0,
+      "R": 0.6,
+      "C": 0.4,
+      "U": 1.0,
+      "frag_cond": NaN
+    },
+    {
+      "policy": "oracle",
+      "budget": 0.1,
+      "NumR": 1.0,
+      "ANR": 0.2,
+      "R": 1.0,
+      "C": 1.0,
+      "U": 1.0,
+      "frag_cond": 0.8
+    },
+    {
+      "policy": "oracle",
+      "budget": 0.2,
+      "NumR": 1.0,
+      "ANR": 0.2,
+      "R": 1.0,
+      "C": 1.0,
+      "U": 1.0,
+      "frag_cond": 0.8
+    },
+    {
+      "policy": "oracle",
+      "budget": 0.3,
+      "NumR": 1.0,
+      "ANR": 0.2,
+      "R": 1.0,
+      "C": 1.0,
+      "U": 1.0,
+      "frag_cond": 0.8
+    },
+    {
+      "policy": "oracle",
+      "budget": 0.5,
+      "NumR": 1.0,
+      "ANR": 0.2,
+      "R": 1.0,
+      "C": 1.0,
+      "U": 1.0,
+      "frag_cond": 0.8
+    }
+  ],
+  "n": 5,
+  "enrich": {
+    "V": 1.7777059078216553,
+    "R": 1.4326955080032349,
+    "C": 0.47977888584136963,
+    "U": 0.09017915278673172
+  }
+}

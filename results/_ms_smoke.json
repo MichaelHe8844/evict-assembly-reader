@@ -1,0 +1,182 @@
+{
+ "summary": {
+  "3": {
+   "base": {
+    "n": 10,
+    "em": 0.3
+   }
+  },
+  "20": {
+   "base": {
+    "n": 10,
+    "em": 0.6
+   }
+  }
+ },
+ "detail": {
+  "3": [
+   {
+    "id": "MAS/2017/page_27.pdf-2",
+    "cond": "base",
+    "ok": false,
+    "val": 0.05599999999999994,
+    "gold": 1.1197,
+    "ctx_tokens": 13
+   },
+   {
+    "id": "STT/2007/page_111.pdf-3",
+    "cond": "base",
+    "ok": true,
+    "val": -0.04364596021112464,
+    "gold": -0.04365,
+    "ctx_tokens": 23
+   },
+   {
+    "id": "FIS/2016/page_31.pdf-2",
+    "cond": "base",
+    "ok": false,
+    "val": 0.04099999999999998,
+    "gold": 1.1363,
+    "ctx_tokens": 11
+   },
+   {
+    "id": "AMT/2016/page_49.pdf-1",
+    "cond": "base",
+    "ok": false,
+    "val": 0.2165228696371588,
+    "gold": 0.09302,
+    "ctx_tokens": 23
+   },
+   {
+    "id": "GS/2013/page_220.pdf-2",
+    "cond": "base",
+    "ok": false,
+    "val": 0.21199999999999986,
+    "gold": 0.1216,
+    "ctx_tokens": 15
+   },
+   {
+    "id": "K/2006/page_52.pdf-2",
+    "cond": "base",
+    "ok": true,
+    "val": 892.3000000000001,
+    "gold": 892.3,
+    "ctx_tokens": 37
+   },
+   {
+    "id": "GPN/2014/page_92.pdf-1",
+    "cond": "base",
+    "ok": false,
+    "val": 175.0,
+    "gold": 31.32382,
+    "ctx_tokens": 18
+   },
+   {
+    "id": "BLL/2010/page_37.pdf-2",
+    "cond": "base",
+    "ok": false,
+    "val": -0.17,
+    "gold": 0.07951,
+    "ctx_tokens": 22
+   },
+   {
+    "id": "FIS/2012/page_48.pdf-1",
+    "cond": "base",
+    "ok": false,
+    "val": 0.11392405063291136,
+    "gold": 0.41935,
+    "ctx_tokens": 10
+   },
+   {
+    "id": "CME/2010/page_91.pdf-1",
+    "cond": "base",
+    "ok": true,
+    "val": 0.27272727272727254,
+    "gold": 0.27273,
+    "ctx_tokens": 24
+   }
+  ],
+  "20": [
+   {
+    "id": "MAS/2017/page_27.pdf-2",
+    "cond": "base",
+    "ok": true,
+    "val": 1.1196999999999995,
+    "gold": 1.1197,
+    "ctx_tokens": 113
+   },
+   {
+    "id": "STT/2007/page_111.pdf-3",
+    "cond": "base",
+    "ok": true,
+    "val": -0.04364596021112464,
+    "gold": -0.04365,
+    "ctx_tokens": 38
+   },
+   {
+    "id": "FIS/2016/page_31.pdf-2",
+    "cond": "base",
+    "ok": true,
+    "val": 1.1362999999999999,
+    "gold": 1.1363,
+    "ctx_tokens": 31
+   },
+   {
+    "id": "AMT/2016/page_49.pdf-1",
+    "cond": "base",
+    "ok": false,
+    "val": 0.23907547851209843,
+    "gold": 0.09302,
+    "ctx_tokens": 162
+   },
+   {
+    "id": "GS/2013/page_220.pdf-2",
+    "cond": "base",
+    "ok": true,
+    "val": 0.12160000000000015,
+    "gold": 0.1216,
+    "ctx_tokens": 38
+   },
+   {
+    "id": "K/2006/page_52.pdf-2",
+    "cond": "base",
+    "ok": true,
+    "val": 892.3000000000001,
+    "gold": 892.3,
+    "ctx_tokens": 37
+   },
+   {
+    "id": "GPN/2014/page_92.pdf-1",
+    "cond": "base",
+    "ok": true,
+    "val": 31.32382085,
+    "gold": 31.32382,
+    "ctx_tokens": 107
+   },
+   {
+    "id": "BLL/2010/page_37.pdf-2",
+    "cond": "base",
+    "ok": false,
+    "val": -0.07950687868500982,
+    "gold": 0.07951,
+    "ctx_tokens": 107
+   },
+   {
+    "id": "FIS/2012/page_48.pdf-1",
+    "cond": "base",
+    "ok": false,
+    "val": 0.43540669856459324,
+    "gold": 0.41935,
+    "ctx_tokens": 50
+   },
+   {
+    "id": "CME/2010/page_91.pdf-1",
+    "cond": "base",
+    "ok": false,
+    "val": 0.1313131313131312,
+    "gold": 0.27273,
+    "ctx_tokens": 32
+   }
+  ]
+ }
+}

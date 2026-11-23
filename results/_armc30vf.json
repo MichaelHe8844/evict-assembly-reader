@@ -1,0 +1,719 @@
+{
+  "summary": [
+    {
+      "cond": "auto_f@10",
+      "n": 14,
+      "em": 0.5,
+      "anr": 0.42857142857142855,
+      "n_intact": 6,
+      "p_correct_intact": 0.8333333333333334,
+      "n_frag": 8,
+      "p_correct_frag": 0.25
+    }
+  ],
+  "records": [
+    {
+      "id": "INTC/2015/page_41.pdf-4",
+      "cond": "auto_f@10",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 14.464285714285714,
+      "gold": 0.14464,
+      "correct": true,
+      "cids": [],
+      "text": "(8.1 / 56.0) * 100",
+      "L": 878,
+      "n_doc": 627,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 62,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    },
+    {
+      "id": "CMCSA/2015/page_112.pdf-2",
+      "cond": "auto_f@10",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": false,
+      "num": true,
+      "air": 0.0625,
+      "pred": 35.0,
+      "gold": -35.0,
+      "correct": false,
+      "cids": [],
+      "text": "(1171 - 1136)",
+      "L": 1285,
+      "n_doc": 1020,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 102,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    },
+    {
+      "id": "UAA/2016/page_42.pdf-2",
+      "cond": "auto_f@10",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": false,
+      "num": true,
+      "air": 0.0,
+      "pred": 22.429027440152936,
+      "gold": 0.22429,
+      "correct": true,
+      "cids": [],
+      "text": "817388 / 3644331 * 100",
+      "L": 671,
+      "n_doc": 424,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 42,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    },
+    {
+      "id": "GIS/2018/page_110.pdf-2",
+      "cond": "auto_f@10",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 24.566422313606296,
+      "gold": 0.24566,
+      "correct": true,
+      "cids": [],
+      "text": "137.4 / 559.3 * 100",
+      "L": 1030,
+      "n_doc": 769,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 76,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    },
+    {
+      "id": "UNP/2015/page_56.pdf-1",
+      "cond": "auto_f@10",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 16.416815660386007,
+      "gold": 0.16417,
+      "correct": true,
+      "cids": [],
+      "text": "(3581 / 21813) * 100",
+      "L": 1190,
+      "n_doc": 932,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 93,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    },
+    {
+      "id": "FBHS/2017/page_83.pdf-1",
+      "cond": "auto_f@10",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 9294571.92,
+      "gold": 9294571.92,
+      "correct": true,
+      "cids": [],
+      "text": "160196*58.02",
+      "L": 1162,
+      "n_doc": 902,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 90,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    },
+    {
+      "id": "SNA/2018/page_31.pdf-1",
+      "cond": "auto_f@10",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": true,
+      "num": true,
+      "air": 0.75,
+      "pred": 3.253968253968254,
+      "gold": 0.3254,
+      "correct": false,
+      "cids": [],
+      "text": "(205000 / 630000) * 10",
+      "L": 1357,
+      "n_doc": 1082,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 108,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    },
+    {
+      "id": "CME/2010/page_123.pdf-2",
+      "cond": "auto_f@10",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": false,
+      "num": true,
+      "air": 0.0,
+      "pred": 373153158.3,
+      "gold": 373153158.3,
+      "correct": true,
+      "cids": [],
+      "text": "1211143*308.10",
+      "L": 815,
+      "n_doc": 553,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 55,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    },
+    {
+      "id": "CME/2010/page_123.pdf-4",
+      "cond": "auto_f@10",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": false,
+      "num": true,
+      "air": 0.0,
+      "pred": null,
+      "gold": 0.99509,
+      "correct": false,
+      "cids": [],
+      "text": "(1211143 / 1270721) *",
+      "L": 805,
+      "n_doc": 553,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 55,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    },
+    {
+      "id": "VNO/2014/page_57.pdf-1",
+      "cond": "auto_f@10",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": false,
+      "num": true,
+      "air": 0.0,
+      "pred": 23.0,
+      "gold": 101.0,
+      "correct": false,
+      "cids": [],
+      "text": "($123 - $100) / $100 * 100",
+      "L": 570,
+      "n_doc": 317,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 31,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    },
+    {
+      "id": "GS/2017/page_86.pdf-2",
+      "cond": "auto_f@10",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": true,
+      "num": true,
+      "air": 1.0,
+      "pred": 160035.0,
+      "gold": 160035.0,
+      "correct": true,
+      "cids": [],
+      "text": "78227 + 81808",
+      "L": 1332,
+      "n_doc": 1066,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 106,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    },
+    {
+      "id": "BLL/2012/page_31.pdf-3",
+      "cond": "auto_f@10",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": false,
+      "num": false,
+      "air": 0.0,
+      "pred": null,
+      "gold": 2.13755,
+      "correct": false,
+      "cids": [],
+      "text": "(155.14 - 2450 / 100) -",
+      "L": 674,
+      "n_doc": 395,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 0.0,
+      "budget_tokens": 39,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    },
+    {
+      "id": "BLL/2012/page_31.pdf-4",
+      "cond": "auto_f@10",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": false,
+      "num": false,
+      "air": 0.0,
+      "pred": null,
+      "gold": 110.49,
+      "correct": false,
+      "cids": [],
+      "text": "(155.14 - 100) / 100 *",
+      "L": 674,
+      "n_doc": 395,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 0.0,
+      "budget_tokens": 39,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    },
+    {
+      "id": "AMT/2012/page_50.pdf-1",
+      "cond": "auto_f@10",
+      "key": [
+        "k",
+        "n",
+        "a",
+        "p",
+        "_",
+        "r"
+      ],
+      "anr": false,
+      "num": true,
+      "air": 0.0,
+      "pred": 1.6534423571887604,
+      "gold": 0.16534,
+      "correct": false,
+      "cids": [],
+      "text": "(102400 / 619314) * 10",
+      "L": 981,
+      "n_doc": 716,
+      "gold_in_kept": false,
+      "n_dup": 0,
+      "dgr": 1.0,
+      "budget_tokens": 71,
+      "pair_fit": -1,
+      "pair_cost": 0,
+      "pair_kept": 0
+    }
+  ],
+  "n": 14,
+  "alloc": [
+    {
+      "id": "INTC/2015/page_41.pdf-4",
+      "budget": 125,
+      "n_doc": 627,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 2,
+          "val": 2.0,
+          "ub": 2.0,
+          "tokens": 47
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 2,
+          "val": 3.155,
+          "ub": 3.155,
+          "tokens": 47
+        }
+      ]
+    },
+    {
+      "id": "CMCSA/2015/page_112.pdf-2",
+      "budget": 204,
+      "n_doc": 1020,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 16,
+          "val": 16.0,
+          "ub": 16.0,
+          "tokens": 162
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 16,
+          "val": 19.851,
+          "ub": 19.851,
+          "tokens": 162
+        }
+      ]
+    },
+    {
+      "id": "UAA/2016/page_42.pdf-2",
+      "budget": 84,
+      "n_doc": 424,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 6,
+          "val": 5.0,
+          "ub": 6.0,
+          "tokens": 67
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 6,
+          "val": 5.0,
+          "ub": 6.0,
+          "tokens": 67
+        }
+      ]
+    },
+    {
+      "id": "GIS/2018/page_110.pdf-2",
+      "budget": 153,
+      "n_doc": 769,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 4,
+          "val": 4.0,
+          "ub": 4.0,
+          "tokens": 58
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 4,
+          "val": 5.62,
+          "ub": 5.62,
+          "tokens": 58
+        }
+      ]
+    },
+    {
+      "id": "UNP/2015/page_56.pdf-1",
+      "budget": 186,
+      "n_doc": 932,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 3,
+          "val": 3.0,
+          "ub": 3.0,
+          "tokens": 34
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 3,
+          "val": 4.385,
+          "ub": 4.385,
+          "tokens": 34
+        }
+      ]
+    },
+    {
+      "id": "FBHS/2017/page_83.pdf-1",
+      "budget": 180,
+      "n_doc": 902,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 4,
+          "val": 4.0,
+          "ub": 4.0,
+          "tokens": 51
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 4,
+          "val": 5.62,
+          "ub": 5.62,
+          "tokens": 51
+        }
+      ]
+    },
+    {
+      "id": "SNA/2018/page_31.pdf-1",
+      "budget": 216,
+      "n_doc": 1082,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 8,
+          "val": 8.0,
+          "ub": 8.0,
+          "tokens": 119
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 8,
+          "val": 9.72,
+          "ub": 9.72,
+          "tokens": 119
+        }
+      ]
+    },
+    {
+      "id": "CME/2010/page_123.pdf-2",
+      "budget": 110,
+      "n_doc": 553,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 6,
+          "val": 6.0,
+          "ub": 6.0,
+          "tokens": 103
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 6,
+          "val": 7.943,
+          "ub": 7.943,
+          "tokens": 103
+        }
+      ]
+    },
+    {
+      "id": "CME/2010/page_123.pdf-4",
+      "budget": 110,
+      "n_doc": 553,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 6,
+          "val": 6.0,
+          "ub": 6.0,
+          "tokens": 103
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 6,
+          "val": 7.658,
+          "ub": 7.658,
+          "tokens": 103
+        }
+      ]
+    },
+    {
+      "id": "VNO/2014/page_57.pdf-1",
+      "budget": 63,
+      "n_doc": 317,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 12,
+          "val": 6.0,
+          "ub": 12.0,
+          "tokens": 59
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 12,
+          "val": 7.8,
+          "ub": 15.6,
+          "tokens": 59
+        }
+      ]
+    },
+    {
+      "id": "GS/2017/page_86.pdf-2",
+      "budget": 213,
+      "n_doc": 1066,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 4,
+          "val": 4.0,
+          "ub": 4.0,
+          "tokens": 100
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 4,
+          "val": 5.84,
+          "ub": 5.84,
+          "tokens": 100
+        }
+      ]
+    },
+    {
+      "id": "BLL/2012/page_31.pdf-3",
+      "budget": 79,
+      "n_doc": 395,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 12,
+          "val": 5.0,
+          "ub": 10.0,
+          "tokens": 74
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 12,
+          "val": 6.92,
+          "ub": 13.42,
+          "tokens": 74
+        }
+      ]
+    },
+    {
+      "id": "BLL/2012/page_31.pdf-4",
+      "budget": 79,
+      "n_doc": 395,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 12,
+          "val": 5.0,
+          "ub": 10.0,
+          "tokens": 73
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 12,
+          "val": 6.92,
+          "ub": 13.42,
+          "tokens": 74
+        }
+      ]
+    },
+    {
+      "id": "AMT/2012/page_50.pdf-1",
+      "budget": 143,
+      "n_doc": 716,
+      "rows": [
+        {
+          "wmode": "uniform",
+          "n_units": 8,
+          "val": 8.0,
+          "ub": 8.0,
+          "tokens": 92
+        },
+        {
+          "wmode": "relevance",
+          "n_units": 8,
+          "val": 11.393,
+          "ub": 11.393,
+          "tokens": 92
+        }
+      ]
+    }
+  ]
+}

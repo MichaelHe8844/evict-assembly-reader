@@ -1,0 +1,5138 @@
+{
+ "summary": {
+  "3": {
+   "n": 182,
+   "em": 0.15384615384615385,
+   "oob_question": 0.0,
+   "oob_numbers": 0,
+   "sec": 371.8908529281616
+  },
+  "5": {
+   "n": 182,
+   "em": 0.2802197802197802,
+   "oob_question": 0.005494505494505495,
+   "oob_numbers": 1,
+   "sec": 378.7397859096527
+  },
+  "10": {
+   "n": 182,
+   "em": 0.4835164835164835,
+   "oob_question": 0.0,
+   "oob_numbers": 0,
+   "sec": 394.8348915576935
+  },
+  "20": {
+   "n": 182,
+   "em": 0.6098901098901099,
+   "oob_question": 0.0,
+   "oob_numbers": 0,
+   "sec": 410.0083386898041
+  }
+ },
+ "detail": {
+  "3": [
+   {
+    "id": "INTC/2015/page_41.pdf-4",
+    "gen": "divide(56.0, 56.0)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "CMCSA/2015/page_112.pdf-2",
+    "gen": "subtract(2015, 2014)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "UAA/2016/page_42.pdf-2",
+    "gen": "divide(2016, 2016)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "GIS/2018/page_110.pdf-2",
+    "gen": "divide(2019, 2019)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "UNP/2015/page_56.pdf-1",
+    "gen": "divide(3581, 20397)",
+    "ok": false,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "FBHS/2017/page_83.pdf-1",
+    "gen": "multiply(2017, 2017)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "SNA/2018/page_31.pdf-1",
+    "gen": "divide(335000, 12)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "CME/2010/page_123.pdf-2",
+    "gen": "multiply(share_count,  $)",
+    "ok": false,
+    "oob": 0,
+    "steps": 9
+   },
+   {
+    "id": "CME/2010/page_123.pdf-4",
+    "gen": "divide(remaining_options, total_options)",
+    "ok": false,
+    "oob": 0,
+    "steps": 9
+   },
+   {
+    "id": "VNO/2014/page_57.pdf-1",
+    "gen": "subtract(2009, 2009)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "GS/2017/page_86.pdf-2",
+    "gen": "add(2017, 2016)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "BLL/2012/page_31.pdf-3",
+    "gen": "subtract(12, 12)",
+    "ok": false,
+    "oob": 0,
+    "steps": 10
+   },
+   {
+    "id": "BLL/2012/page_31.pdf-4",
+    "gen": "subtract(12, 12)",
+    "ok": false,
+    "oob": 0,
+    "steps": 10
+   },
+   {
+    "id": "AMT/2012/page_50.pdf-1",
+    "gen": "divide(1, 1)",
+    "ok": false,
+    "oob": 0,
+    "steps": 8
+   },
+   {
+    "id": "C/2018/page_175.pdf-3",
+    "gen": "divide(1, 1)",
+    "ok": false,
+    "oob": 0,
+    "steps": 8
+   },
+   {
+    "id": "RSG/2016/page_145.pdf-1",
+    "gen": "divide(2017, 2018)",
+    "ok": true,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "DRE/2008/page_46.pdf-2",
+    "gen": "divide(2007, 2007)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "HST/2018/page_135.pdf-1",
+    "gen": "subtract(11, 11)",
+    "ok": true,
+    "oob": 0,
+    "steps": 10
+   },
+   {
+    "id": "PNC/2012/page_174.pdf-5",
+    "gen": "divide(541, 2859)",
+    "ok": true,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "CMCSA/2015/page_67.pdf-2",
+    "gen": "divide(2424, 2424)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "GPN/2018/page_94.pdf-1",
+    "gen": "multiply(27.55, 2016)",
+    "ok": false,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "AES/2001/page_33.pdf-2",
+    "gen": "subtract(60.15, 41.30)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "CMCSA/2015/page_67.pdf-1",
+    "gen": "divide(2424, 2424)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "FIS/2016/page_45.pdf-2",
+    "gen": "divide(1, 1)",
+    "ok": false,
+    "oob": 0,
+    "steps": 8
+   },
+   {
+    "id": "MRO/2004/page_46.pdf-3",
+    "gen": "multiply(45686, 37.73)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "V/2014/page_126.pdf-2",
+    "gen": "subtract(44.11, 2013)",
+    "ok": false,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "PKG/2013/page_88.pdf-2",
+    "gen": "multiply(share, price)",
+    "ok": false,
+    "oob": 0,
+    "steps": 7
+   },
+   {
+    "id": "AES/2001/page_33.pdf-1",
+    "gen": "subtract(60.15, 41.30)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "HOLX/2009/page_151.pdf-1",
+    "gen": "multiply(2008, 2008)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "FBHS/2017/page_22.pdf-1",
+    "gen": "divide(502.9, 2017)",
+    "ok": false,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "CDW/2017/page_38.pdf-1",
+    "gen": "divide(2017_gross_profit, 2017_net_sales)",
+    "ok": false,
+    "oob": 0,
+    "steps": 19
+   },
+   {
+    "id": "CME/2010/page_91.pdf-2",
+    "gen": "divide(9.9, 146.1)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "IPG/2017/page_92.pdf-1",
+    "gen": "subtract(41.9, 2018)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "CMCSA/2008/page_36.pdf-2",
+    "gen": "divide(1024, 1024 + 906)",
+    "ok": false,
+    "oob": 0,
+    "steps": 19
+   },
+   {
+    "id": "SNA/2012/page_110.pdf-3",
+    "gen": "multiply(707, 41.01)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "AAL/2016/page_8.pdf-2",
+    "gen": "divide(26900, 101500)",
+    "ok": false,
+    "oob": 0,
+    "steps": 17
+   },
+   {
+    "id": "PKG/2013/page_88.pdf-1",
+    "gen": "divide(151945, 151945)",
+    "ok": false,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "INTC/2015/page_41.pdf-2",
+    "gen": "divide(30.7, 17.2)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "AAL/2010/page_72.pdf-3",
+    "gen": "add(574, 173)",
+    "ok": true,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "KHC/2018/page_132.pdf-3",
+    "gen": "subtract(2016, 2016)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "C/2009/page_243.pdf-2",
+    "gen": "divide(2.5, 2.5)",
+    "ok": false,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "GRMN/2008/page_73.pdf-1",
+    "gen": "divide(1, 1)",
+    "ok": false,
+    "oob": 0,
+    "steps": 8
+   },
+   {
+    "id": "PNC/2012/page_100.pdf-1",
+    "gen": "subtract(2012, 2011)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "UNP/2010/page_21.pdf-1",
+    "gen": "divide(share_purchased_november, ①)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "JPM/2009/page_175.pdf-1",
+    "gen": "subtract(2009 trading assets, 2009 trading liabilities)",
+    "ok": false,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "MAS/2017/page_27.pdf-4",
+    "gen": "divide(2015masco, 2015snp)",
+    "ok": false,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "SLB/2012/page_56.pdf-1",
+    "gen": "add(176, 176)",
+    "ok": false,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "TMUS/2017/page_29.pdf-2",
+    "gen": "divide(1400000, 17)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "UPS/2016/page_114.pdf-2",
+    "gen": "subtract(190, 207)",
+    "ok": true,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "GS/2013/page_220.pdf-1",
+    "gen": "subtract(26, 12)",
+    "ok": false,
+    "oob": 0,
+    "steps": 10
+   },
+   {
+    "id": "FIS/2017/page_64.pdf-4",
+    "gen": "divide(35, 130)",
+    "ok": true,
+    "oob": 0,
+    "steps": 11
+   },
+   {
+    "id": "GRMN/2006/page_68.pdf-2",
+    "gen": "divide(1, 1)",
+    "ok": false,
+    "oob": 0,
+    "steps": 8
+   },
+   {
+    "id": "GPN/2010/page_89.pdf-2",
+    "gen": "multiply(762, 2009)",
+    "ok": false,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "TFX/2015/page_89.pdf-1",
+    "gen": "divide(2015, 2015_total)",
+    "ok": false,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "CDW/2017/page_38.pdf-2",
+    "gen": "divide(2016_gross_profit, 2016_net_sales)",
+    "ok": false,
+    "oob": 0,
+    "steps": 19
+   },
+   {
+    "id": "CB/2008/page_229.pdf-4",
+    "gen": "divide(2008, 2007)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "GIS/2019/page_68.pdf-1",
+    "gen": "subtract(2018, 2017)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "C/2009/page_63.pdf-3",
+    "gen": "divide(47162, 47162)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "GS/2013/page_85.pdf-1",
+    "gen": "divide(45826, 45826)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "GIS/2018/page_110.pdf-3",
+    "gen": "divide(2020, 2020)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "GPN/2013/page_87.pdf-1",
+    "gen": "multiply(472, 2013)",
+    "ok": false,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "BLL/2006/page_67.pdf-2",
+    "gen": "divide(uk, icos)",
+    "ok": false,
+    "oob": 0,
+    "steps": 8
+   },
+   {
+    "id": "FIS/2016/page_9.pdf-4",
+    "gen": "divide(2015, 6596)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "SNA/2013/page_83.pdf-1",
+    "gen": "subtract(7.7, 19.6)",
+    "ok": true,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "LMT/2014/page_77.pdf-2",
+    "gen": "subtract(2014, 2013)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "AON/2007/page_171.pdf-2",
+    "gen": "subtract(2007, 2007)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "TFX/2015/page_89.pdf-2",
+    "gen": "divide(2015_facility_closer_costs, 64)",
+    "ok": false,
+    "oob": 0,
+    "steps": 17
+   },
+   {
+    "id": "HII/2015/page_121.pdf-2",
+    "gen": "divide(1, 1)",
+    "ok": false,
+    "oob": 0,
+    "steps": 8
+   },
+   {
+    "id": "AAL/2016/page_8.pdf-1",
+    "gen": "divide(13400, 101500)",
+    "ok": true,
+    "oob": 0,
+    "steps": 17
+   },
+   {
+    "id": "HOLX/2006/page_71.pdf-1",
+    "gen": "multiply(share, icos)",
+    "ok": false,
+    "oob": 0,
+    "steps": 8
+   },
+   {
+    "id": "HII/2015/page_121.pdf-1",
+    "gen": "divide(1, 1)",
+    "ok": false,
+    "oob": 0,
+    "steps": 8
+   },
+   {
+    "id": "GS/2017/page_132.pdf-4",
+    "gen": "subtract(2017, 2016)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "SNA/2007/page_29.pdf-1",
+    "gen": "divide(152.42, 152.42)",
+    "ok": false,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "MRO/2008/page_45.pdf-3",
+    "gen": "divide(1451, 2007)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "GS/2014/page_74.pdf-2",
+    "gen": "divide(2014, 2014)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "UPS/2010/page_52.pdf-3",
+    "gen": "divide(2963, 23556)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "GS/2013/page_63.pdf-2",
+    "gen": "subtract(2019, 2012)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "GS/2014/page_74.pdf-1",
+    "gen": "divide(2013, 2013)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "DRE/2008/page_46.pdf-1",
+    "gen": "divide(2008.diluted_net_income_available_for_common_shares, 2008.weighted_averag",
+    "ok": false,
+    "oob": 0,
+    "steps": 34
+   },
+   {
+    "id": "HOLX/2009/page_151.pdf-2",
+    "gen": "multiply(2008, 2008)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "RSG/2010/page_98.pdf-1",
+    "gen": "subtract(2008, 2008)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "AMT/2012/page_50.pdf-2",
+    "gen": "multiply(1, 1)",
+    "ok": false,
+    "oob": 0,
+    "steps": 8
+   },
+   {
+    "id": "BLL/2006/page_67.pdf-4",
+    "gen": "divide(239.5, 802.6)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "IPG/2008/page_72.pdf-2",
+    "gen": "subtract(2008, 2008)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "GRMN/2006/page_68.pdf-1",
+    "gen": "subtract(1, 1)",
+    "ok": false,
+    "oob": 0,
+    "steps": 8
+   },
+   {
+    "id": "CME/2010/page_123.pdf-3",
+    "gen": "divide(ask, iced)",
+    "ok": false,
+    "oob": 0,
+    "steps": 8
+   },
+   {
+    "id": "HOLX/2003/page_52.pdf-1",
+    "gen": "multiply(3227753, 3227753)",
+    "ok": false,
+    "oob": 0,
+    "steps": 20
+   },
+   {
+    "id": "UPS/2010/page_52.pdf-2",
+    "gen": "divide(1546, 23556)",
+    "ok": false,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "SNA/2018/page_31.pdf-3",
+    "gen": "multiply(335000, 11)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "GS/2017/page_86.pdf-4",
+    "gen": "subtract(2017, 2016)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "PNC/2012/page_100.pdf-3",
+    "gen": "add(2012, 2011)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "ILMN/2003/page_58.pdf-2",
+    "gen": "divide(2000, 2000)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "SNA/2018/page_31.pdf-2",
+    "gen": "multiply(11, 12)",
+    "ok": false,
+    "oob": 0,
+    "steps": 10
+   },
+   {
+    "id": "AAL/2014/page_15.pdf-2",
+    "gen": "divide(9100, 6100)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "ETR/2011/page_301.pdf-2",
+    "gen": "subtract(23596, 2009)",
+    "ok": false,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "GS/2017/page_86.pdf-3",
+    "gen": "subtract(2017, 2016)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "C/2009/page_63.pdf-4",
+    "gen": "divide(47162, 47162)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "UPS/2016/page_114.pdf-1",
+    "gen": "subtract(68, 74)",
+    "ok": true,
+    "oob": 0,
+    "steps": 10
+   },
+   {
+    "id": "C/2009/page_63.pdf-2",
+    "gen": "divide(47162, 47162)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "CB/2008/page_229.pdf-3",
+    "gen": "divide(2008, 2008)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "BLL/2006/page_67.pdf-1",
+    "gen": "divide(assets, ubs)",
+    "ok": false,
+    "oob": 0,
+    "steps": 8
+   },
+   {
+    "id": "GS/2013/page_63.pdf-3",
+    "gen": "subtract(2019, 2012)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "TMUS/2017/page_29.pdf-1",
+    "gen": "divide(61, 500000)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "AAL/2014/page_15.pdf-1",
+    "gen": "divide(4400, 7700)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "INTC/2015/page_41.pdf-3",
+    "gen": "divide(1, 47.9)",
+    "ok": false,
+    "oob": 0,
+    "steps": 11
+   },
+   {
+    "id": "GS/2013/page_85.pdf-3",
+    "gen": "divide(46984, 2012)",
+    "ok": false,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "CMCSA/2015/page_112.pdf-1",
+    "gen": "subtract(2014, 2013)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "LMT/2014/page_91.pdf-4",
+    "gen": "divide(190, 190)",
+    "ok": false,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "VNO/2014/page_57.pdf-2",
+    "gen": "subtract(100, 100)",
+    "ok": false,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "IPG/2017/page_92.pdf-4",
+    "gen": "divide(121.0, 268.4)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "C/2018/page_175.pdf-2",
+    "gen": "divide(1, 1)",
+    "ok": false,
+    "oob": 0,
+    "steps": 8
+   },
+   {
+    "id": "LMT/2014/page_91.pdf-3",
+    "gen": "subtract(190, 190)",
+    "ok": false,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "ABMD/2006/page_43.pdf-1",
+    "gen": "divide(2007, 2008)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "RSG/2012/page_93.pdf-1",
+    "gen": "subtract(29.7, 2012)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "UPS/2007/page_49.pdf-2",
+    "gen": "divide(1782, 619)",
+    "ok": false,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "UPS/2007/page_49.pdf-3",
+    "gen": "divide(1782, 1782 + 619)",
+    "ok": false,
+    "oob": 0,
+    "steps": 19
+   },
+   {
+    "id": "AMT/2012/page_50.pdf-4",
+    "gen": "multiply(1, 1)",
+    "ok": false,
+    "oob": 0,
+    "steps": 8
+   },
+   {
+    "id": "JPM/2010/page_281.pdf-1",
+    "gen": "divide(214.8, 214.8)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "KHC/2018/page_132.pdf-1",
+    "gen": "subtract(2016, 2016)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "AES/2002/page_128.pdf-1",
+    "gen": "divide(169, 14)",
+    "ok": false,
+    "oob": 0,
+    "steps": 11
+   },
+   {
+    "id": "CME/2010/page_123.pdf-1",
+    "gen": "divide(5156223, 5156223)",
+    "ok": false,
+    "oob": 0,
+    "steps": 20
+   },
+   {
+    "id": "UAA/2016/page_42.pdf-1",
+    "gen": "divide(2016, 2016)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "GPN/2018/page_94.pdf-2",
+    "gen": "multiply(2016, 27.55)",
+    "ok": false,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "STT/2011/page_69.pdf-3",
+    "gen": "divide(105, 105)",
+    "ok": false,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "SNA/2013/page_34.pdf-1",
+    "gen": "divide(3, 3)",
+    "ok": false,
+    "oob": 0,
+    "steps": 8
+   },
+   {
+    "id": "JKHY/2017/page_26.pdf-3",
+    "gen": "subtract(203.87, 2015)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "UNP/2006/page_15.pdf-2",
+    "gen": "divide(27318, 51596)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "FIS/2016/page_9.pdf-3",
+    "gen": "divide(2016, 9241)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "AON/2018/page_87.pdf-2",
+    "gen": "subtract(2018, 2017)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "C/2018/page_175.pdf-4",
+    "gen": "divide(525, 2017)",
+    "ok": false,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "GS/2014/page_165.pdf-4",
+    "gen": "divide(16075, 16075)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "CME/2017/page_40.pdf-3",
+    "gen": "divide(2017, 2017)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "LMT/2015/page_89.pdf-1",
+    "gen": "divide(2015 net earnings from continuing operations, 2015 net sales)",
+    "ok": false,
+    "oob": 0,
+    "steps": 21
+   },
+   {
+    "id": "FIS/2017/page_64.pdf-2",
+    "gen": "divide(38, 129)",
+    "ok": true,
+    "oob": 0,
+    "steps": 11
+   },
+   {
+    "id": "UPS/2010/page_52.pdf-1",
+    "gen": "divide(1546, 23556)",
+    "ok": false,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "CMCSA/2008/page_36.pdf-1",
+    "gen": "divide(906, 1024)",
+    "ok": false,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "JPM/2009/page_175.pdf-3",
+    "gen": "divide(2008_trading_assets_derivatives_receivables, 2008_trading_liabilities)",
+    "ok": false,
+    "oob": 0,
+    "steps": 27
+   },
+   {
+    "id": "ANSS/2016/page_47.pdf-1",
+    "gen": "divide(2013, 2013)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "DXC/2018/page_56.pdf-1",
+    "gen": "divide(2018, 2018)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "V/2010/page_28.pdf-1",
+    "gen": "divide(1852, 1)",
+    "ok": false,
+    "oob": 0,
+    "steps": 11
+   },
+   {
+    "id": "INTC/2013/page_31.pdf-1",
+    "gen": "divide(157, 157)",
+    "ok": false,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "BLL/2006/page_67.pdf-3",
+    "gen": "divide(411.1, 802.6)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "SNA/2013/page_84.pdf-2",
+    "gen": "subtract(2013, 2012)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "GS/2014/page_165.pdf-3",
+    "gen": "subtract(8368, 8368)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "STT/2011/page_69.pdf-4",
+    "gen": "divide(105, 190)",
+    "ok": false,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "DXC/2018/page_56.pdf-2",
+    "gen": "divide(2018, 2018)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "GS/2013/page_220.pdf-3",
+    "gen": "subtract(12, 12)",
+    "ok": false,
+    "oob": 0,
+    "steps": 10
+   },
+   {
+    "id": "DRE/2007/page_56.pdf-2",
+    "gen": "divide(2007_basic_net_income_available_for_common_shareholders, 2007_weighted_av",
+    "ok": false,
+    "oob": 0,
+    "steps": 32
+   },
+   {
+    "id": "MMM/2015/page_93.pdf-1",
+    "gen": "divide(2016, 2017)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "MRO/2008/page_45.pdf-2",
+    "gen": "divide(1451, 2007)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "HOLX/2007/page_93.pdf-2",
+    "gen": "divide(352796, 352796)",
+    "ok": false,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "GS/2014/page_165.pdf-1",
+    "gen": "divide(16044, 16044)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "AES/2002/page_128.pdf-3",
+    "gen": "divide(30, 169)",
+    "ok": true,
+    "oob": 0,
+    "steps": 11
+   },
+   {
+    "id": "BKNG/2016/page_33.pdf-1",
+    "gen": "divide(adjustd, ⅛)",
+    "ok": false,
+    "oob": 0,
+    "steps": 10
+   },
+   {
+    "id": "IPG/2017/page_92.pdf-3",
+    "gen": "divide(121.0, 268.4)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "STT/2007/page_111.pdf-4",
+    "gen": "subtract(558368, 2007)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "DVN/2018/page_35.pdf-1",
+    "gen": "divide(156, 156)",
+    "ok": false,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "JPM/2009/page_175.pdf-2",
+    "gen": "subtract(2008 trading assets, 2008 trading liabilities)",
+    "ok": false,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "JKHY/2017/page_26.pdf-2",
+    "gen": "divide(100.00, 100.00)",
+    "ok": false,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "UNP/2016/page_52.pdf-2",
+    "gen": "divide(3543, 20397)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "INTC/2015/page_41.pdf-1",
+    "gen": "divide(56.0, 1)",
+    "ok": false,
+    "oob": 0,
+    "steps": 11
+   },
+   {
+    "id": "GRMN/2008/page_85.pdf-1",
+    "gen": "subtract(214.4, 2007)",
+    "ok": false,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "JKHY/2019/page_18.pdf-2",
+    "gen": "subtract(100.00, 100.00)",
+    "ok": false,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "LMT/2014/page_77.pdf-4",
+    "gen": "subtract(2013, 2012)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "ABMD/2006/page_43.pdf-2",
+    "gen": "divide(2007, 5419)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "UNP/2015/page_56.pdf-3",
+    "gen": "divide(4489, 22560)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "ANSS/2016/page_47.pdf-2",
+    "gen": "divide(1, 1)",
+    "ok": false,
+    "oob": 0,
+    "steps": 8
+   },
+   {
+    "id": "UNP/2018/page_74.pdf-3",
+    "gen": "divide(159, 898)",
+    "ok": true,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "UNP/2018/page_74.pdf-4",
+    "gen": "divide(155, 898)",
+    "ok": true,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "UNP/2007/page_25.pdf-3",
+    "gen": "subtract(487, 516)",
+    "ok": true,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "UNP/2015/page_56.pdf-4",
+    "gen": "divide(20397, 21813)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "UNP/2010/page_21.pdf-3",
+    "gen": "divide(ask, ½)",
+    "ok": false,
+    "oob": 0,
+    "steps": 8
+   },
+   {
+    "id": "UNP/2007/page_25.pdf-4",
+    "gen": "subtract(516, 487)",
+    "ok": false,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "VRTX/2006/page_111.pdf-4",
+    "gen": "divide(61535, 61535)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "UNP/2006/page_15.pdf-3",
+    "gen": "divide(27318, 51596)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "ABMD/2006/page_43.pdf-3",
+    "gen": "divide(1571, 1571)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "UNP/2006/page_15.pdf-4",
+    "gen": "divide(27318, 52667)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "CMCSA/2008/page_36.pdf-3",
+    "gen": "divide(435, 2006)",
+    "ok": false,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "UNP/2009/page_42.pdf-3",
+    "gen": "divide(5312, 24166)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "UNP/2016/page_52.pdf-4",
+    "gen": "subtract(3664, 3474)",
+    "ok": true,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "CMCSA/2015/page_67.pdf-3",
+    "gen": "divide(3698, 756)",
+    "ok": false,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "UNP/2009/page_42.pdf-4",
+    "gen": "divide(2975, 24166)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   }
+  ],
+  "5": [
+   {
+    "id": "INTC/2015/page_41.pdf-4",
+    "gen": "divide(56.0, 56.0)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "CMCSA/2015/page_112.pdf-2",
+    "gen": "subtract(2015, 2014)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "UAA/2016/page_42.pdf-2",
+    "gen": "divide(1, 1)",
+    "ok": false,
+    "oob": 0,
+    "steps": 8
+   },
+   {
+    "id": "GIS/2018/page_110.pdf-2",
+    "gen": "divide(137.4, 559.3)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "UNP/2015/page_56.pdf-1",
+    "gen": "divide(3581, 21813)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "FBHS/2017/page_83.pdf-1",
+    "gen": "multiply(58.02, 428328)",
+    "ok": false,
+    "oob": 0,
+    "steps": 17
+   },
+   {
+    "id": "SNA/2018/page_31.pdf-1",
+    "gen": "divide(10, 12)",
+    "ok": false,
+    "oob": 0,
+    "steps": 10
+   },
+   {
+    "id": "CME/2010/page_123.pdf-2",
+    "gen": "multiply(share, ⅔)",
+    "ok": false,
+    "oob": 0,
+    "steps": 9
+   },
+   {
+    "id": "CME/2010/page_123.pdf-4",
+    "gen": "divide(remaining_options, total_options)",
+    "ok": false,
+    "oob": 0,
+    "steps": 9
+   },
+   {
+    "id": "VNO/2014/page_57.pdf-1",
+    "gen": "subtract(2010, 2009)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "GS/2017/page_86.pdf-2",
+    "gen": "add(78227, 81808)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "BLL/2012/page_31.pdf-3",
+    "gen": "subtract(12, 12)",
+    "ok": false,
+    "oob": 0,
+    "steps": 10
+   },
+   {
+    "id": "BLL/2012/page_31.pdf-4",
+    "gen": "subtract(12, 12)",
+    "ok": false,
+    "oob": 0,
+    "steps": 10
+   },
+   {
+    "id": "AMT/2012/page_50.pdf-1",
+    "gen": "divide(1, 1)",
+    "ok": false,
+    "oob": 0,
+    "steps": 8
+   },
+   {
+    "id": "C/2018/page_175.pdf-3",
+    "gen": "divide(5186, 1)",
+    "ok": false,
+    "oob": 0,
+    "steps": 11
+   },
+   {
+    "id": "RSG/2016/page_145.pdf-1",
+    "gen": "divide(120000, 120000)",
+    "ok": true,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "DRE/2008/page_46.pdf-2",
+    "gen": "divide(14399, 1155)",
+    "ok": false,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "HST/2018/page_135.pdf-1",
+    "gen": "subtract(11, 11)",
+    "ok": true,
+    "oob": 0,
+    "steps": 10
+   },
+   {
+    "id": "PNC/2012/page_174.pdf-5",
+    "gen": "divide(541, 2859)",
+    "ok": true,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "CMCSA/2015/page_67.pdf-2",
+    "gen": "divide(2047, 2424)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "GPN/2018/page_94.pdf-1",
+    "gen": "multiply(2015, 2016)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "AES/2001/page_33.pdf-2",
+    "gen": "subtract(60.15, 41.30)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "CMCSA/2015/page_67.pdf-1",
+    "gen": "divide(2424, 2424)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "FIS/2016/page_45.pdf-2",
+    "gen": "divide(10591, 10591)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "MRO/2004/page_46.pdf-3",
+    "gen": "multiply(45686, 37.73)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "V/2014/page_126.pdf-2",
+    "gen": "subtract(44.11, 39.03)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "PKG/2013/page_88.pdf-2",
+    "gen": "multiply(share, ̶divide(̶divide(̶divide(̶divide(̶divide(̶divide(̶divide(̶divide(",
+    "ok": false,
+    "oob": 0,
+    "steps": 40
+   },
+   {
+    "id": "AES/2001/page_33.pdf-1",
+    "gen": "subtract(60.15, 41.30)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "HOLX/2009/page_151.pdf-1",
+    "gen": "multiply(2770, 2009)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "FBHS/2017/page_22.pdf-1",
+    "gen": "divide(2467.1, 502.9)",
+    "ok": true,
+    "oob": 0,
+    "steps": 17
+   },
+   {
+    "id": "CDW/2017/page_38.pdf-1",
+    "gen": "divide(866.1, 2017)",
+    "ok": false,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "CME/2010/page_91.pdf-2",
+    "gen": "divide(9.9, 146.1)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "IPG/2017/page_92.pdf-1",
+    "gen": "subtract(41.9, 16.1)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "CMCSA/2008/page_36.pdf-2",
+    "gen": "divide(1024, 1024 + 522)",
+    "ok": false,
+    "oob": 0,
+    "steps": 19
+   },
+   {
+    "id": "SNA/2012/page_110.pdf-3",
+    "gen": "multiply(707, 41.01)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "AAL/2016/page_8.pdf-2",
+    "gen": "divide(26900, 122300)",
+    "ok": false,
+    "oob": 0,
+    "steps": 17
+   },
+   {
+    "id": "PKG/2013/page_88.pdf-1",
+    "gen": "divide(remaining, to_be_issued)",
+    "ok": false,
+    "oob": 0,
+    "steps": 10
+   },
+   {
+    "id": "INTC/2015/page_41.pdf-2",
+    "gen": "divide(30.7, 47.9)",
+    "ok": true,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "AAL/2010/page_72.pdf-3",
+    "gen": "add(602, 170)",
+    "ok": false,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "KHC/2018/page_132.pdf-3",
+    "gen": "subtract(1214, 1214)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "C/2009/page_243.pdf-2",
+    "gen": "divide(2.5, 1.6)",
+    "ok": true,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "GRMN/2008/page_73.pdf-1",
+    "gen": "divide(1, 95519)",
+    "ok": false,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "PNC/2012/page_100.pdf-1",
+    "gen": "subtract(110, 74)",
+    "ok": false,
+    "oob": 0,
+    "steps": 11
+   },
+   {
+    "id": "UNP/2010/page_21.pdf-1",
+    "gen": "divide(share, ①)",
+    "ok": false,
+    "oob": 0,
+    "steps": 9
+   },
+   {
+    "id": "JPM/2009/page_175.pdf-1",
+    "gen": "subtract(2013, 77901)",
+    "ok": false,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "MAS/2017/page_27.pdf-4",
+    "gen": "divide(151.94, 151.94)",
+    "ok": false,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "SLB/2012/page_56.pdf-1",
+    "gen": "subtract(2012, 2012)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "TMUS/2017/page_29.pdf-2",
+    "gen": "divide(1400000, 17)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "UPS/2016/page_114.pdf-2",
+    "gen": "subtract(190, 207)",
+    "ok": true,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "GS/2013/page_220.pdf-1",
+    "gen": "subtract(26, 10)",
+    "ok": false,
+    "oob": 0,
+    "steps": 10
+   },
+   {
+    "id": "FIS/2017/page_64.pdf-4",
+    "gen": "divide(130, 129)",
+    "ok": false,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "GRMN/2006/page_68.pdf-2",
+    "gen": "divide(1, 1)",
+    "ok": false,
+    "oob": 0,
+    "steps": 8
+   },
+   {
+    "id": "GPN/2010/page_89.pdf-2",
+    "gen": "multiply(713, 2009)",
+    "ok": false,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "TFX/2015/page_89.pdf-1",
+    "gen": "divide(5009, 2015)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "CDW/2017/page_38.pdf-2",
+    "gen": "divide(819.2, 2016)",
+    "ok": false,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "CB/2008/page_229.pdf-4",
+    "gen": "divide(2008, 2007)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "GIS/2019/page_68.pdf-1",
+    "gen": "subtract(17057.4, 1540.2)",
+    "ok": false,
+    "oob": 0,
+    "steps": 19
+   },
+   {
+    "id": "C/2009/page_63.pdf-3",
+    "gen": "divide(2010, 2010)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "GS/2013/page_85.pdf-1",
+    "gen": "divide(2013, 2013_total)",
+    "ok": false,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "GIS/2018/page_110.pdf-3",
+    "gen": "divide(115.7, 559.3)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "GPN/2013/page_87.pdf-1",
+    "gen": "multiply(472, 48)",
+    "ok": false,
+    "oob": 0,
+    "steps": 11
+   },
+   {
+    "id": "BLL/2006/page_67.pdf-2",
+    "gen": "divide(617.9, 617.9)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "FIS/2016/page_9.pdf-4",
+    "gen": "divide(4250, 6596)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "SNA/2013/page_83.pdf-1",
+    "gen": "subtract(7.7, 19.6)",
+    "ok": true,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "LMT/2014/page_77.pdf-2",
+    "gen": "subtract(322.4, 326.5)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "AON/2007/page_171.pdf-2",
+    "gen": "subtract(2007, 2007)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "TFX/2015/page_89.pdf-2",
+    "gen": "divide(2015, 5009)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "HII/2015/page_121.pdf-2",
+    "gen": "divide(159, 159)",
+    "ok": false,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "AAL/2016/page_8.pdf-1",
+    "gen": "divide(16800, 122300)",
+    "ok": false,
+    "oob": 0,
+    "steps": 17
+   },
+   {
+    "id": "HOLX/2006/page_71.pdf-1",
+    "gen": "multiply(share_count, exercise_price)",
+    "ok": false,
+    "oob": 0,
+    "steps": 9
+   },
+   {
+    "id": "HII/2015/page_121.pdf-1",
+    "gen": "divide(159, 159)",
+    "ok": false,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "GS/2017/page_132.pdf-4",
+    "gen": "subtract(2017, 2016)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "SNA/2007/page_29.pdf-1",
+    "gen": "divide(152.42, 152.42)",
+    "ok": false,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "MRO/2008/page_45.pdf-3",
+    "gen": "divide(1451, 2007)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "GS/2014/page_74.pdf-2",
+    "gen": "divide(45410, 2014)",
+    "ok": false,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "UPS/2010/page_52.pdf-3",
+    "gen": "divide(2963, 23556)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "GS/2013/page_63.pdf-2",
+    "gen": "subtract(78467, 75716)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "GS/2014/page_74.pdf-1",
+    "gen": "divide(45410, 2013)",
+    "ok": false,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "DRE/2008/page_46.pdf-1",
+    "gen": "divide(2968, 507)",
+    "ok": false,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "HOLX/2009/page_151.pdf-2",
+    "gen": "multiply(2770, 2009)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "RSG/2010/page_98.pdf-1",
+    "gen": "subtract(12.7, 36.5)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "AMT/2012/page_50.pdf-2",
+    "gen": "multiply(1, 1)",
+    "ok": false,
+    "oob": 0,
+    "steps": 8
+   },
+   {
+    "id": "BLL/2006/page_67.pdf-4",
+    "gen": "divide(239.5, 802.6)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "IPG/2008/page_72.pdf-2",
+    "gen": "subtract(2008, 2008)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "GRMN/2006/page_68.pdf-1",
+    "gen": "subtract(1, 1)",
+    "ok": false,
+    "oob": 0,
+    "steps": 8
+   },
+   {
+    "id": "CME/2010/page_123.pdf-3",
+    "gen": "divide(1217121, 1217121)",
+    "ok": false,
+    "oob": 0,
+    "steps": 20
+   },
+   {
+    "id": "HOLX/2003/page_52.pdf-1",
+    "gen": "multiply(3227753, 8.86)",
+    "ok": true,
+    "oob": 0,
+    "steps": 17
+   },
+   {
+    "id": "UPS/2010/page_52.pdf-2",
+    "gen": "divide(1546, 23556)",
+    "ok": false,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "SNA/2018/page_31.pdf-3",
+    "gen": "multiply(10, 11)",
+    "ok": false,
+    "oob": 0,
+    "steps": 10
+   },
+   {
+    "id": "GS/2017/page_86.pdf-4",
+    "gen": "subtract(408164, 391555)",
+    "ok": true,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "PNC/2012/page_100.pdf-3",
+    "gen": "add(110, 74)",
+    "ok": true,
+    "oob": 0,
+    "steps": 11
+   },
+   {
+    "id": "ILMN/2003/page_58.pdf-2",
+    "gen": "divide(2000, 2000)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "SNA/2018/page_31.pdf-2",
+    "gen": "multiply(10, 11)",
+    "ok": false,
+    "oob": 0,
+    "steps": 10
+   },
+   {
+    "id": "AAL/2014/page_15.pdf-2",
+    "gen": "divide(9100, 22500)",
+    "ok": false,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "ETR/2011/page_301.pdf-2",
+    "gen": "subtract(23596, 63003)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "GS/2017/page_86.pdf-3",
+    "gen": "subtract(2017, 2016)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "C/2009/page_63.pdf-4",
+    "gen": "divide(2011, 2011_total)",
+    "ok": false,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "UPS/2016/page_114.pdf-1",
+    "gen": "subtract(68, 74)",
+    "ok": true,
+    "oob": 0,
+    "steps": 10
+   },
+   {
+    "id": "C/2009/page_63.pdf-2",
+    "gen": "divide(2010, 2010)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "CB/2008/page_229.pdf-3",
+    "gen": "divide(2008, 2008)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "BLL/2006/page_67.pdf-1",
+    "gen": "divide(617.9, 617.9)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "GS/2013/page_63.pdf-3",
+    "gen": "subtract(75716, 78467)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "TMUS/2017/page_29.pdf-1",
+    "gen": "divide(1300000, 61)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "AAL/2014/page_15.pdf-1",
+    "gen": "divide(4400, 4400 + 7700 + 3600 + 6200 + 6100 + 48",
+    "ok": false,
+    "oob": 1,
+    "steps": 40
+   },
+   {
+    "id": "INTC/2015/page_41.pdf-3",
+    "gen": "divide(47.9, 47.9)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "GS/2013/page_85.pdf-3",
+    "gen": "divide(2012, 2012_total)",
+    "ok": false,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "CMCSA/2015/page_112.pdf-1",
+    "gen": "subtract(111, 111)",
+    "ok": false,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "LMT/2014/page_91.pdf-4",
+    "gen": "divide(2070, 13430)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "VNO/2014/page_57.pdf-2",
+    "gen": "subtract(2010, 2009)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "IPG/2017/page_92.pdf-4",
+    "gen": "divide(121.0, 268.4)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "C/2018/page_175.pdf-2",
+    "gen": "divide(1, 1)",
+    "ok": false,
+    "oob": 0,
+    "steps": 8
+   },
+   {
+    "id": "LMT/2014/page_91.pdf-3",
+    "gen": "subtract(210, 200)",
+    "ok": true,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "ABMD/2006/page_43.pdf-1",
+    "gen": "divide(2007, 2007)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "RSG/2012/page_93.pdf-1",
+    "gen": "subtract(29.7, 32.5)",
+    "ok": true,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "UPS/2007/page_49.pdf-2",
+    "gen": "divide(1782, 619)",
+    "ok": false,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "UPS/2007/page_49.pdf-3",
+    "gen": "divide(1782, 1782 + 619)",
+    "ok": false,
+    "oob": 0,
+    "steps": 19
+   },
+   {
+    "id": "AMT/2012/page_50.pdf-4",
+    "gen": "multiply(1, 1)",
+    "ok": false,
+    "oob": 0,
+    "steps": 8
+   },
+   {
+    "id": "JPM/2010/page_281.pdf-1",
+    "gen": "divide(214.8, 525.4)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "KHC/2018/page_132.pdf-1",
+    "gen": "subtract(1214, 1214)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "AES/2002/page_128.pdf-1",
+    "gen": "divide(14, 169)",
+    "ok": true,
+    "oob": 0,
+    "steps": 11
+   },
+   {
+    "id": "CME/2010/page_123.pdf-1",
+    "gen": "divide(2014, 2014)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "UAA/2016/page_42.pdf-1",
+    "gen": "divide(1, 1)",
+    "ok": false,
+    "oob": 0,
+    "steps": 8
+   },
+   {
+    "id": "GPN/2018/page_94.pdf-2",
+    "gen": "multiply(2015, 2016)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "STT/2011/page_69.pdf-3",
+    "gen": "divide(105, 105)",
+    "ok": false,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "SNA/2013/page_34.pdf-1",
+    "gen": "divide(2012, 2012)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "JKHY/2017/page_26.pdf-3",
+    "gen": "subtract(117.87, 117.87)",
+    "ok": false,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "UNP/2006/page_15.pdf-2",
+    "gen": "divide(27318, 51596)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "FIS/2016/page_9.pdf-3",
+    "gen": "divide(4250, 9241)",
+    "ok": true,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "AON/2018/page_87.pdf-2",
+    "gen": "subtract(10, 12)",
+    "ok": false,
+    "oob": 0,
+    "steps": 10
+   },
+   {
+    "id": "C/2018/page_175.pdf-4",
+    "gen": "divide(2017, 2018)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "GS/2014/page_165.pdf-4",
+    "gen": "divide(8368, 16075)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "CME/2017/page_40.pdf-3",
+    "gen": "divide(2017, 2013)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "LMT/2015/page_89.pdf-1",
+    "gen": "divide(3538, 50962)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "FIS/2017/page_64.pdf-2",
+    "gen": "divide(38, 129)",
+    "ok": true,
+    "oob": 0,
+    "steps": 11
+   },
+   {
+    "id": "UPS/2010/page_52.pdf-1",
+    "gen": "divide(1546, 23556)",
+    "ok": false,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "CMCSA/2008/page_36.pdf-1",
+    "gen": "divide(1014, 1024)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "JPM/2009/page_175.pdf-3",
+    "gen": "divide(2013, 93200)",
+    "ok": false,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "ANSS/2016/page_47.pdf-1",
+    "gen": "divide(12814, 12814 + 12814)",
+    "ok": false,
+    "oob": 0,
+    "steps": 23
+   },
+   {
+    "id": "DXC/2018/page_56.pdf-1",
+    "gen": "divide(2018, 2018)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "V/2010/page_28.pdf-1",
+    "gen": "divide(2793, 100)",
+    "ok": false,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "INTC/2013/page_31.pdf-1",
+    "gen": "divide(2010-2010, 2010-2010)",
+    "ok": false,
+    "oob": 0,
+    "steps": 24
+   },
+   {
+    "id": "BLL/2006/page_67.pdf-3",
+    "gen": "divide(411.1, 802.6)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "SNA/2013/page_84.pdf-2",
+    "gen": "subtract(531.6, 497.9)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "GS/2014/page_165.pdf-3",
+    "gen": "subtract(8368, 7874)",
+    "ok": true,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "STT/2011/page_69.pdf-4",
+    "gen": "divide(190, 2011)",
+    "ok": false,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "DXC/2018/page_56.pdf-2",
+    "gen": "divide(2018, 2018)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "GS/2013/page_220.pdf-3",
+    "gen": "subtract(12, 10)",
+    "ok": false,
+    "oob": 0,
+    "steps": 10
+   },
+   {
+    "id": "DRE/2007/page_56.pdf-2",
+    "gen": "divide(1, 1)",
+    "ok": false,
+    "oob": 0,
+    "steps": 8
+   },
+   {
+    "id": "MMM/2015/page_93.pdf-1",
+    "gen": "divide(987, 156)",
+    "ok": false,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "MRO/2008/page_45.pdf-2",
+    "gen": "divide(1451, 2007)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "HOLX/2007/page_93.pdf-2",
+    "gen": "divide(1, 1)",
+    "ok": false,
+    "oob": 0,
+    "steps": 8
+   },
+   {
+    "id": "GS/2014/page_165.pdf-1",
+    "gen": "divide(7874, 16044)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "AES/2002/page_128.pdf-3",
+    "gen": "divide(30, 169)",
+    "ok": true,
+    "oob": 0,
+    "steps": 11
+   },
+   {
+    "id": "BKNG/2016/page_33.pdf-1",
+    "gen": "divide(2016, 2016)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "IPG/2017/page_92.pdf-3",
+    "gen": "divide(121.0, 268.4)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "STT/2007/page_111.pdf-4",
+    "gen": "subtract(558368, 506032)",
+    "ok": true,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "DVN/2018/page_35.pdf-1",
+    "gen": "divide(2018, 2017)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "JPM/2009/page_175.pdf-2",
+    "gen": "subtract(2013, 93200)",
+    "ok": false,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "JKHY/2017/page_26.pdf-2",
+    "gen": "divide(100.00, 100.00)",
+    "ok": false,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "UNP/2016/page_52.pdf-2",
+    "gen": "divide(3543, 21813)",
+    "ok": false,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "INTC/2015/page_41.pdf-1",
+    "gen": "divide(56.0, 1)",
+    "ok": false,
+    "oob": 0,
+    "steps": 11
+   },
+   {
+    "id": "GRMN/2008/page_85.pdf-1",
+    "gen": "subtract(214.4, 126.6)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "JKHY/2019/page_18.pdf-2",
+    "gen": "subtract(110.51, 100.00)",
+    "ok": false,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "LMT/2014/page_77.pdf-4",
+    "gen": "subtract(326.5, 328.4)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "ABMD/2006/page_43.pdf-2",
+    "gen": "divide(2007, 2007)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "UNP/2015/page_56.pdf-3",
+    "gen": "divide(4489, 22560)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "ANSS/2016/page_47.pdf-2",
+    "gen": "divide(1, 1)",
+    "ok": false,
+    "oob": 0,
+    "steps": 8
+   },
+   {
+    "id": "UNP/2018/page_74.pdf-3",
+    "gen": "divide(159, 898)",
+    "ok": true,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "UNP/2018/page_74.pdf-4",
+    "gen": "divide(155, 898)",
+    "ok": true,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "UNP/2007/page_25.pdf-3",
+    "gen": "subtract(487, 234)",
+    "ok": false,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "UNP/2015/page_56.pdf-4",
+    "gen": "divide(4074, 20397)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "UNP/2010/page_21.pdf-3",
+    "gen": "divide(ask, ¼)",
+    "ok": false,
+    "oob": 0,
+    "steps": 8
+   },
+   {
+    "id": "UNP/2007/page_25.pdf-4",
+    "gen": "subtract(516, 234)",
+    "ok": true,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "VRTX/2006/page_111.pdf-4",
+    "gen": "divide(61535, 54533)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "UNP/2006/page_15.pdf-3",
+    "gen": "divide(27318, 51596)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "ABMD/2006/page_43.pdf-3",
+    "gen": "divide(2008, 2008)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "UNP/2006/page_15.pdf-4",
+    "gen": "divide(27301, 52667)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "CMCSA/2008/page_36.pdf-3",
+    "gen": "divide(2321, 2321)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "UNP/2009/page_42.pdf-3",
+    "gen": "divide(5312, 24166)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "UNP/2016/page_52.pdf-4",
+    "gen": "subtract(3664, 3474)",
+    "ok": true,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "CMCSA/2015/page_67.pdf-3",
+    "gen": "divide(3698, 613)",
+    "ok": false,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "UNP/2009/page_42.pdf-4",
+    "gen": "divide(2975, 24166)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   }
+  ],
+  "10": [
+   {
+    "id": "INTC/2015/page_41.pdf-4",
+    "gen": "divide(8.1, 56.0)",
+    "ok": true,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "CMCSA/2015/page_112.pdf-2",
+    "gen": "subtract(1171, 1701)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "UAA/2016/page_42.pdf-2",
+    "gen": "divide(1)divide(1)",
+    "ok": false,
+    "oob": 0,
+    "steps": 9
+   },
+   {
+    "id": "GIS/2018/page_110.pdf-2",
+    "gen": "divide(137.4, 559.3)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "UNP/2015/page_56.pdf-1",
+    "gen": "divide(3581, 21813)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "FBHS/2017/page_83.pdf-1",
+    "gen": "multiply(160196, 58.02)",
+    "ok": true,
+    "oob": 0,
+    "steps": 17
+   },
+   {
+    "id": "SNA/2018/page_31.pdf-1",
+    "gen": "divide(205000, 630000)",
+    "ok": true,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "CME/2010/page_123.pdf-2",
+    "gen": "multiply(5978, 5978)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "CME/2010/page_123.pdf-4",
+    "gen": "divide(5978, 5978)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "VNO/2014/page_57.pdf-1",
+    "gen": "subtract(123, 100)",
+    "ok": false,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "GS/2017/page_86.pdf-2",
+    "gen": "add(78227, 81808)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "BLL/2012/page_31.pdf-3",
+    "gen": "subtract(12, 12)",
+    "ok": false,
+    "oob": 0,
+    "steps": 10
+   },
+   {
+    "id": "BLL/2012/page_31.pdf-4",
+    "gen": "subtract(12, 12)",
+    "ok": false,
+    "oob": 0,
+    "steps": 10
+   },
+   {
+    "id": "AMT/2012/page_50.pdf-1",
+    "gen": "divide(102400, 619314)",
+    "ok": true,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "C/2018/page_175.pdf-3",
+    "gen": "divide(5186, 9062)",
+    "ok": true,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "RSG/2016/page_145.pdf-1",
+    "gen": "divide(120000, 120000)",
+    "ok": true,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "DRE/2008/page_46.pdf-2",
+    "gen": "divide(232091, 139255)",
+    "ok": false,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "HST/2018/page_135.pdf-1",
+    "gen": "subtract(11, 11)",
+    "ok": true,
+    "oob": 0,
+    "steps": 10
+   },
+   {
+    "id": "PNC/2012/page_174.pdf-5",
+    "gen": "divide(541, 2859)",
+    "ok": true,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "CMCSA/2015/page_67.pdf-2",
+    "gen": "divide(2047, 2424)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "GPN/2018/page_94.pdf-1",
+    "gen": "multiply(1848, 28.97)",
+    "ok": false,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "AES/2001/page_33.pdf-2",
+    "gen": "subtract(52.25, 34.25)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "CMCSA/2015/page_67.pdf-1",
+    "gen": "divide(2424, 2424)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "FIS/2016/page_45.pdf-2",
+    "gen": "divide(332, 10591)",
+    "ok": true,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "MRO/2004/page_46.pdf-3",
+    "gen": "multiply(45686, 37.73)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "V/2014/page_126.pdf-2",
+    "gen": "subtract(44.11, 39.03)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "PKG/2013/page_88.pdf-2",
+    "gen": "multiply(share, ⅔)",
+    "ok": false,
+    "oob": 0,
+    "steps": 9
+   },
+   {
+    "id": "AES/2001/page_33.pdf-1",
+    "gen": "subtract(72.81, 34.25)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "HOLX/2009/page_151.pdf-1",
+    "gen": "multiply(2770, 21.96)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "FBHS/2017/page_22.pdf-1",
+    "gen": "divide(2467.1, 502.9)",
+    "ok": true,
+    "oob": 0,
+    "steps": 17
+   },
+   {
+    "id": "CDW/2017/page_38.pdf-1",
+    "gen": "divide(2449.9, 15191.5)",
+    "ok": true,
+    "oob": 0,
+    "steps": 19
+   },
+   {
+    "id": "CME/2010/page_91.pdf-2",
+    "gen": "divide(9.9, 146.1)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "IPG/2017/page_92.pdf-1",
+    "gen": "subtract(121.0, 4.8)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "CMCSA/2008/page_36.pdf-2",
+    "gen": "divide(1024, 1024 + 1014)",
+    "ok": false,
+    "oob": 0,
+    "steps": 20
+   },
+   {
+    "id": "SNA/2012/page_110.pdf-3",
+    "gen": "multiply(707, 48.87)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "AAL/2016/page_8.pdf-2",
+    "gen": "divide(26900, 122300)",
+    "ok": false,
+    "oob": 0,
+    "steps": 17
+   },
+   {
+    "id": "PKG/2013/page_88.pdf-1",
+    "gen": "divide(available_for_future_issuance, securities_to_be_issued)",
+    "ok": false,
+    "oob": 0,
+    "steps": 17
+   },
+   {
+    "id": "INTC/2015/page_41.pdf-2",
+    "gen": "divide(30.7, 47.9)",
+    "ok": true,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "AAL/2010/page_72.pdf-3",
+    "gen": "add(785, 173)",
+    "ok": false,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "KHC/2018/page_132.pdf-3",
+    "gen": "subtract(1220, 1214)",
+    "ok": true,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "C/2009/page_243.pdf-2",
+    "gen": "divide(2.5, 1.6)",
+    "ok": true,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "GRMN/2008/page_73.pdf-1",
+    "gen": "divide(7957, 95519)",
+    "ok": false,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "PNC/2012/page_100.pdf-1",
+    "gen": "subtract(110, 74)",
+    "ok": false,
+    "oob": 0,
+    "steps": 11
+   },
+   {
+    "id": "UNP/2010/page_21.pdf-1",
+    "gen": "divide(3063816, 3063816)",
+    "ok": false,
+    "oob": 0,
+    "steps": 20
+   },
+   {
+    "id": "JPM/2009/page_175.pdf-1",
+    "gen": "subtract(2013, 77901)",
+    "ok": false,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "MAS/2017/page_27.pdf-4",
+    "gen": "divide(155.26, 151.94)",
+    "ok": false,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "SLB/2012/page_56.pdf-1",
+    "gen": "subtract(1328, 176)",
+    "ok": true,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "TMUS/2017/page_29.pdf-2",
+    "gen": "divide(1400000, 17)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "UPS/2016/page_114.pdf-2",
+    "gen": "subtract(190, 207)",
+    "ok": true,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "GS/2013/page_220.pdf-1",
+    "gen": "subtract(13, 10)",
+    "ok": false,
+    "oob": 0,
+    "steps": 10
+   },
+   {
+    "id": "FIS/2017/page_64.pdf-4",
+    "gen": "divide(130, 129)",
+    "ok": false,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "GRMN/2006/page_68.pdf-2",
+    "gen": "divide(1, 296554)",
+    "ok": false,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "GPN/2010/page_89.pdf-2",
+    "gen": "multiply(42, 713)",
+    "ok": true,
+    "oob": 0,
+    "steps": 11
+   },
+   {
+    "id": "TFX/2015/page_89.pdf-1",
+    "gen": "divide(5009, 5822)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "CDW/2017/page_38.pdf-2",
+    "gen": "divide(2327.2, 13981.9)",
+    "ok": false,
+    "oob": 0,
+    "steps": 19
+   },
+   {
+    "id": "CB/2008/page_229.pdf-4",
+    "gen": "divide(7001, 684)",
+    "ok": true,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "GIS/2019/page_68.pdf-1",
+    "gen": "subtract(17057.4, 16772.9)",
+    "ok": true,
+    "oob": 0,
+    "steps": 20
+   },
+   {
+    "id": "C/2009/page_63.pdf-3",
+    "gen": "divide(47162, 1)",
+    "ok": false,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "GS/2013/page_85.pdf-1",
+    "gen": "divide(45826, 182650)",
+    "ok": true,
+    "oob": 0,
+    "steps": 17
+   },
+   {
+    "id": "GIS/2018/page_110.pdf-3",
+    "gen": "divide(115.7, 559.3)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "GPN/2013/page_87.pdf-1",
+    "gen": "multiply(472, 48)",
+    "ok": false,
+    "oob": 0,
+    "steps": 11
+   },
+   {
+    "id": "BLL/2006/page_67.pdf-2",
+    "gen": "divide(184.7, 802.6)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "FIS/2016/page_9.pdf-4",
+    "gen": "divide(2360, 6596)",
+    "ok": true,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "SNA/2013/page_83.pdf-1",
+    "gen": "subtract(7.7, 19.6)",
+    "ok": true,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "LMT/2014/page_77.pdf-2",
+    "gen": "subtract(322.4, 326.5)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "AON/2007/page_171.pdf-2",
+    "gen": "subtract(284, 118)",
+    "ok": true,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "TFX/2015/page_89.pdf-2",
+    "gen": "divide(231, 5009)",
+    "ok": false,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "HII/2015/page_121.pdf-2",
+    "gen": "divide(1, 1)",
+    "ok": false,
+    "oob": 0,
+    "steps": 8
+   },
+   {
+    "id": "AAL/2016/page_8.pdf-1",
+    "gen": "divide(16800, 122300)",
+    "ok": false,
+    "oob": 0,
+    "steps": 17
+   },
+   {
+    "id": "HOLX/2006/page_71.pdf-1",
+    "gen": "multiply(4218065, 15.52)",
+    "ok": true,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "HII/2015/page_121.pdf-1",
+    "gen": "divide(1, 1)",
+    "ok": false,
+    "oob": 0,
+    "steps": 8
+   },
+   {
+    "id": "GS/2017/page_132.pdf-4",
+    "gen": "subtract(2017, 2016)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "SNA/2007/page_29.pdf-1",
+    "gen": "divide(152.42, 130.66)",
+    "ok": false,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "MRO/2008/page_45.pdf-3",
+    "gen": "divide(1451, 2007)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "GS/2014/page_74.pdf-2",
+    "gen": "divide(45410, 134223)",
+    "ok": false,
+    "oob": 0,
+    "steps": 17
+   },
+   {
+    "id": "UPS/2010/page_52.pdf-3",
+    "gen": "divide(2963, 23556)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "GS/2013/page_63.pdf-2",
+    "gen": "subtract(938555, 911507)",
+    "ok": false,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "GS/2014/page_74.pdf-1",
+    "gen": "divide(45826, 136824)",
+    "ok": false,
+    "oob": 0,
+    "steps": 17
+   },
+   {
+    "id": "DRE/2008/page_46.pdf-1",
+    "gen": "divide(59584, 146915)",
+    "ok": false,
+    "oob": 0,
+    "steps": 17
+   },
+   {
+    "id": "HOLX/2009/page_151.pdf-2",
+    "gen": "multiply(210, 31.23)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "RSG/2010/page_98.pdf-1",
+    "gen": "subtract(65.7, 14.7)",
+    "ok": true,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "AMT/2012/page_50.pdf-2",
+    "gen": "multiply(102400, 102400)",
+    "ok": false,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "BLL/2006/page_67.pdf-4",
+    "gen": "divide(239.5, 802.6)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "IPG/2008/page_72.pdf-2",
+    "gen": "subtract(148.8, 134.8)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "GRMN/2006/page_68.pdf-1",
+    "gen": "subtract(15477, 6040)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "CME/2010/page_123.pdf-3",
+    "gen": "divide(1217121, 1217121)",
+    "ok": false,
+    "oob": 0,
+    "steps": 20
+   },
+   {
+    "id": "HOLX/2003/page_52.pdf-1",
+    "gen": "multiply(3227753, 8.86)",
+    "ok": true,
+    "oob": 0,
+    "steps": 17
+   },
+   {
+    "id": "UPS/2010/page_52.pdf-2",
+    "gen": "divide(1546, 3515)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "SNA/2018/page_31.pdf-3",
+    "gen": "multiply(630000, 160.20)",
+    "ok": false,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "GS/2017/page_86.pdf-4",
+    "gen": "subtract(408164, 391555)",
+    "ok": true,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "PNC/2012/page_100.pdf-3",
+    "gen": "add(110, 74)",
+    "ok": true,
+    "oob": 0,
+    "steps": 11
+   },
+   {
+    "id": "ILMN/2003/page_58.pdf-2",
+    "gen": "divide(2000, 2000)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "SNA/2018/page_31.pdf-2",
+    "gen": "multiply(630000, 160.20)",
+    "ok": false,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "AAL/2014/page_15.pdf-2",
+    "gen": "divide(22500, 2500)",
+    "ok": false,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "ETR/2011/page_301.pdf-2",
+    "gen": "subtract(23596, 63003)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "GS/2017/page_86.pdf-3",
+    "gen": "subtract(1341016, 1270173)",
+    "ok": true,
+    "oob": 0,
+    "steps": 20
+   },
+   {
+    "id": "C/2009/page_63.pdf-4",
+    "gen": "divide(59656, 1)",
+    "ok": false,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "UPS/2016/page_114.pdf-1",
+    "gen": "subtract(68, 74)",
+    "ok": true,
+    "oob": 0,
+    "steps": 10
+   },
+   {
+    "id": "C/2009/page_63.pdf-2",
+    "gen": "divide(47162, 1)",
+    "ok": false,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "CB/2008/page_229.pdf-3",
+    "gen": "divide(684, 7001)",
+    "ok": true,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "BLL/2006/page_67.pdf-1",
+    "gen": "divide(184.7, 802.6)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "GS/2013/page_63.pdf-3",
+    "gen": "subtract(75716, 78467)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "TMUS/2017/page_29.pdf-1",
+    "gen": "divide(1300000, 61)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "AAL/2014/page_15.pdf-1",
+    "gen": "divide(32800, 4400)",
+    "ok": false,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "INTC/2015/page_41.pdf-3",
+    "gen": "divide(47.9, 56.0)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "GS/2013/page_85.pdf-3",
+    "gen": "divide(46984, 172095)",
+    "ok": true,
+    "oob": 0,
+    "steps": 17
+   },
+   {
+    "id": "CMCSA/2015/page_112.pdf-1",
+    "gen": "subtract(1701, 1573)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "LMT/2014/page_91.pdf-4",
+    "gen": "divide(2070, 13430)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "VNO/2014/page_57.pdf-2",
+    "gen": "subtract(115, 100)",
+    "ok": false,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "IPG/2017/page_92.pdf-4",
+    "gen": "divide(121.0, 268.4)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "C/2018/page_175.pdf-2",
+    "gen": "divide(4229, 9475)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "LMT/2014/page_91.pdf-3",
+    "gen": "subtract(200, 190)",
+    "ok": true,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "ABMD/2006/page_43.pdf-1",
+    "gen": "divide(4819, 5419)",
+    "ok": true,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "RSG/2012/page_93.pdf-1",
+    "gen": "subtract(45.3, 48.1)",
+    "ok": true,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "UPS/2007/page_49.pdf-2",
+    "gen": "divide(1782, 619)",
+    "ok": false,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "UPS/2007/page_49.pdf-3",
+    "gen": "divide(1782, 1782)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "AMT/2012/page_50.pdf-4",
+    "gen": "multiply(619314, 74.25)",
+    "ok": true,
+    "oob": 0,
+    "steps": 17
+   },
+   {
+    "id": "JPM/2010/page_281.pdf-1",
+    "gen": "divide(214.8, 450.1)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "KHC/2018/page_132.pdf-1",
+    "gen": "subtract(1224, 1214)",
+    "ok": true,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "AES/2002/page_128.pdf-1",
+    "gen": "divide(14, 169)",
+    "ok": true,
+    "oob": 0,
+    "steps": 11
+   },
+   {
+    "id": "CME/2010/page_123.pdf-1",
+    "gen": "divide(5978, 5978)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "UAA/2016/page_42.pdf-1",
+    "gen": "divide(1)divide(1)",
+    "ok": false,
+    "oob": 0,
+    "steps": 9
+   },
+   {
+    "id": "GPN/2018/page_94.pdf-2",
+    "gen": "multiply(1848, 28.97)",
+    "ok": false,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "STT/2011/page_69.pdf-3",
+    "gen": "divide(105, 105)",
+    "ok": false,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "SNA/2013/page_34.pdf-1",
+    "gen": "divide(223.82, 195.02)",
+    "ok": true,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "JKHY/2017/page_26.pdf-3",
+    "gen": "subtract(203.87, 117.87)",
+    "ok": false,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "UNP/2006/page_15.pdf-2",
+    "gen": "divide(27318, 51596)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "FIS/2016/page_9.pdf-3",
+    "gen": "divide(4250, 9241)",
+    "ok": true,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "AON/2018/page_87.pdf-2",
+    "gen": "subtract(10, 12)",
+    "ok": false,
+    "oob": 0,
+    "steps": 10
+   },
+   {
+    "id": "C/2018/page_175.pdf-4",
+    "gen": "divide(2435, 1423)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "GS/2014/page_165.pdf-4",
+    "gen": "divide(8368, 16075)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "CME/2017/page_40.pdf-3",
+    "gen": "divide(164.01, 164.01)",
+    "ok": false,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "LMT/2015/page_89.pdf-1",
+    "gen": "divide(3538, 50962)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "FIS/2017/page_64.pdf-2",
+    "gen": "divide(38, 129)",
+    "ok": true,
+    "oob": 0,
+    "steps": 11
+   },
+   {
+    "id": "UPS/2010/page_52.pdf-1",
+    "gen": "divide(1334, 23556)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "CMCSA/2008/page_36.pdf-1",
+    "gen": "divide(1014, 1024)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "JPM/2009/page_175.pdf-3",
+    "gen": "divide(93200, 65198)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "ANSS/2016/page_47.pdf-1",
+    "gen": "divide(40859, 138930)",
+    "ok": true,
+    "oob": 0,
+    "steps": 17
+   },
+   {
+    "id": "DXC/2018/page_56.pdf-1",
+    "gen": "divide(17944, 93.2%)",
+    "ok": false,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "V/2010/page_28.pdf-1",
+    "gen": "divide(2793, 100)",
+    "ok": false,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "INTC/2013/page_31.pdf-1",
+    "gen": "divide(157, 191)",
+    "ok": true,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "BLL/2006/page_67.pdf-3",
+    "gen": "divide(411.1, 802.6)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "SNA/2013/page_84.pdf-2",
+    "gen": "subtract(531.6, 497.9)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "GS/2014/page_165.pdf-3",
+    "gen": "subtract(8368, 7874)",
+    "ok": true,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "STT/2011/page_69.pdf-4",
+    "gen": "divide(190, 2011)",
+    "ok": false,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "DXC/2018/page_56.pdf-2",
+    "gen": "divide(8.2, 93.2)",
+    "ok": true,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "GS/2013/page_220.pdf-3",
+    "gen": "subtract(12, 100.00)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "DRE/2007/page_56.pdf-2",
+    "gen": "divide(232091, 139255)",
+    "ok": false,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "MMM/2015/page_93.pdf-1",
+    "gen": "divide(987, 205)",
+    "ok": true,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "MRO/2008/page_45.pdf-2",
+    "gen": "divide(1451, 2007)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "HOLX/2007/page_93.pdf-2",
+    "gen": "divide(2590898, 2943694)",
+    "ok": true,
+    "oob": 0,
+    "steps": 20
+   },
+   {
+    "id": "GS/2014/page_165.pdf-1",
+    "gen": "divide(7874, 16044)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "AES/2002/page_128.pdf-3",
+    "gen": "divide(30, 169)",
+    "ok": true,
+    "oob": 0,
+    "steps": 11
+   },
+   {
+    "id": "BKNG/2016/page_33.pdf-1",
+    "gen": "divide(2016, 2016)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "IPG/2017/page_92.pdf-3",
+    "gen": "divide(121.0, 268.4)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "STT/2007/page_111.pdf-4",
+    "gen": "divide(558368, 506032)",
+    "ok": false,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "DVN/2018/page_35.pdf-1",
+    "gen": "divide(156, 15)",
+    "ok": true,
+    "oob": 0,
+    "steps": 11
+   },
+   {
+    "id": "JPM/2009/page_175.pdf-2",
+    "gen": "subtract(93200, 65198)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "JKHY/2017/page_26.pdf-2",
+    "gen": "divide(177.10, 100.00)",
+    "ok": false,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "UNP/2016/page_52.pdf-2",
+    "gen": "divide(3543, 21813)",
+    "ok": false,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "INTC/2015/page_41.pdf-1",
+    "gen": "divide(47.9, 56.0)",
+    "ok": true,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "GRMN/2008/page_85.pdf-1",
+    "gen": "subtract(214.4, 126.6)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "JKHY/2019/page_18.pdf-2",
+    "gen": "subtract(240.29, 100.00)",
+    "ok": true,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "LMT/2014/page_77.pdf-4",
+    "gen": "subtract(326.5, 328.4)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "ABMD/2006/page_43.pdf-2",
+    "gen": "divide(4819, 5419)",
+    "ok": true,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "UNP/2015/page_56.pdf-3",
+    "gen": "divide(4489, 22560)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "ANSS/2016/page_47.pdf-2",
+    "gen": "divide(12814, 4752)",
+    "ok": false,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "UNP/2018/page_74.pdf-3",
+    "gen": "divide(159, 898)",
+    "ok": true,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "UNP/2018/page_74.pdf-4",
+    "gen": "divide(155, 898)",
+    "ok": true,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "UNP/2007/page_25.pdf-3",
+    "gen": "subtract(487, 234)",
+    "ok": false,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "UNP/2015/page_56.pdf-4",
+    "gen": "divide(4074, 20397)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "UNP/2010/page_21.pdf-3",
+    "gen": "multiply(3063816, 3063816)",
+    "ok": false,
+    "oob": 0,
+    "steps": 20
+   },
+   {
+    "id": "UNP/2007/page_25.pdf-4",
+    "gen": "subtract(516, 234)",
+    "ok": true,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "VRTX/2006/page_111.pdf-4",
+    "gen": "divide(61535, 54533)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "UNP/2006/page_15.pdf-3",
+    "gen": "divide(27318, 51596)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "ABMD/2006/page_43.pdf-3",
+    "gen": "divide(1703, 1903)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "UNP/2006/page_15.pdf-4",
+    "gen": "divide(27301, 52667)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "CMCSA/2008/page_36.pdf-3",
+    "gen": "divide(2321, 2006)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "UNP/2009/page_42.pdf-3",
+    "gen": "divide(5312, 24166)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "UNP/2016/page_52.pdf-4",
+    "gen": "subtract(3664, 3474)",
+    "ok": true,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "CMCSA/2015/page_67.pdf-3",
+    "gen": "divide(3698, 527)",
+    "ok": false,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "UNP/2009/page_42.pdf-4",
+    "gen": "divide(2975, 24166)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   }
+  ],
+  "20": [
+   {
+    "id": "INTC/2015/page_41.pdf-4",
+    "gen": "divide(8.1, 56.0)",
+    "ok": true,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "CMCSA/2015/page_112.pdf-2",
+    "gen": "subtract(1136, 1171)",
+    "ok": true,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "UAA/2016/page_42.pdf-2",
+    "gen": "divide(817388, 3644331)",
+    "ok": true,
+    "oob": 0,
+    "steps": 19
+   },
+   {
+    "id": "GIS/2018/page_110.pdf-2",
+    "gen": "divide(137.4, 559.3)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "UNP/2015/page_56.pdf-1",
+    "gen": "divide(3581, 21813)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "FBHS/2017/page_83.pdf-1",
+    "gen": "multiply(160196, 58.02)",
+    "ok": true,
+    "oob": 0,
+    "steps": 17
+   },
+   {
+    "id": "SNA/2018/page_31.pdf-1",
+    "gen": "divide(205000, 630000)",
+    "ok": true,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "CME/2010/page_123.pdf-2",
+    "gen": "multiply(5156223, 308.10)",
+    "ok": false,
+    "oob": 0,
+    "steps": 19
+   },
+   {
+    "id": "CME/2010/page_123.pdf-4",
+    "gen": "divide(1211143, 1211143 + 5978)",
+    "ok": true,
+    "oob": 0,
+    "steps": 26
+   },
+   {
+    "id": "VNO/2014/page_57.pdf-1",
+    "gen": "subtract(128, 100)",
+    "ok": false,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "GS/2017/page_86.pdf-2",
+    "gen": "add(78227, 81808)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "BLL/2012/page_31.pdf-3",
+    "gen": "subtract(12, 100.00)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "BLL/2012/page_31.pdf-4",
+    "gen": "subtract(12, 100.00)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "AMT/2012/page_50.pdf-1",
+    "gen": "divide(102400, 619314)",
+    "ok": true,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "C/2018/page_175.pdf-3",
+    "gen": "divide(5186, 9062)",
+    "ok": true,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "RSG/2016/page_145.pdf-1",
+    "gen": "divide(120000, 120000)",
+    "ok": true,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "DRE/2008/page_46.pdf-2",
+    "gen": "divide(217692, 139255)",
+    "ok": true,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "HST/2018/page_135.pdf-1",
+    "gen": "subtract(11, 11)",
+    "ok": true,
+    "oob": 0,
+    "steps": 10
+   },
+   {
+    "id": "PNC/2012/page_174.pdf-5",
+    "gen": "divide(541, 2859)",
+    "ok": true,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "CMCSA/2015/page_67.pdf-2",
+    "gen": "divide(2047, 2424)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "GPN/2018/page_94.pdf-1",
+    "gen": "multiply(1226, 39.26)",
+    "ok": false,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "AES/2001/page_33.pdf-2",
+    "gen": "subtract(52.25, 39.95)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "CMCSA/2015/page_67.pdf-1",
+    "gen": "divide(2424, 2424)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "FIS/2016/page_45.pdf-2",
+    "gen": "divide(332, 10591)",
+    "ok": true,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "MRO/2004/page_46.pdf-3",
+    "gen": "multiply(45686, 37.73)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "V/2014/page_126.pdf-2",
+    "gen": "subtract(44.11, 39.03)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "PKG/2013/page_88.pdf-2",
+    "gen": "multiply(151945, 24.61)",
+    "ok": true,
+    "oob": 0,
+    "steps": 17
+   },
+   {
+    "id": "AES/2001/page_33.pdf-1",
+    "gen": "subtract(72.81, 45.00)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "HOLX/2009/page_151.pdf-1",
+    "gen": "multiply(2770, 21.96)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "FBHS/2017/page_22.pdf-1",
+    "gen": "divide(2467.1, 502.9)",
+    "ok": true,
+    "oob": 0,
+    "steps": 17
+   },
+   {
+    "id": "CDW/2017/page_38.pdf-1",
+    "gen": "divide(2449.9, 15191.5)",
+    "ok": true,
+    "oob": 0,
+    "steps": 19
+   },
+   {
+    "id": "CME/2010/page_91.pdf-2",
+    "gen": "divide(9.9, 146.1)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "IPG/2017/page_92.pdf-1",
+    "gen": "subtract(121.0, 41.9)",
+    "ok": false,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "CMCSA/2008/page_36.pdf-2",
+    "gen": "divide(1024, 1024 + 1014)",
+    "ok": false,
+    "oob": 0,
+    "steps": 20
+   },
+   {
+    "id": "SNA/2012/page_110.pdf-3",
+    "gen": "multiply(707, 48.87)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "AAL/2016/page_8.pdf-2",
+    "gen": "divide(26900, 122300)",
+    "ok": false,
+    "oob": 0,
+    "steps": 17
+   },
+   {
+    "id": "PKG/2013/page_88.pdf-1",
+    "gen": "divide(2140954, 151945)",
+    "ok": true,
+    "oob": 0,
+    "steps": 19
+   },
+   {
+    "id": "INTC/2015/page_41.pdf-2",
+    "gen": "divide(30.7, 47.9)",
+    "ok": true,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "AAL/2010/page_72.pdf-3",
+    "gen": "add(4959, 989)",
+    "ok": false,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "KHC/2018/page_132.pdf-3",
+    "gen": "subtract(1220, 1214)",
+    "ok": true,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "C/2009/page_243.pdf-2",
+    "gen": "divide(2.5, 1.6)",
+    "ok": true,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "GRMN/2008/page_73.pdf-1",
+    "gen": "divide(13789, 95519)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "PNC/2012/page_100.pdf-1",
+    "gen": "subtract(110, 74)",
+    "ok": false,
+    "oob": 0,
+    "steps": 11
+   },
+   {
+    "id": "UNP/2010/page_21.pdf-1",
+    "gen": "divide(2500596, 3063816)",
+    "ok": false,
+    "oob": 0,
+    "steps": 20
+   },
+   {
+    "id": "JPM/2009/page_175.pdf-1",
+    "gen": "subtract(110457, 77901)",
+    "ok": false,
+    "oob": 0,
+    "steps": 17
+   },
+   {
+    "id": "MAS/2017/page_27.pdf-4",
+    "gen": "divide(200.79, 151.94)",
+    "ok": true,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "SLB/2012/page_56.pdf-1",
+    "gen": "subtract(1328, 176)",
+    "ok": true,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "TMUS/2017/page_29.pdf-2",
+    "gen": "divide(1400000, 17)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "UPS/2016/page_114.pdf-2",
+    "gen": "subtract(190, 207)",
+    "ok": true,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "GS/2013/page_220.pdf-1",
+    "gen": "subtract(248.36, 100.00)",
+    "ok": true,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "FIS/2017/page_64.pdf-4",
+    "gen": "divide(35, 130)",
+    "ok": true,
+    "oob": 0,
+    "steps": 11
+   },
+   {
+    "id": "GRMN/2006/page_68.pdf-2",
+    "gen": "divide(265409, 296554)",
+    "ok": false,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "GPN/2010/page_89.pdf-2",
+    "gen": "multiply(713, 42)",
+    "ok": true,
+    "oob": 0,
+    "steps": 11
+   },
+   {
+    "id": "TFX/2015/page_89.pdf-1",
+    "gen": "divide(5009, 5822)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "CDW/2017/page_38.pdf-2",
+    "gen": "divide(2327.2, 13981.9)",
+    "ok": false,
+    "oob": 0,
+    "steps": 19
+   },
+   {
+    "id": "CB/2008/page_229.pdf-4",
+    "gen": "divide(7001, 684)",
+    "ok": true,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "GIS/2019/page_68.pdf-1",
+    "gen": "subtract(17057.4, 16772.9)",
+    "ok": true,
+    "oob": 0,
+    "steps": 20
+   },
+   {
+    "id": "C/2009/page_63.pdf-3",
+    "gen": "divide(47162, 83659)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "GS/2013/page_85.pdf-1",
+    "gen": "divide(45826, 182650)",
+    "ok": true,
+    "oob": 0,
+    "steps": 17
+   },
+   {
+    "id": "GIS/2018/page_110.pdf-3",
+    "gen": "divide(115.7, 559.3)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "GPN/2013/page_87.pdf-1",
+    "gen": "multiply(472, 48)",
+    "ok": false,
+    "oob": 0,
+    "steps": 11
+   },
+   {
+    "id": "BLL/2006/page_67.pdf-2",
+    "gen": "divide(184.7, 802.6)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "FIS/2016/page_9.pdf-4",
+    "gen": "divide(2360, 6596)",
+    "ok": true,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "SNA/2013/page_83.pdf-1",
+    "gen": "subtract(7.7, 19.6)",
+    "ok": true,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "LMT/2014/page_77.pdf-2",
+    "gen": "subtract(322.4, 326.5)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "AON/2007/page_171.pdf-2",
+    "gen": "subtract(284, 118)",
+    "ok": true,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "TFX/2015/page_89.pdf-2",
+    "gen": "divide(231, 5009)",
+    "ok": false,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "HII/2015/page_121.pdf-2",
+    "gen": "divide(1927, 1594)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "AAL/2016/page_8.pdf-1",
+    "gen": "divide(16800, 122300)",
+    "ok": false,
+    "oob": 0,
+    "steps": 17
+   },
+   {
+    "id": "HOLX/2006/page_71.pdf-1",
+    "gen": "multiply(4218065, 15.52)",
+    "ok": true,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "HII/2015/page_121.pdf-1",
+    "gen": "divide(159, 1719)",
+    "ok": false,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "GS/2017/page_132.pdf-4",
+    "gen": "subtract(2017, 2016)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "SNA/2007/page_29.pdf-1",
+    "gen": "divide(152.42, 130.66)",
+    "ok": false,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "MRO/2008/page_45.pdf-3",
+    "gen": "divide(1451, 2007)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "GS/2014/page_74.pdf-2",
+    "gen": "divide(45410, 134223)",
+    "ok": false,
+    "oob": 0,
+    "steps": 17
+   },
+   {
+    "id": "UPS/2010/page_52.pdf-3",
+    "gen": "divide(2963, 23556)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "GS/2013/page_63.pdf-2",
+    "gen": "subtract(938555, 911507)",
+    "ok": false,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "GS/2014/page_74.pdf-1",
+    "gen": "divide(45826, 136824)",
+    "ok": false,
+    "oob": 0,
+    "steps": 17
+   },
+   {
+    "id": "DRE/2008/page_46.pdf-1",
+    "gen": "divide(56616, 146915)",
+    "ok": true,
+    "oob": 0,
+    "steps": 17
+   },
+   {
+    "id": "HOLX/2009/page_151.pdf-2",
+    "gen": "multiply(1461, 31.23)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "RSG/2010/page_98.pdf-1",
+    "gen": "subtract(65.7, 14.7)",
+    "ok": true,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "AMT/2012/page_50.pdf-2",
+    "gen": "multiply(102400, 102400)",
+    "ok": false,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "BLL/2006/page_67.pdf-4",
+    "gen": "divide(239.5, 802.6)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "IPG/2008/page_72.pdf-2",
+    "gen": "subtract(148.8, 134.8)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "GRMN/2006/page_68.pdf-1",
+    "gen": "subtract(15477, 6040)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "CME/2010/page_123.pdf-3",
+    "gen": "divide(1217121, 1217121)",
+    "ok": false,
+    "oob": 0,
+    "steps": 20
+   },
+   {
+    "id": "HOLX/2003/page_52.pdf-1",
+    "gen": "multiply(3227753, 8.86)",
+    "ok": true,
+    "oob": 0,
+    "steps": 17
+   },
+   {
+    "id": "UPS/2010/page_52.pdf-2",
+    "gen": "divide(1546, 3515)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "SNA/2018/page_31.pdf-3",
+    "gen": "multiply(630000, 158.19)",
+    "ok": false,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "GS/2017/page_86.pdf-4",
+    "gen": "subtract(408164, 391555)",
+    "ok": true,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "PNC/2012/page_100.pdf-3",
+    "gen": "add(110, 74)",
+    "ok": true,
+    "oob": 0,
+    "steps": 11
+   },
+   {
+    "id": "ILMN/2003/page_58.pdf-2",
+    "gen": "divide(100.00, 93.20)",
+    "ok": false,
+    "oob": 0,
+    "steps": 17
+   },
+   {
+    "id": "SNA/2018/page_31.pdf-2",
+    "gen": "multiply(335000, 159.35)",
+    "ok": false,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "AAL/2014/page_15.pdf-2",
+    "gen": "divide(22500, 2500)",
+    "ok": false,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "ETR/2011/page_301.pdf-2",
+    "gen": "subtract(23596, 63003)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "GS/2017/page_86.pdf-3",
+    "gen": "subtract(1341016, 1270173)",
+    "ok": true,
+    "oob": 0,
+    "steps": 20
+   },
+   {
+    "id": "C/2009/page_63.pdf-4",
+    "gen": "divide(59656, 61368)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "UPS/2016/page_114.pdf-1",
+    "gen": "subtract(68, 74)",
+    "ok": true,
+    "oob": 0,
+    "steps": 10
+   },
+   {
+    "id": "C/2009/page_63.pdf-2",
+    "gen": "divide(47162, 83659)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "CB/2008/page_229.pdf-3",
+    "gen": "divide(684, 7001)",
+    "ok": true,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "BLL/2006/page_67.pdf-1",
+    "gen": "divide(184.7, 802.6)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "GS/2013/page_63.pdf-3",
+    "gen": "subtract(75716, 78467)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "TMUS/2017/page_29.pdf-1",
+    "gen": "divide(1300000, 61)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "AAL/2014/page_15.pdf-1",
+    "gen": "divide(32800, 4400)",
+    "ok": false,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "INTC/2015/page_41.pdf-3",
+    "gen": "divide(47.9, 56.0)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "GS/2013/page_85.pdf-3",
+    "gen": "divide(46984, 172095)",
+    "ok": true,
+    "oob": 0,
+    "steps": 17
+   },
+   {
+    "id": "CMCSA/2015/page_112.pdf-1",
+    "gen": "subtract(1171, 1701)",
+    "ok": true,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "LMT/2014/page_91.pdf-4",
+    "gen": "divide(2070, 13430)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "VNO/2014/page_57.pdf-2",
+    "gen": "subtract(205, 100)",
+    "ok": true,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "IPG/2017/page_92.pdf-4",
+    "gen": "divide(121.0, 268.4)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "C/2018/page_175.pdf-2",
+    "gen": "divide(4229, 7857)",
+    "ok": true,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "LMT/2014/page_91.pdf-3",
+    "gen": "subtract(200, 190)",
+    "ok": true,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "ABMD/2006/page_43.pdf-1",
+    "gen": "divide(4819, 5419)",
+    "ok": true,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "RSG/2012/page_93.pdf-1",
+    "gen": "subtract(45.3, 48.1)",
+    "ok": true,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "UPS/2007/page_49.pdf-2",
+    "gen": "divide(1782, 619)",
+    "ok": false,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "UPS/2007/page_49.pdf-3",
+    "gen": "divide(1782, 1782)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "AMT/2012/page_50.pdf-4",
+    "gen": "multiply(619314, 74.25)",
+    "ok": true,
+    "oob": 0,
+    "steps": 17
+   },
+   {
+    "id": "JPM/2010/page_281.pdf-1",
+    "gen": "divide(214.8, 450.1)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "KHC/2018/page_132.pdf-1",
+    "gen": "subtract(1224, 1214)",
+    "ok": true,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "AES/2002/page_128.pdf-1",
+    "gen": "divide(14, 169)",
+    "ok": true,
+    "oob": 0,
+    "steps": 11
+   },
+   {
+    "id": "CME/2010/page_123.pdf-1",
+    "gen": "divide(5978, 1211143)",
+    "ok": true,
+    "oob": 0,
+    "steps": 17
+   },
+   {
+    "id": "UAA/2016/page_42.pdf-1",
+    "gen": "divide(817388, 2030900)",
+    "ok": true,
+    "oob": 0,
+    "steps": 19
+   },
+   {
+    "id": "GPN/2018/page_94.pdf-2",
+    "gen": "multiply(108.51, 1084)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "STT/2011/page_69.pdf-3",
+    "gen": "divide(105, 105)",
+    "ok": false,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "SNA/2013/page_34.pdf-1",
+    "gen": "divide(223.82, 195.02)",
+    "ok": true,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "JKHY/2017/page_26.pdf-3",
+    "gen": "subtract(233.39, 100.00)",
+    "ok": false,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "UNP/2006/page_15.pdf-2",
+    "gen": "divide(27318, 51596)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "FIS/2016/page_9.pdf-3",
+    "gen": "divide(4250, 9241)",
+    "ok": true,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "AON/2018/page_87.pdf-2",
+    "gen": "subtract(10, 12)",
+    "ok": false,
+    "oob": 0,
+    "steps": 10
+   },
+   {
+    "id": "C/2018/page_175.pdf-4",
+    "gen": "divide(2435, 1423)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "GS/2014/page_165.pdf-4",
+    "gen": "divide(8368, 16075)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "CME/2017/page_40.pdf-3",
+    "gen": "divide(370.32, 279.85)",
+    "ok": false,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "LMT/2015/page_89.pdf-1",
+    "gen": "divide(3538, 50962)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "FIS/2017/page_64.pdf-2",
+    "gen": "divide(38, 129)",
+    "ok": true,
+    "oob": 0,
+    "steps": 11
+   },
+   {
+    "id": "UPS/2010/page_52.pdf-1",
+    "gen": "divide(1334, 23556)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "CMCSA/2008/page_36.pdf-1",
+    "gen": "divide(1014, 1024)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "JPM/2009/page_175.pdf-3",
+    "gen": "divide(121417, 93200)",
+    "ok": false,
+    "oob": 0,
+    "steps": 17
+   },
+   {
+    "id": "ANSS/2016/page_47.pdf-1",
+    "gen": "divide(8556, 138930)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "DXC/2018/page_56.pdf-1",
+    "gen": "divide(17944, 22885)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "V/2010/page_28.pdf-1",
+    "gen": "divide(2793, 109)",
+    "ok": false,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "INTC/2013/page_31.pdf-1",
+    "gen": "divide(157, 191)",
+    "ok": true,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "BLL/2006/page_67.pdf-3",
+    "gen": "divide(411.1, 802.6)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "SNA/2013/page_84.pdf-2",
+    "gen": "subtract(531.6, 497.9)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "GS/2014/page_165.pdf-3",
+    "gen": "subtract(8368, 7874)",
+    "ok": true,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "STT/2011/page_69.pdf-4",
+    "gen": "divide(190, 2011)",
+    "ok": false,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "DXC/2018/page_56.pdf-2",
+    "gen": "divide(17944, 22885)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "GS/2013/page_220.pdf-3",
+    "gen": "subtract(236.20, 100.00)",
+    "ok": true,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "DRE/2007/page_56.pdf-2",
+    "gen": "divide(217692, 139255)",
+    "ok": true,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "MMM/2015/page_93.pdf-1",
+    "gen": "divide(987, 205)",
+    "ok": true,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "MRO/2008/page_45.pdf-2",
+    "gen": "divide(1451, 2007)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "HOLX/2007/page_93.pdf-2",
+    "gen": "divide(2590898, 2943694)",
+    "ok": true,
+    "oob": 0,
+    "steps": 20
+   },
+   {
+    "id": "GS/2014/page_165.pdf-1",
+    "gen": "divide(7874, 16044)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "AES/2002/page_128.pdf-3",
+    "gen": "divide(30, 169)",
+    "ok": true,
+    "oob": 0,
+    "steps": 11
+   },
+   {
+    "id": "BKNG/2016/page_33.pdf-1",
+    "gen": "divide(313.45, 198.18)",
+    "ok": false,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "IPG/2017/page_92.pdf-3",
+    "gen": "divide(121.0, 268.4)",
+    "ok": false,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "STT/2007/page_111.pdf-4",
+    "gen": "divide(558368, 506032)",
+    "ok": false,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "DVN/2018/page_35.pdf-1",
+    "gen": "divide(156, 15)",
+    "ok": true,
+    "oob": 0,
+    "steps": 11
+   },
+   {
+    "id": "JPM/2009/page_175.pdf-2",
+    "gen": "subtract(121417, 93200)",
+    "ok": false,
+    "oob": 0,
+    "steps": 17
+   },
+   {
+    "id": "JKHY/2017/page_26.pdf-2",
+    "gen": "divide(322.60, 233.39)",
+    "ok": false,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "UNP/2016/page_52.pdf-2",
+    "gen": "divide(3543, 21813)",
+    "ok": false,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "INTC/2015/page_41.pdf-1",
+    "gen": "divide(47.9, 56.0)",
+    "ok": true,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "GRMN/2008/page_85.pdf-1",
+    "gen": "subtract(214.4, 126.6)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "JKHY/2019/page_18.pdf-2",
+    "gen": "subtract(240.29, 100.00)",
+    "ok": true,
+    "oob": 0,
+    "steps": 18
+   },
+   {
+    "id": "LMT/2014/page_77.pdf-4",
+    "gen": "subtract(326.5, 328.4)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "ABMD/2006/page_43.pdf-2",
+    "gen": "divide(4819, 5419)",
+    "ok": true,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "UNP/2015/page_56.pdf-3",
+    "gen": "divide(4489, 22560)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "ANSS/2016/page_47.pdf-2",
+    "gen": "divide(40859, 29808)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "UNP/2018/page_74.pdf-3",
+    "gen": "divide(159, 898)",
+    "ok": true,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "UNP/2018/page_74.pdf-4",
+    "gen": "divide(155, 898)",
+    "ok": true,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "UNP/2007/page_25.pdf-3",
+    "gen": "subtract(487, 234)",
+    "ok": false,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "UNP/2015/page_56.pdf-4",
+    "gen": "divide(4074, 20397)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "UNP/2010/page_21.pdf-3",
+    "gen": "multiply(2500596, 3063816)",
+    "ok": false,
+    "oob": 0,
+    "steps": 20
+   },
+   {
+    "id": "UNP/2007/page_25.pdf-4",
+    "gen": "subtract(516, 234)",
+    "ok": true,
+    "oob": 0,
+    "steps": 12
+   },
+   {
+    "id": "VRTX/2006/page_111.pdf-4",
+    "gen": "divide(61535, 54533)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "UNP/2006/page_15.pdf-3",
+    "gen": "divide(27318, 51596)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "ABMD/2006/page_43.pdf-3",
+    "gen": "divide(1371, 1903)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "UNP/2006/page_15.pdf-4",
+    "gen": "divide(27301, 52667)",
+    "ok": true,
+    "oob": 0,
+    "steps": 16
+   },
+   {
+    "id": "CMCSA/2008/page_36.pdf-3",
+    "gen": "divide(2321, 2006)",
+    "ok": false,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "UNP/2009/page_42.pdf-3",
+    "gen": "divide(5312, 24166)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   },
+   {
+    "id": "UNP/2016/page_52.pdf-4",
+    "gen": "subtract(3664, 3474)",
+    "ok": true,
+    "oob": 0,
+    "steps": 14
+   },
+   {
+    "id": "CMCSA/2015/page_67.pdf-3",
+    "gen": "divide(3698, 527)",
+    "ok": false,
+    "oob": 0,
+    "steps": 13
+   },
+   {
+    "id": "UNP/2009/page_42.pdf-4",
+    "gen": "divide(2975, 24166)",
+    "ok": true,
+    "oob": 0,
+    "steps": 15
+   }
+  ]
+ }
+}
