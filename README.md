@@ -91,4 +91,4 @@ python pilot/arm_c.py --model /path/to/Llama-3.2-3B-Instruct --data data/test.js
 
 ## 联系
 
-通信作者邮箱见论文首页。复现遇到问题请开 issue。
+通信作者：贺明涵，20251513112@sspu.edu.cn。复现遇到问题请开 issue。
